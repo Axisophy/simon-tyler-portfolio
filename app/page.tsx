@@ -42,7 +42,7 @@ export default function Home() {
               {/* Title Frame */}
               <Link
                 href="/work/mxwll"
-                className="frame p-4 md:p-6 transition-all group"
+                className="frame p-4 md:p-6 transition-all group min-h-[180px]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -82,7 +82,7 @@ export default function Home() {
               {/* Title Frame */}
               <Link
                 href="/work/elxsis"
-                className="frame p-4 md:p-6 transition-all group"
+                className="frame p-4 md:p-6 transition-all group min-h-[180px]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -119,7 +119,7 @@ export default function Home() {
               {/* Title Frame */}
               <Link
                 href="/work/network-rail"
-                className="frame p-4 md:p-6 transition-all group h-full"
+                className="frame p-4 md:p-6 transition-all group min-h-[180px]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -156,7 +156,7 @@ export default function Home() {
               {/* Title Frame */}
               <Link
                 href="/work/axisophy"
-                className="frame p-4 md:p-6 transition-all group"
+                className="frame p-4 md:p-6 transition-all group min-h-[180px]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -194,7 +194,7 @@ export default function Home() {
               {/* Title Frame */}
               <Link
                 href="/work/gizmo"
-                className="frame p-4 md:p-6 transition-all group h-full"
+                className="frame p-4 md:p-6 transition-all group min-h-[180px]"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
