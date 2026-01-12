@@ -8,7 +8,7 @@ export default function Work() {
     {
       slug: "mxwll",
       title: "Mxwll",
-      year: "2024—25",
+      year: "2024-25",
       description: "End-to-end product design for a scientific data laboratory",
       tags: ["Product Design", "UI/UX", "Data Visualisation", "React"],
       category: "Digital Product",
@@ -17,7 +17,7 @@ export default function Work() {
     {
       slug: "elxsis",
       title: "Elxsis",
-      year: "2024—25",
+      year: "2024-25",
       description: "Computational art studio exploring mathematical forms",
       tags: ["Creative Direction", "Generative Art", "Python"],
       category: "Digital Product",
@@ -44,7 +44,7 @@ export default function Work() {
     {
       slug: "axisophy",
       title: "Axisophy",
-      year: "2020—25",
+      year: "2020-25",
       description: "Data visualisation print studio",
       tags: ["E-commerce", "Shopify", "Illustration", "Graphic Design"],
       category: "Product Design",
@@ -53,7 +53,7 @@ export default function Work() {
     {
       slug: "with-a-bang",
       title: "With a Bang",
-      year: "2023—25",
+      year: "2023-25",
       description: "Design-led textiles and homewares business",
       tags: ["Product Design", "Branding", "Textiles"],
       category: "Product Design"
@@ -66,7 +66,7 @@ export default function Work() {
       tags: ["Book", "Illustration", "Design", "Writing"],
       category: "Books",
       image: "/images/gizmo/Gizmo4.3 front.jpeg",
-      containImage: true
+      useWhiteBg: true
     },
     {
       slug: "bugs",
@@ -130,44 +130,52 @@ export default function Work() {
         <section className="mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             {projects.map((project, index) => (
-              <Link
-                key={project.slug}
-                href={`/work/${project.slug}`}
-                className="frame p-4 md:p-6 transition-all group"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <p className="font-mono text-xs text-pink-500 mb-2">{String(index + 1).padStart(2, '0')}</p>
-                    <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                      {project.title}
-                    </h2>
+              <div key={project.slug} className="flex flex-col gap-px">
+                {/* Title Frame */}
+                <Link
+                  href={`/work/${project.slug}`}
+                  className="frame p-4 md:p-6 transition-all group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <p className="font-mono text-xs text-pink-500 mb-2">{String(index + 1).padStart(2, '0')}</p>
+                      <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                        {project.title}
+                      </h2>
+                    </div>
+                    <span className="font-mono text-xs text-black/40">{project.year}</span>
                   </div>
-                  <span className="font-mono text-xs text-black/40">{project.year}</span>
-                </div>
 
+                  <p className="text-black/60 mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="flex gap-2 flex-wrap">
+                    {project.tags.map((tag) => (
+                      <span key={tag} className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </Link>
+
+                {/* Image Frame */}
                 {project.image && (
-                  <div className={`relative aspect-video rounded-lg mb-4 overflow-hidden ${project.containImage ? 'bg-white' : ''}`}>
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className={project.containImage ? "object-contain" : "object-cover"}
-                    />
-                  </div>
+                  <Link
+                    href={`/work/${project.slug}`}
+                    className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} p-4 flex items-start`}
+                  >
+                    <div className="relative h-[250px] w-full">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-contain object-left"
+                      />
+                    </div>
+                  </Link>
                 )}
-
-                <p className="text-black/60 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex gap-2 flex-wrap">
-                  {project.tags.map((tag) => (
-                    <span key={tag} className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </Link>
+              </div>
             ))}
           </div>
         </section>

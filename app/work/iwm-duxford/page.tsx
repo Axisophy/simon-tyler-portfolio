@@ -11,9 +11,9 @@ import {
 
 export default function IWMDuxfordProject() {
   const metaItems = [
-    { label: "Role", value: "Senior Designer" },
+    { label: "Role", value: "Project Leader at Spaceagency" },
     { label: "Date", value: "2020" },
-    { label: "Client", value: "Imperial War Museum (with Spaceagency)" }
+    { label: "Client", value: "Imperial War Museum" }
   ];
 
   const heroSlides = [
@@ -28,14 +28,14 @@ export default function IWMDuxfordProject() {
 
         <CaseStudyHero
           title="IWM Duxford"
-          tagline="Wayfinding and identity signage for the Imperial War Museum's historic Duxford Airfield."
+          tagline="Wayfinding and identity signage for Europe's largest air museum."
         />
 
         <CaseStudyMeta
           items={metaItems}
           overview={
             <p>
-              Wayfinding and identity signage for the Imperial War Museum's historic Duxford Airfield. Working with Spaceagency, I contributed to the design of a comprehensive signage system that respects the site's aviation heritage while providing clear navigation for visitors.
+              Led the team rebranding and redesigning the wayfinding for the Imperial War Museum at Duxford - the largest air museum in Europe.
             </p>
           }
         />
@@ -49,6 +49,17 @@ export default function IWMDuxfordProject() {
           ]}
           aspectRatio="video"
         />
+
+        <ContentSection title="The Work">
+          <div className="space-y-4">
+            <p>
+              The project involved developing a colour-coded symbol identity and layout system for the large-scale navigational totems used across the huge Duxford site, providing directions between the various exhibition zones.
+            </p>
+            <p>
+              I also designed a new pictogram set, specific signage layouts, and a series of supergraphics including large-format vinyl imagery and branding for the exterior of the visitor centre at the museum entrance.
+            </p>
+          </div>
+        </ContentSection>
 
         <ImageRow
           images={[
@@ -80,12 +91,6 @@ export default function IWMDuxfordProject() {
           ]}
           aspectRatio="wide"
         />
-
-        <ContentSection title="The Project">
-          <p>
-            Case study content coming soon.
-          </p>
-        </ContentSection>
 
         <section className="mt-16 mb-12">
           <Link

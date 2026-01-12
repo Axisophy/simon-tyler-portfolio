@@ -11,8 +11,8 @@ import {
 
 export default function AxisophyProject() {
   const metaItems = [
-    { label: "Role", value: "Founder" },
-    { label: "Date", value: "2020—present" },
+    { label: "Role", value: "Founder, Creative Director" },
+    { label: "Dates", value: "2013-present (as Atomic Printworks until 2024)" },
     { label: "Link", value: "axisophy.com", href: "https://axisophy.com" }
   ];
 
@@ -20,16 +20,38 @@ export default function AxisophyProject() {
     { src: "/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg", caption: "Sacks Spiral print" }
   ];
 
+  const collections = [
+    {
+      number: "01",
+      title: "Signature Series",
+      description: "Prime number spirals (Ulam, Sacks), phylogenetic trees, Apollonian gaskets, and scientific infographics. The accessible entry point - open editions at £80-125."
+    },
+    {
+      number: "02",
+      title: "Mersenne Series",
+      description: "Large-format limited editions including strange attractor phase portraits (Henon map basin visualisations) and E8 Lie group projections. Premium work on specialist archival papers, £1,095-1,595."
+    },
+    {
+      number: "03",
+      title: "Radiance Series",
+      description: "Processed imagery from NASA's Mars HiRISE archive - metre-scale planetary terrain rendered for large-format print with restrained, evidence-minded tonal adjustments."
+    },
+    {
+      number: "04",
+      title: "Gizmo Series",
+      description: "Retro technology illustrations accompanying the forthcoming Laurence King book (May 2026)."
+    }
+  ];
+
   return (
     <main className="min-h-screen">
       <Header />
 
-      {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
 
         <CaseStudyHero
           title="Axisophy"
-          tagline="Data visualisation prints — the art of intelligent data."
+          tagline="Museum-quality art prints at the intersection of science, mathematics, and design."
         />
 
         <CaseStudyMeta
@@ -37,16 +59,16 @@ export default function AxisophyProject() {
           overview={
             <div className="space-y-4">
               <p>
-                Axisophy is a data visualisation print studio, transforming complex datasets into museum-grade prints. Mathematical structures, geological timescales, phylogenetic trees, and computational art — rendered with obsessive attention to accuracy and aesthetic quality.
+                Axisophy transforms complex data - from prime number distributions to phylogenetic trees, dynamical systems to planetary imagery - into visually striking prints that reward both close examination and distant appreciation.
               </p>
               <p>
-                Each print begins with real data: astronomical catalogues, evolutionary trees, mathematical constants. The challenge is finding visual forms that honour the data's inherent structure while creating something genuinely beautiful to live with.
+                The studio produces original mathematical visualisations developed through custom computational tools. Products range from accessible open-edition prints to large-scale limited editions on specialist papers, positioning the brand between commercial print retail and gallery-represented fine art.
               </p>
             </div>
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="Axisophy prints" />
+        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
 
         <ImageRow
           images={[
@@ -56,29 +78,21 @@ export default function AxisophyProject() {
           aspectRatio="video"
         />
 
-        <ContentSection title="The Collection" subtitle="Mathematical Forms" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Visualisations of mathematical constants, prime distributions, and abstract structures. The golden ratio rendered as nested rectangles. Pi's digits mapped to colour. The Mandelbrot set at print-resolution detail.
-            </p>
+        {/* Collections */}
+        <section className="mb-px">
+          <div className="frame p-4 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Collections</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+              {collections.map((collection, index) => (
+                <div key={index} className="bg-black/5 rounded-lg p-6">
+                  <p className="font-mono text-sm text-pink-500 mb-2">{collection.number}</p>
+                  <h3 className="text-lg font-bold text-black mb-2">{collection.title}</h3>
+                  <p className="text-sm text-black/70 leading-relaxed">{collection.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </ContentSection>
-
-        <ContentSection title="The Collection" subtitle="Geological Time" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              The 4.5 billion year history of Earth compressed into a single visual timeline. Each geological period, mass extinction, and evolutionary milestone plotted with accurate relative durations — making deep time tangible.
-            </p>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="The Collection" subtitle="Evolutionary Trees" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Phylogenetic trees showing the relationships between species — from the tree of life spanning all domains to focused studies of specific lineages. Each branch point backed by molecular and fossil evidence.
-            </p>
-          </div>
-        </ContentSection>
+        </section>
 
         <ImageRow
           images={[
@@ -88,6 +102,46 @@ export default function AxisophyProject() {
           aspectRatio="video"
         />
 
+        {/* Technical Approach */}
+        <section className="mb-px">
+          <div className="frame p-4 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Technical Approach</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <tbody className="divide-y divide-black/10">
+                  <tr>
+                    <td className="py-3 font-mono text-black/50 w-40">Technique</td>
+                    <td className="py-3 font-mono text-black/50">Tools</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Phylogenetic Trees</td>
+                    <td className="py-3 text-black">D3.js radial tree layouts, custom taxonomic data curation</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Phase Portraits</td>
+                    <td className="py-3 text-black">Python, RK4 numerical integration, Poincare sections, GPU acceleration via CuPy</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Prime Spirals</td>
+                    <td className="py-3 text-black">Sieve of Eratosthenes, Archimedean spiral coordinate mapping</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Domain Colouring</td>
+                    <td className="py-3 text-black">Complex function visualisation with mpmath</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">E8 Projections</td>
+                    <td className="py-3 text-black">High-dimensional Lie group mathematics, computational geometry</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-black/60 mt-6">
+              Cloud GPU resources (RunPod - RTX 4090, A100) for intensive renders. High-resolution export up to 12,000px with supersampling for large-format print production.
+            </p>
+          </div>
+        </section>
+
         <ImageRow
           images={[
             { src: "/images/axisophy/PhasePortrait_003p1.jpg", alt: "Phase Portrait print" },
@@ -96,20 +150,16 @@ export default function AxisophyProject() {
           aspectRatio="video"
         />
 
-        <ContentSection title="Press">
-          <div className="space-y-4">
-            <p>
-              Featured in The Guardian, Elle Decoration, and The Times. Selected for the Design Museum Shop and stockists across Europe and North America.
-            </p>
-          </div>
+        <ContentSection title="Production">
+          <p>
+            Tiered fulfillment model: print-on-demand via Gelato for global distribution of standard editions; specialist UK printers (Beyond Print, Metro Imaging) for premium and limited edition work on archival and Lambda-process papers.
+          </p>
         </ContentSection>
 
-        <ContentSection title="Production">
-          <div className="space-y-4">
-            <p>
-              All prints are produced in the UK on archival paper using museum-grade giclée printing. Each print is individually inspected before shipping in custom protective packaging.
-            </p>
-          </div>
+        <ContentSection title="Recognition">
+          <p>
+            Featured in Elle Decoration, The Guardian, The Telegraph, The Times, The Sunday Times, and It's Nice That. The original Elle Decoration coverage led to a multi-book publishing deal.
+          </p>
         </ContentSection>
 
         {/* Back Link */}

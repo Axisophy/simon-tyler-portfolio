@@ -25,14 +25,14 @@ export default function AdventuresOnEarthProject() {
 
         <CaseStudyHero
           title="Adventures on Earth"
-          tagline="Exploration of Earth's extreme environments — polar regions, volcanoes, mountains, oceans, deserts."
+          tagline="Exploration of Earth's extreme environments - polar regions, volcanoes, mountains, oceans, deserts."
         />
 
         <CaseStudyMeta
           items={metaItems}
           overview={
             <p>
-              Adventures on Earth explores our planet's most extreme environments — from the frozen polar regions to erupting volcanoes, towering mountain peaks to the deepest ocean trenches, and scorching deserts. Bold illustrations bring these incredible landscapes to life. Published by Pavilion.
+              Adventures on Earth explores our planet's most extreme environments - from the frozen polar regions to erupting volcanoes, towering mountain peaks to the deepest ocean trenches, and scorching deserts. Bold illustrations bring these incredible landscapes to life. Published by Pavilion.
             </p>
           }
         />

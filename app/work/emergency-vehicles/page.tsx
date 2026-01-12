@@ -32,7 +32,7 @@ export default function EmergencyVehiclesProject() {
           items={metaItems}
           overview={
             <p>
-              Emergency Vehicles features detailed technical illustrations of emergency vehicles from around the world — fire engines, ambulances, police cars, rescue helicopters, and more. Each vehicle is rendered with precision and accompanied by information about its design and function. Published by Faber & Faber.
+              Emergency Vehicles features detailed technical illustrations of emergency vehicles from around the world - fire engines, ambulances, police cars, rescue helicopters, and more. Each vehicle is rendered with precision and accompanied by information about its design and function. Published by Faber & Faber.
             </p>
           }
         />

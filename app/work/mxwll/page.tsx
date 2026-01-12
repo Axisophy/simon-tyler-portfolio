@@ -12,7 +12,7 @@ import {
 export default function MxwllProject() {
   const metaItems = [
     { label: "Role", value: "Founder, Creative Director, Lead Product Developer" },
-    { label: "Dates", value: "2025—2026" },
+    { label: "Dates", value: "2025-2026" },
     { label: "Link", value: "mxwll.io", href: "https://mxwll.io" }
   ];
 
@@ -29,7 +29,7 @@ export default function MxwllProject() {
 
         <CaseStudyHero
           title="Mxwll"
-          tagline="The quality layer for science — design-led real-time data for curious people."
+          tagline="The quality layer for science - design-led real-time data for curious people."
         />
 
         <CaseStudyMeta

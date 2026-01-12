@@ -32,7 +32,7 @@ export default function MagnificentMachinesProject() {
           items={metaItems}
           overview={
             <p>
-              The World's Most Magnificent Machines features illustrations for David Long's exploration of 32 remarkable machines from history — from early steam engines to space rockets, submarines to supersonic aircraft. Each machine is brought to life through detailed technical illustration. Published by Faber & Faber.
+              The World's Most Magnificent Machines features illustrations for David Long's exploration of 32 remarkable machines from history - from early steam engines to space rockets, submarines to supersonic aircraft. Each machine is brought to life through detailed technical illustration. Published by Faber & Faber.
             </p>
           }
         />

@@ -12,7 +12,7 @@ import {
 export default function ElxsisProject() {
   const metaItems = [
     { label: "Role", value: "Founder, Creative Director" },
-    { label: "Date", value: "2024—2025" },
+    { label: "Dates", value: "2024-present" },
     { label: "Link", value: "elxsis.com", href: "https://elxsis.com" }
   ];
 
@@ -20,16 +20,38 @@ export default function ElxsisProject() {
     { src: "/images/elxsis/FinalLorenz1.png", caption: "Lorenz attractor visualization" }
   ];
 
+  const selectedWork = [
+    {
+      number: "01",
+      title: "Lorenz Loop",
+      description: "A seamlessly looping 4K animation of the Lorenz attractor, computed from 12 million trajectory points with a rolling-window reveal and orbiting camera. The flagship piece demonstrating the full pipeline from trajectory generation through Blender rendering to encoded video."
+    },
+    {
+      number: "02",
+      title: "Gray-Scott Reaction-Diffusion Studies",
+      description: "Coral and labyrinthine pattern fields generated through chemical simulation - the same mathematics that produces animal markings and coral growth. Exported as print-ready stills."
+    },
+    {
+      number: "03",
+      title: "Complex Function Cartographies",
+      description: "Domain colouring and transformation grid visualisations of analytic functions (sin(z), Joukowski, Mobius transforms), rendered with an engraving aesthetic."
+    },
+    {
+      number: "04",
+      title: "Quantum Hydrogen Wavefunction Plates",
+      description: "2D cross-sections of atomic orbitals showing probability density and phase structure - making quantum mechanics visible."
+    }
+  ];
+
   return (
     <main className="min-h-screen">
       <Header />
 
-      {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
 
         <CaseStudyHero
           title="Elxsis"
-          tagline="Computational art studio exploring dynamical systems, astrophysical data, and emergent forms."
+          tagline="Computational art studio exploring dynamical systems, astrophysical data, and emergent mathematical forms."
         />
 
         <CaseStudyMeta
@@ -37,24 +59,16 @@ export default function ElxsisProject() {
           overview={
             <div className="space-y-4">
               <p>
-                Elxsis is a computational art practice exploring the visual language of mathematics, physics, and astronomy. Each piece begins with real scientific data or mathematical systems, transformed through code into visual forms that reveal hidden structures and patterns.
+                Elxsis works at the intersection of computation and scientific imagination - developing moving image work and high-resolution stills derived from mathematical systems. The studio treats models, simulations, and physical equations as raw material, rendering invisible processes as visual experiences.
               </p>
               <p>
-                The work spans strange attractors, stellar catalogues, quantum orbital structures, and abstract mathematical symmetries — all rendered with obsessive attention to both scientific accuracy and aesthetic quality.
+                Work is designed for multiple formats: seamless loops for gallery screens or projection, and still plates for large-format print up to 60 inches at 300 DPI.
               </p>
             </div>
           }
         />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="video" />
-
-        <ContentSection title="Strange Attractors" subtitle="Lorenz System" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              The Lorenz attractor — the canonical example of deterministic chaos — rendered with millions of trajectory points. Each visualisation captures the system's sensitive dependence on initial conditions while revealing the beautiful structure underlying apparent randomness.
-            </p>
-          </div>
-        </ContentSection>
 
         <ImageRow
           images={[
@@ -64,13 +78,21 @@ export default function ElxsisProject() {
           aspectRatio="square"
         />
 
-        <ContentSection title="Astrophysical Data" subtitle="Gaia Star Catalogue" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Visualisations built from ESA's Gaia mission data — the most detailed 3D map of our galaxy ever created. Over a billion stars plotted by position, brightness, colour, and motion, revealing the structure of the Milky Way.
-            </p>
+        {/* Selected Work */}
+        <section className="mb-px">
+          <div className="frame p-4 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Selected Work</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+              {selectedWork.map((work, index) => (
+                <div key={index} className="bg-black/5 rounded-lg p-6">
+                  <p className="font-mono text-sm text-pink-500 mb-2">{work.number}</p>
+                  <h3 className="text-lg font-bold text-black mb-2">{work.title}</h3>
+                  <p className="text-sm text-black/70 leading-relaxed">{work.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </ContentSection>
+        </section>
 
         <ImageRow
           images={[{ src: "/images/elxsis/gaia_hr_setC_full_hex_full_hex_wide_2400x1350.webp", alt: "Gaia star catalog - wide view" }]}
@@ -85,13 +107,41 @@ export default function ElxsisProject() {
           aspectRatio="square"
         />
 
-        <ContentSection title="Mathematical Symmetry" subtitle="Weyl Groups & E8" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Visualisations of exceptional Lie group structures — the mathematical objects underlying fundamental physics. The E8 root system, projected and rendered to reveal its extraordinary 248-dimensional symmetry.
+        {/* Technical Approach */}
+        <section className="mb-px">
+          <div className="frame p-4 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Technical Approach</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <tbody className="divide-y divide-black/10">
+                  <tr>
+                    <td className="py-3 font-mono text-black/50 w-32">Stage</td>
+                    <td className="py-3 font-mono text-black/50">Tools</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Compute</td>
+                    <td className="py-3 text-black">NumPy/SciPy, RK4 integration for stability in chaotic systems, custom physical equation implementations</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Render</td>
+                    <td className="py-3 text-black">Matplotlib for 2D with custom colormaps; Blender Cycles for 3D path-traced animation</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Export</td>
+                    <td className="py-3 text-black">Multiple formats (PNG, TIFF, SVG, PDF), JSON parameter snapshots for reproducibility</td>
+                  </tr>
+                  <tr>
+                    <td className="py-3 text-black/70">Encode</td>
+                    <td className="py-3 text-black">FFmpeg with careful attention to seamless looping</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-black/60 mt-6">
+              Cloud GPU resources (RunPod) used for computationally intensive renders.
             </p>
           </div>
-        </ContentSection>
+        </section>
 
         <ImageRow
           images={[
@@ -101,18 +151,10 @@ export default function ElxsisProject() {
           aspectRatio="square"
         />
 
-        <ContentSection title="Complex Functions" subtitle="Domain Colouring" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Complex-valued functions visualised through domain colouring — mapping the complex plane to colour space to reveal poles, zeros, and the intricate behaviour of mathematical functions.
-            </p>
-          </div>
-        </ContentSection>
-
         <ImageRow
           images={[
             { src: "/images/elxsis/elxsis_complex_Ripple_20251222_151640.png", alt: "Complex function - Ripple" },
-            { src: "/images/elxsis/elxsis_complex_sinz²_20251222_151314.png", alt: "Complex function - sin(z²)" }
+            { src: "/images/elxsis/elxsis_complex_sinz²_20251222_151314.png", alt: "Complex function - sin(z squared)" }
           ]}
           aspectRatio="square"
         />

@@ -12,31 +12,31 @@ import {
 
 export default function NetworkRailProject() {
   const metaItems = [
-    { label: "Role", value: "Senior Designer" },
+    { label: "Role", value: "Senior Designer at Spaceagency" },
     { label: "Date", value: "2020" },
-    { label: "Client", value: "Network Rail (with Spaceagency + Weston Williamson)" }
+    { label: "Client", value: "Network Rail (with Weston Williamson + Partners)" }
   ];
 
   const designCriteria = [
     {
       number: "01",
-      title: "ISO Compliance",
-      description: "Meet ISO 7001 requirements for public information symbols while allowing for character and warmth beyond purely functional signage."
+      title: "ISO Adherence",
+      description: "The ISO 7001 standard represents decades of international testing. Rather than reinvent established conventions, we worked closely with ISO pictograms as a foundation - familiar to travellers worldwide."
     },
     {
       number: "02",
-      title: "Typographic Derivation",
-      description: "Derive pictogram geometry from Network Rail's custom typeface, ensuring visual consistency between text and symbols across all touchpoints."
+      title: "Typographic Connection",
+      description: "The pictograms sit alongside Rail Alphabet 2 by Margaret Calvert and Henrik Kubel. We extracted formal elements from the letterforms and applied them across the icon set."
     },
     {
       number: "03",
-      title: "Scale Flexibility",
-      description: "Work at sizes from 12mm app icons to 2-metre platform signs. Maintain legibility and character at every scale without optical corrections breaking the system."
+      title: "Modern Content",
+      description: "Existing pictograms contained anachronistic references. We updated icons like Lost Property - replacing the umbrella with a wheeled suitcase, phone, and keys."
     },
     {
       number: "04",
-      title: "British Character",
-      description: "Balance international clarity with distinctly British character — warm, approachable, slightly rounded — reflecting the heritage of the rail network."
+      title: "Cultural Accuracy",
+      description: "The set references British identity: double-decker buses, black cab silhouettes, UK tram designs."
     }
   ];
 
@@ -48,12 +48,11 @@ export default function NetworkRailProject() {
     <main className="min-h-screen">
       <Header />
 
-      {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
 
         <CaseStudyHero
           title="Network Rail Pictograms"
-          tagline="A comprehensive pictogram system for UK rail wayfinding — balancing ISO clarity with British character."
+          tagline="A comprehensive pictogram system for UK rail wayfinding - balancing ISO clarity with British character."
         />
 
         <CaseStudyMeta
@@ -61,10 +60,10 @@ export default function NetworkRailProject() {
           overview={
             <div className="space-y-4">
               <p>
-                Network Rail operates over 2,500 stations across the UK, from Victorian termini to modern transport hubs. Each station requires clear, consistent wayfinding — but existing pictogram systems were fragmented, inconsistent, and often borrowed from other transport networks without adaptation.
+                Led the redesign of Network Rail's pictogram system while at Spaceagency, working alongside Weston Williamson + Partners. The brief was to create a comprehensive set of pictograms for UK station wayfinding that would work across Network Rail's managed stations - from historic Victorian termini to modern transport hubs.
               </p>
               <p>
-                Working with Spaceagency and Weston Williamson, I led the design of a comprehensive pictogram system that would work across this diverse estate while maintaining a distinctly British character.
+                The project involved extensive stakeholder consultation, including sessions with the Built Environment Access Panel (BEAP) to ensure accessibility across diverse user needs.
               </p>
             </div>
           }
@@ -75,68 +74,6 @@ export default function NetworkRailProject() {
         <CardGrid title="Design Criteria" cards={designCriteria} columns={2} />
 
         <ImageRow
-          images={[{ alt: "Typography derivation diagram", placeholder: "Typography derivation diagram" }]}
-          aspectRatio="wide"
-        />
-
-        <ContentSection title="Design System" subtitle="Grid & Construction" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Every pictogram is constructed on a consistent grid derived from the stroke weights and proportions of Network Rail's custom typeface. This ensures visual harmony between text and symbols at any scale.
-            </p>
-            <p>
-              The grid accommodates three complexity levels: simple symbols (arrows, ticks) use quarter-grid positioning; standard symbols (facilities, transport modes) use eighth-grid; complex symbols (human figures, vehicles) use sixteenth-grid for finer detail.
-            </p>
-          </div>
-        </ContentSection>
-
-        <ImageRow
-          images={[
-            { alt: "Grid construction", placeholder: "Grid overlay on pictograms" },
-            { alt: "Complexity levels", placeholder: "Three complexity levels" }
-          ]}
-          aspectRatio="video"
-        />
-
-        <ContentSection title="Design System" subtitle="Human Figures" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Human figures follow a consistent 7-head proportion, with joints positioned at grid intersections. This allows for natural poses while maintaining systematic consistency. The figures are deliberately gender-neutral and avoid cultural specificity.
-            </p>
-            <p>
-              Accessibility representations (wheelchair users, visual impairment, etc.) follow the same proportional system, ensuring they feel like natural parts of the family rather than afterthoughts.
-            </p>
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Design System" subtitle="Vehicles & Objects" accentSubtitle>
-          <div className="space-y-4">
-            <p>
-              Vehicles are rendered at consistent optical scales — a bus appears the same visual weight as a train, despite their different real-world sizes. This required careful calibration to ensure immediate recognition while maintaining system harmony.
-            </p>
-            <p>
-              Objects follow a "recognition-first" principle: the most distinctive feature of each object is emphasised, even if this means departing from strict geometric accuracy.
-            </p>
-          </div>
-        </ContentSection>
-
-        <ImageRow
-          images={[{ alt: "Vehicle scaling comparison", placeholder: "Vehicle scaling comparison" }]}
-          aspectRatio="wide"
-        />
-
-        <ContentSection title="Stakeholder Feedback">
-          <div className="space-y-4">
-            <p className="italic text-black/60">
-              "The pictograms strike exactly the right balance — clear enough for international visitors, characterful enough to feel distinctly British. They work beautifully alongside our typeface."
-            </p>
-            <p className="text-sm text-black/50">
-              — Network Rail Brand Team
-            </p>
-          </div>
-        </ContentSection>
-
-        <ImageRow
           images={[
             { src: "/images/network-rail/pictograms1.jpg", alt: "Pictogram set 1" },
             { src: "/images/network-rail/pictograms2.jpg", alt: "Pictogram set 2" }
@@ -144,20 +81,42 @@ export default function NetworkRailProject() {
           aspectRatio="square"
         />
 
+        {/* Design System */}
+        <section className="mb-px">
+          <div className="frame p-4 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Design System</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-px">
+              <div className="bg-black/5 rounded-lg p-6">
+                <p className="font-mono text-sm text-pink-500 mb-2">The "D" Shape</p>
+                <p className="text-sm text-black/70 leading-relaxed">The signature element is derived from the bowl of Rail Alphabet's capital P. This form - a rectangle with one rounded end - appears across vehicles, cup handles, and luggage details.</p>
+              </div>
+              <div className="bg-black/5 rounded-lg p-6">
+                <p className="font-mono text-sm text-pink-500 mb-2">Grid Construction</p>
+                <p className="text-sm text-black/70 leading-relaxed">All pictograms are built on a 100x100 unit grid, with 2.5 units as the base module. Line weights, corner radii, and spacing are all multiples of 2.5.</p>
+              </div>
+              <div className="bg-black/5 rounded-lg p-6">
+                <p className="font-mono text-sm text-pink-500 mb-2">Relative Scaling</p>
+                <p className="text-sm text-black/70 leading-relaxed">Vehicles are scaled according to actual physical size - bus largest, taxi smallest. This aids recognition and avoids visual confusion.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ImageRow
           images={[{ src: "/images/network-rail/pictograms3.jpg", alt: "Pictograms in context" }]}
           aspectRatio="wide"
         />
 
+        <ContentSection title="Stakeholder Feedback">
+          <p>
+            The BEAP panel review in January 2020 surfaced key concerns that shaped the final designs: strong preference for ISO-style pictograms due to universal familiarity, feedback that the proposed arrow was too thin, and that male/female pictograms needed clearer distinction.
+          </p>
+        </ContentSection>
+
         <ContentSection title="Outcome">
-          <div className="space-y-4">
-            <p>
-              The pictogram system is now being rolled out across Network Rail's managed stations, starting with major termini and working through the regional network. The system includes over 200 individual symbols covering facilities, transport connections, accessibility, safety, and wayfinding.
-            </p>
-            <p>
-              The accompanying guidelines ensure consistent implementation by Network Rail's in-house teams and external suppliers, with clear rules for grid usage, colour application, and scale relationships.
-            </p>
-          </div>
+          <p>
+            A complete pictogram system covering 85+ icons: transport modes, facilities, accessibility, wayfinding arrows, and operational signage. The system balances international legibility with British character, and connects visually to the Rail Alphabet typographic family.
+          </p>
         </ContentSection>
 
         {/* Back Link */}

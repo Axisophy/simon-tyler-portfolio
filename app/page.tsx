@@ -38,180 +38,208 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-px">
             {/* Row 1: Mxwll - Full width */}
-            <Link
-              href="/work/mxwll"
-              className="lg:col-span-3 frame p-4 md:p-6 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">01</p>
-                  <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Mxwll
-                  </h2>
+            <div className="lg:col-span-3 flex flex-col gap-px">
+              {/* Title Frame */}
+              <Link
+                href="/work/mxwll"
+                className="frame p-4 md:p-6 transition-all group"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="font-mono text-xs text-pink-500 mb-2">01</p>
+                    <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                      Mxwll
+                    </h2>
+                  </div>
+                  <span className="font-mono text-xs text-black/40">2024-25</span>
                 </div>
-                <span className="font-mono text-xs text-black/40">2024—25</span>
-              </div>
 
-              <div className="relative aspect-[21/9] mb-4 overflow-hidden rounded-lg">
-                <Image
-                  src="/images/maxwell/hero.jpg"
-                  alt="Mxwll - a digital laboratory for science"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+                <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                  End-to-end product design for a scientific data platform. Real-time space station tracking,
+                  earthquake monitoring, particle physics visualisation, and live astronomical data.
+                </p>
 
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                End-to-end product design for a scientific data platform. Real-time space station tracking,
-                earthquake monitoring, particle physics visualisation, and live astronomical data.
-              </p>
-
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Product Design</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">UI/UX</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Data Visualisation</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">React</span>
-              </div>
-            </Link>
-
-            {/* Elxsis - 2 cols left */}
-            <Link
-              href="/work/elxsis"
-              className="lg:col-span-2 lg:col-start-1 frame p-4 md:p-6 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">02</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Elxsis
-                  </h2>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Product Design</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">UI/UX</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Data Visualisation</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">React</span>
                 </div>
-                <span className="font-mono text-xs text-black/40">2024—25</span>
-              </div>
+              </Link>
 
-              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/images/elxsis/FinalLorenz1.png"
-                  alt="Elxsis - Lorenz attractor visualization"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                Computational art studio. Dynamical systems, astrophysical data, and emergent mathematical forms.
-              </p>
-
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Creative Direction</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Generative Art</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Python</span>
-              </div>
-            </Link>
-
-            {/* Network Rail - 2 cols right */}
-            <Link
-              href="/work/network-rail"
-              className="lg:col-span-2 lg:col-start-2 frame p-4 md:p-6 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">03</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Network Rail
-                  </h2>
+              {/* Image Frame */}
+              <Link href="/work/mxwll" className="frame-dark p-4 flex items-start">
+                <div className="relative h-[300px] w-full">
+                  <Image
+                    src="/images/maxwell/hero.jpg"
+                    alt="Mxwll - a digital laboratory for science"
+                    fill
+                    className="object-contain object-left"
+                  />
                 </div>
-                <span className="font-mono text-xs text-black/40">2020</span>
-              </div>
+              </Link>
+            </div>
 
-              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
-                <Image
-                  src="/images/network-rail/hero1.jpg"
-                  alt="Network Rail Pictogram System"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                Led the design of a comprehensive pictogram system for UK rail wayfinding at Space Agency.
-              </p>
-
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Pictograms</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Wayfinding</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Iconography</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
-              </div>
-            </Link>
-
-            {/* Gizmo - 2 cols left */}
-            <Link
-              href="/work/gizmo"
-              className="lg:col-span-2 lg:col-start-1 frame p-4 md:p-6 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">04</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Gizmo
-                  </h2>
+            {/* Row 2: Elxsis (2 cols) + Network Rail (1 col) */}
+            <div className="lg:col-span-2 flex flex-col gap-px">
+              {/* Title Frame */}
+              <Link
+                href="/work/elxsis"
+                className="frame p-4 md:p-6 transition-all group"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="font-mono text-xs text-pink-500 mb-2">02</p>
+                    <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                      Elxsis
+                    </h2>
+                  </div>
+                  <span className="font-mono text-xs text-black/40">2024-25</span>
                 </div>
-                <span className="font-mono text-xs text-black/40">2026</span>
-              </div>
 
-              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden bg-white">
-                <Image
-                  src="/images/gizmo/Gizmo4.3 front.jpeg"
-                  alt="Gizmo - book cover"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+                <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                  Computational art studio. Dynamical systems, astrophysical data, and emergent mathematical forms.
+                </p>
 
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                A comprehensive illustrated survey of retro technology - the gadgets we loved and lost. Published by Laurence King.
-              </p>
-
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Book</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Design</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Writing</span>
-              </div>
-            </Link>
-
-            {/* Axisophy - 2 cols right */}
-            <Link
-              href="/work/axisophy"
-              className="lg:col-span-2 lg:col-start-2 frame p-4 md:p-6 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">05</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Axisophy
-                  </h2>
+                <div className="flex gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Creative Direction</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Generative Art</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Python</span>
                 </div>
-                <span className="font-mono text-xs text-black/40">2020—25</span>
-              </div>
+              </Link>
 
-              <div className="relative aspect-video bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <p className="font-mono text-xs text-black/30">axisophy.com — The art of intelligent data</p>
-              </div>
+              {/* Image Frame */}
+              <Link href="/work/elxsis" className="frame-dark p-4 flex items-start">
+                <div className="relative h-[300px] w-full">
+                  <Image
+                    src="/images/elxsis/FinalLorenz1.png"
+                    alt="Elxsis - Lorenz attractor visualization"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              </Link>
+            </div>
 
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                Data visualisation print studio. Mathematical structures, geological timescales, phylogenetic trees,
-                and computational art — transformed into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
-              </p>
+            <div className="lg:col-span-1 flex flex-col gap-px">
+              {/* Title Frame */}
+              <Link
+                href="/work/network-rail"
+                className="frame p-4 md:p-6 transition-all group h-full"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="font-mono text-xs text-pink-500 mb-2">03</p>
+                    <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                      Network Rail
+                    </h2>
+                  </div>
+                  <span className="font-mono text-xs text-black/40">2020</span>
+                </div>
 
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">E-commerce</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Shopify</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Graphic Design</span>
-              </div>
-            </Link>
+                <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                  Comprehensive pictogram system for UK rail wayfinding.
+                </p>
+
+                <div className="flex gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Pictograms</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Wayfinding</span>
+                </div>
+              </Link>
+
+              {/* Image Frame */}
+              <Link href="/work/network-rail" className="frame-dark p-4 flex items-start">
+                <div className="relative h-[300px] w-full">
+                  <Image
+                    src="/images/network-rail/hero1.jpg"
+                    alt="Network Rail Pictogram System"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              </Link>
+            </div>
+
+            {/* Row 3: Axisophy (2 cols) + Gizmo (1 col) */}
+            <div className="lg:col-span-2 flex flex-col gap-px">
+              {/* Title Frame */}
+              <Link
+                href="/work/axisophy"
+                className="frame p-4 md:p-6 transition-all group"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="font-mono text-xs text-pink-500 mb-2">04</p>
+                    <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                      Axisophy
+                    </h2>
+                  </div>
+                  <span className="font-mono text-xs text-black/40">2020-25</span>
+                </div>
+
+                <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                  Data visualisation print studio. Mathematical structures, geological timescales, phylogenetic trees,
+                  and computational art - transformed into museum-grade prints.
+                </p>
+
+                <div className="flex gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">E-commerce</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Graphic Design</span>
+                </div>
+              </Link>
+
+              {/* Image Frame */}
+              <Link href="/work/axisophy" className="frame-dark p-4 flex items-start">
+                <div className="relative h-[300px] w-full">
+                  <Image
+                    src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
+                    alt="Axisophy - Sacks Spiral print"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              </Link>
+            </div>
+
+            <div className="lg:col-span-1 flex flex-col gap-px">
+              {/* Title Frame */}
+              <Link
+                href="/work/gizmo"
+                className="frame p-4 md:p-6 transition-all group h-full"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <p className="font-mono text-xs text-pink-500 mb-2">05</p>
+                    <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                      Gizmo
+                    </h2>
+                  </div>
+                  <span className="font-mono text-xs text-black/40">2026</span>
+                </div>
+
+                <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                  Illustrated survey of retro technology. Published by Laurence King.
+                </p>
+
+                <div className="flex gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Book</span>
+                  <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
+                </div>
+              </Link>
+
+              {/* Image Frame - white bg for book cover */}
+              <Link href="/work/gizmo" className="frame p-4 flex items-start">
+                <div className="relative h-[300px] w-full">
+                  <Image
+                    src="/images/gizmo/Gizmo4.3 front.jpeg"
+                    alt="Gizmo - book cover"
+                    fill
+                    className="object-contain object-left"
+                  />
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
       </div>

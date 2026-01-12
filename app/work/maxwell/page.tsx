@@ -20,7 +20,7 @@ export default function MaxwellProject() {
                 A digital laboratory for science happening now
               </p>
             </div>
-            <span className="font-mono text-sm text-white/40">2024—25</span>
+            <span className="font-mono text-sm text-white/40">2024-25</span>
           </div>
 
           <div className="flex gap-2 flex-wrap">
@@ -61,7 +61,7 @@ export default function MaxwellProject() {
               </div>
               <div>
                 <h3 className="font-mono text-xs text-black/40 mb-2">TIMELINE</h3>
-                <p className="text-black/80 font-semibold">2024—2025</p>
+                <p className="text-black/80 font-semibold">2024-2025</p>
               </div>
               <div>
                 <h3 className="font-mono text-xs text-black/40 mb-2">PLATFORM</h3>
