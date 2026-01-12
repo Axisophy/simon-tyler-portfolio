@@ -40,14 +40,14 @@ export default function IWMDuxfordProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
+        <ImageSlideshow slides={heroSlides} height={400} />
 
         <ImageRow
           images={[
             { src: "/images/IWM-duxford/Duxford2.jpeg", alt: "Duxford signage" },
             { src: "/images/IWM-duxford/Duxford3.webp", alt: "Duxford signage" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ContentSection title="The Work">
@@ -66,7 +66,7 @@ export default function IWMDuxfordProject() {
             { src: "/images/IWM-duxford/Duxford4.webp", alt: "Duxford signage" },
             { src: "/images/IWM-duxford/Duxford5.jpeg", alt: "Duxford signage" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ImageRow
@@ -74,7 +74,7 @@ export default function IWMDuxfordProject() {
             { src: "/images/IWM-duxford/Duxford6.jpg", alt: "Duxford signage" },
             { src: "/images/IWM-duxford/Duxford7.webp", alt: "Duxford signage" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ImageRow
@@ -82,14 +82,14 @@ export default function IWMDuxfordProject() {
             { src: "/images/IWM-duxford/Duxford8.webp", alt: "Duxford signage" },
             { src: "/images/IWM-duxford/Duxford9.jpg", alt: "Duxford signage" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ImageRow
           images={[
             { src: "/images/IWM-duxford/Duxford10.webp", alt: "Duxford signage" }
           ]}
-          aspectRatio="wide"
+          height={350}
         />
 
         <section className="mt-16 mb-12">

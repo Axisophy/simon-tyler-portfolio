@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -159,18 +158,14 @@ export default function Work() {
                   </div>
                 </Link>
 
-                {/* Image Frame - edge to edge */}
+                {/* Image Frame - shrink to fit */}
                 {project.image && (
-                  <Link
-                    href={`/work/${project.slug}`}
-                    className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} overflow-hidden`}
-                  >
-                    <div className="relative h-[300px] w-full">
-                      <Image
+                  <Link href={`/work/${project.slug}`} className="block">
+                    <div className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} overflow-hidden w-fit`}>
+                      <img
                         src={project.image}
                         alt={project.title}
-                        fill
-                        className="object-contain object-left"
+                        className="h-[300px] w-auto block"
                       />
                     </div>
                   </Link>

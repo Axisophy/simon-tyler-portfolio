@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import {
@@ -38,19 +37,16 @@ export default function GizmoProject() {
 
         {/* Book cover */}
         <section className="mb-px">
-          <div className="frame overflow-hidden">
-            <div className="relative aspect-[4/3] bg-white">
-              <Image
-                src="/images/gizmo/Gizmo4.3 front.jpeg"
-                alt="Gizmo - book cover"
-                fill
-                className="object-contain"
-              />
-            </div>
+          <div className="frame overflow-hidden w-fit">
+            <img
+              src="/images/gizmo/Gizmo4.3 front.jpeg"
+              alt="Gizmo - book cover"
+              className="h-[400px] w-auto block"
+            />
           </div>
         </section>
         <section className="mb-px">
-          <div className="frame px-4 py-3">
+          <div className="frame px-4 py-3 w-fit">
             <p className="font-mono text-xs text-black/50">Gizmo - book cover</p>
           </div>
         </section>
@@ -70,76 +66,58 @@ export default function GizmoProject() {
         </ContentSection>
 
         <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-02.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-02.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-03.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-03.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-04.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-04.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-05.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-05.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-06.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-06.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-07.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-07.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
             </div>
           </div>
         </section>
@@ -166,90 +144,69 @@ export default function GizmoProject() {
         </section>
 
         <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-08.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-09.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-10.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-11.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-12.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame overflow-hidden">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-13.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="frame overflow-hidden">
-            <div className="relative aspect-[4/3] bg-white">
-              <Image
-                src="/images/gizmo/gizmo-14.png"
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-08.png"
                 alt="Gizmo spread"
-                fill
-                className="object-contain"
+                className="h-[300px] w-auto block"
               />
             </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-09.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-10.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
+            </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-11.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="flex flex-wrap gap-px">
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-12.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
+            </div>
+            <div className="frame overflow-hidden w-fit">
+              <img
+                src="/images/gizmo/gizmo-13.png"
+                alt="Gizmo spread"
+                className="h-[300px] w-auto block"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="frame overflow-hidden w-fit">
+            <img
+              src="/images/gizmo/gizmo-14.png"
+              alt="Gizmo spread"
+              className="h-[300px] w-auto block"
+            />
           </div>
         </section>
 

@@ -68,14 +68,14 @@ export default function AxisophyProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
+        <ImageSlideshow slides={heroSlides} height={400} />
 
         <ImageRow
           images={[
             { src: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg", alt: "Geological Timescale print" },
             { src: "/images/axisophy/Axisophy-Aves-Mono-PhylogeneticTree-mockup-1-flat-mono.jpg", alt: "Phylogenetic Tree print" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         {/* Collections */}
@@ -99,7 +99,7 @@ export default function AxisophyProject() {
             { src: "/images/axisophy/Axisophy-mars-aram-chaos-V3_mockup-flat-crop.jpg", alt: "Mars Aram Chaos print" },
             { src: "/images/axisophy/Axisophy-european-peacock-butterfly-mockup-1-2800px.jpg", alt: "European Peacock Butterfly print" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         {/* Technical Approach */}
@@ -147,7 +147,7 @@ export default function AxisophyProject() {
             { src: "/images/axisophy/PhasePortrait_003p1.jpg", alt: "Phase Portrait print" },
             { src: "/images/axisophy/Axisophy-Canon-XL1_mockup-1-flat-crop.jpg", alt: "Canon XL1 print" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ContentSection title="Production">

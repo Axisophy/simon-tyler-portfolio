@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
@@ -33,13 +32,11 @@ export default function MaxwellProject() {
 
         {/* Hero Image */}
         <section className="mb-12">
-          <div className="frame overflow-hidden">
-            <Image
+          <div className="frame overflow-hidden w-fit">
+            <img
               src="/images/maxwell/hero.jpg"
               alt="Mxwll - a digital laboratory for science"
-              width={2880}
-              height={1620}
-              className="w-full h-auto"
+              className="h-[400px] w-auto block"
             />
           </div>
         </section>
@@ -75,118 +72,104 @@ export default function MaxwellProject() {
         <section className="mb-12">
           <h2 className="font-mono text-xs text-white/40 mb-6">INTERFACE DESIGN</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px mb-px">
+          <div className="flex flex-wrap gap-px mb-px">
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/space.jpg"
                   alt="Space station tracking interface"
-                  width={1440}
-                  height={810}
-                  className="w-full h-auto"
+                  className="h-[300px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Real-time Space Station Tracking</h3>
-                <p className="text-xs text-black/60">Live visualisation of ISS and Tiangong positions with orbital data</p>
+                <p className="text-xs text-black/60">Live visualisation of ISS and Tiangong positions</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/earth.jpg"
                   alt="Earthquake monitoring dashboard"
-                  width={1440}
-                  height={810}
-                  className="w-full h-auto"
+                  className="h-[300px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Earthquake Monitoring</h3>
-                <p className="text-xs text-black/60">Global earthquake data with temporal filtering and magnitude visualisation</p>
+                <p className="text-xs text-black/60">Global earthquake data with temporal filtering</p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-px mb-px">
+          <div className="flex flex-wrap gap-px mb-px">
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/lhc.jpg"
                   alt="LHC particle physics interface"
-                  width={960}
-                  height={540}
-                  className="w-full h-auto"
+                  className="h-[250px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Particle Physics</h3>
                 <p className="text-xs text-black/60">LHC data visualisation</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/periodic.jpg"
                   alt="Interactive periodic table"
-                  width={960}
-                  height={540}
-                  className="w-full h-auto"
+                  className="h-[250px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Periodic Table</h3>
                 <p className="text-xs text-black/60">Interactive element explorer</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/observatory.jpg"
                   alt="Observatory interface"
-                  width={960}
-                  height={540}
-                  className="w-full h-auto"
+                  className="h-[250px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Observatory</h3>
                 <p className="text-xs text-black/60">Astronomical data feeds</p>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
+          <div className="flex flex-wrap gap-px">
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/dashboard.jpg"
                   alt="Main dashboard"
-                  width={1440}
-                  height={810}
-                  className="w-full h-auto"
+                  className="h-[300px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Dashboard</h3>
                 <p className="text-xs text-black/60">Central hub for all scientific modules</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-px">
-              <div className="frame overflow-hidden">
-                <Image
+              <div className="frame overflow-hidden w-fit">
+                <img
                   src="/images/maxwell/universe.jpg"
                   alt="Universe explorer"
-                  width={1440}
-                  height={810}
-                  className="w-full h-auto"
+                  className="h-[300px] w-auto block"
                 />
               </div>
-              <div className="frame px-4 py-3">
+              <div className="frame px-4 py-3 w-fit">
                 <h3 className="text-sm font-semibold text-black mb-1">Universe</h3>
                 <p className="text-xs text-black/60">Scale of the universe visualisation</p>
               </div>

@@ -67,14 +67,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - edge to edge */}
-              <Link href="/work/mxwll" className="frame-dark overflow-hidden">
-                <div className="relative h-[450px] w-full">
-                  <Image
+              {/* Image Frame - shrink to fit */}
+              <Link href="/work/mxwll" className="block">
+                <div className="frame-dark overflow-hidden w-fit">
+                  <img
                     src="/images/maxwell/hero.jpg"
                     alt="Mxwll - a digital laboratory for science"
-                    fill
-                    className="object-contain object-left"
+                    className="h-[450px] w-auto block"
                   />
                 </div>
               </Link>
@@ -108,14 +107,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - edge to edge */}
-              <Link href="/work/elxsis" className="frame-dark overflow-hidden">
-                <div className="relative h-[450px] w-full">
-                  <Image
+              {/* Image Frame - shrink to fit */}
+              <Link href="/work/elxsis" className="block">
+                <div className="frame-dark overflow-hidden w-fit">
+                  <img
                     src="/images/elxsis/FinalLorenz1.png"
                     alt="Elxsis - Lorenz attractor visualization"
-                    fill
-                    className="object-contain object-left"
+                    className="h-[450px] w-auto block"
                   />
                 </div>
               </Link>
@@ -147,14 +145,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - edge to edge */}
-              <Link href="/work/network-rail" className="frame-dark overflow-hidden">
-                <div className="relative h-[450px] w-full">
-                  <Image
+              {/* Image Frame - shrink to fit */}
+              <Link href="/work/network-rail" className="block">
+                <div className="frame-dark overflow-hidden w-fit">
+                  <img
                     src="/images/network-rail/hero1.jpg"
                     alt="Network Rail Pictogram System"
-                    fill
-                    className="object-contain object-left"
+                    className="h-[450px] w-auto block"
                   />
                 </div>
               </Link>
@@ -189,14 +186,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - edge to edge */}
-              <Link href="/work/axisophy" className="frame-dark overflow-hidden">
-                <div className="relative h-[450px] w-full">
-                  <Image
+              {/* Image Frame - shrink to fit */}
+              <Link href="/work/axisophy" className="block">
+                <div className="frame-dark overflow-hidden w-fit">
+                  <img
                     src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
                     alt="Axisophy - Sacks Spiral print"
-                    fill
-                    className="object-contain object-left"
+                    className="h-[450px] w-auto block"
                   />
                 </div>
               </Link>
@@ -228,14 +224,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - white bg for book cover, edge to edge */}
-              <Link href="/work/gizmo" className="frame overflow-hidden">
-                <div className="relative h-[450px] w-full">
-                  <Image
+              {/* Image Frame - white bg for book cover, shrink to fit */}
+              <Link href="/work/gizmo" className="block">
+                <div className="frame overflow-hidden w-fit">
+                  <img
                     src="/images/gizmo/Gizmo4.3 front.jpeg"
                     alt="Gizmo - book cover"
-                    fill
-                    className="object-contain object-left"
+                    className="h-[450px] w-auto block"
                   />
                 </div>
               </Link>
