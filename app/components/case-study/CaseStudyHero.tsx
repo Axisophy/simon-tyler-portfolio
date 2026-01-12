@@ -5,7 +5,7 @@ interface CaseStudyHeroProps {
 
 export default function CaseStudyHero({ title, tagline }: CaseStudyHeroProps) {
   return (
-    <section className="mb-8">
+    <section className="pt-[100px] mb-8">
       <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white font-display mb-4">
         {title}
       </h1>

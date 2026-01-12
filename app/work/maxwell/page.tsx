@@ -10,7 +10,7 @@ export default function MaxwellProject() {
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Project Header */}
-        <section className="mb-12">
+        <section className="pt-[100px] mb-12">
           <div className="flex items-start justify-between mb-6">
             <div>
               <p className="font-mono text-xs text-pink-500 mb-2">01</p>

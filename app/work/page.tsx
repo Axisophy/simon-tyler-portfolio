@@ -116,7 +116,7 @@ export default function Work() {
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Page Title */}
-        <section className="mb-12">
+        <section className="pt-[100px] mb-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 font-display">
             Selected Work
           </h1>
