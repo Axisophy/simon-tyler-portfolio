@@ -40,7 +40,7 @@ export default function Home() {
             {/* Row 1: Mxwll - Full width */}
             <Link
               href="/work/mxwll"
-              className="lg:col-span-3 frame p-6 transition-all group"
+              className="lg:col-span-3 frame p-4 md:p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -77,7 +77,7 @@ export default function Home() {
             {/* Elxsis - 2 cols left */}
             <Link
               href="/work/elxsis"
-              className="lg:col-span-2 lg:col-start-1 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-1 frame p-4 md:p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -112,7 +112,7 @@ export default function Home() {
             {/* Network Rail - 2 cols right */}
             <Link
               href="/work/network-rail"
-              className="lg:col-span-2 lg:col-start-2 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-2 frame p-4 md:p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -148,7 +148,7 @@ export default function Home() {
             {/* Gizmo - 2 cols left */}
             <Link
               href="/work/gizmo"
-              className="lg:col-span-2 lg:col-start-1 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-1 frame p-4 md:p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -184,7 +184,7 @@ export default function Home() {
             {/* Axisophy - 2 cols right */}
             <Link
               href="/work/axisophy"
-              className="lg:col-span-2 lg:col-start-2 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-2 frame p-4 md:p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>

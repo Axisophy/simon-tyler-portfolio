@@ -10,7 +10,7 @@ export default function About() {
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Hero Section - White Frame */}
         <section className="mb-16 md:mb-24">
-          <div className="frame p-8 md:p-12 pt-16 md:pt-20">
+          <div className="frame p-4 md:p-6">
             <div className="max-w-[75%]">
               <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-[1.1] mb-8 font-display">
                 Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK.

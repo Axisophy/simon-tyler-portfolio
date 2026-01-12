@@ -21,7 +21,7 @@ export default function Contact() {
 
         {/* Contact Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
-          <div className="frame p-8">
+          <div className="frame p-4 md:p-6">
             <h2 className="font-mono text-xs text-black/40 mb-4">EMAIL</h2>
             <a
               href="mailto:hello@simontyler.co.uk"
@@ -31,13 +31,13 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="frame p-8">
+          <div className="frame p-4 md:p-6">
             <h2 className="font-mono text-xs text-black/40 mb-4">LOCATION</h2>
             <p className="text-xl md:text-2xl text-black font-semibold">St Leonards on Sea</p>
             <p className="text-sm text-black/50 mt-1">East Sussex, UK</p>
           </div>
 
-          <div className="frame p-8">
+          <div className="frame p-4 md:p-6">
             <h2 className="font-mono text-xs text-black/40 mb-4">LINKEDIN</h2>
             <a
               href="https://linkedin.com/in/simontyler"
@@ -58,7 +58,7 @@ export default function Contact() {
               href="https://mxwll.io"
               target="_blank"
               rel="noopener"
-              className="frame p-6 transition-all group"
+              className="frame p-4 md:p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Mxwll →</p>
               <p className="text-sm text-black/50">Scientific data lab</p>
@@ -67,7 +67,7 @@ export default function Contact() {
               href="https://elxsis.com"
               target="_blank"
               rel="noopener"
-              className="frame p-6 transition-all group"
+              className="frame p-4 md:p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Elxsis →</p>
               <p className="text-sm text-black/50">Computational art</p>
@@ -76,7 +76,7 @@ export default function Contact() {
               href="https://axisophy.com"
               target="_blank"
               rel="noopener"
-              className="frame p-6 transition-all group"
+              className="frame p-4 md:p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Axisophy →</p>
               <p className="text-sm text-black/50">Data viz prints</p>
@@ -85,7 +85,7 @@ export default function Contact() {
               href="https://withabang.co"
               target="_blank"
               rel="noopener"
-              className="frame p-6 transition-all group"
+              className="frame p-4 md:p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">With a Bang →</p>
               <p className="text-sm text-black/50">Textiles & homewares</p>

@@ -15,7 +15,7 @@ export default function ContentSection({
 }: ContentSectionProps) {
   return (
     <section className="mb-px">
-      <div className="frame p-8 md:p-10">
+      <div className="frame p-4 md:p-6">
         <h2 className="text-xl md:text-2xl font-bold text-black mb-2 font-display">{title}</h2>
         {subtitle && (
           <h3 className={`text-lg font-semibold mb-4 ${accentSubtitle ? 'text-pink-500' : 'text-black/70'}`}>

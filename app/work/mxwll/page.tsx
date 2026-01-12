@@ -77,7 +77,7 @@ export default function MxwllProject() {
 
         {/* Combined What I Built section */}
         <section className="mb-px">
-          <div className="frame p-8 md:p-10">
+          <div className="frame p-4 md:p-6">
             <h2 className="text-xl md:text-2xl font-bold text-black mb-8 font-display">What I Built</h2>
 
             {/* Observe */}
@@ -170,7 +170,7 @@ export default function MxwllProject() {
 
         {/* Technical Implementation */}
         <section className="mb-px">
-          <div className="frame p-8 md:p-10">
+          <div className="frame p-4 md:p-6">
             <h2 className="text-xl md:text-2xl font-bold text-black mb-8 font-display">Technical Implementation</h2>
 
             {/* Tech Stack Table */}

@@ -11,7 +11,7 @@ interface CaseStudyMetaProps {
 export default function CaseStudyMeta({ items }: CaseStudyMetaProps) {
   return (
     <section className="mb-px">
-      <div className="frame p-6 md:p-8">
+      <div className="frame p-4 md:p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {items.map((item, index) => (
             <div key={index}>
