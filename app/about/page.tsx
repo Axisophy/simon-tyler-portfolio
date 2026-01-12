@@ -8,76 +8,61 @@ export default function About() {
 
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
-        {/* Bio Section */}
+        {/* Hero Section - White Frame */}
         <section className="mb-16 md:mb-24">
-          <div className="frame p-8 md:p-12 pt-12 md:pt-16">
+          <div className="frame p-8 md:p-12 pt-16 md:pt-20">
             <div className="max-w-[75%]">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black leading-[1.1] mb-8 font-display">
-                About
-              </h1>
-
-              <div className="space-y-6 text-xl md:text-2xl text-black/70 leading-relaxed">
-                <p>
-                  I'm a designer, author, and systems thinker based in St Leonards on Sea, East Sussex.
-                  I work at the intersection of digital product design, data visualisation, and design systems.
-                </p>
-
-                <p>
-                  Most recently, I led the end-to-end design of <span className="text-pink-500 font-semibold">Mxwll</span>,
-                  a scientific data laboratory, and founded <span className="text-pink-500 font-semibold">Elxsis</span>,
-                  a computational art studio exploring mathematical forms and scientific data.
-                </p>
-
-                <p>
-                  Previously, I led design systems work at Space Agency, including the comprehensive
-                  pictogram system for Network Rail's UK stations.
-                </p>
-
-                <p>
-                  I also run <span className="text-pink-500 font-semibold">With a Bang</span>, a design-led textiles
-                  and homewares business, and <span className="text-pink-500 font-semibold">Axisophy</span>, which
-                  explores the geometry of knowledge through data visualisation prints.
-                </p>
-
-                <p>
-                  I've written and illustrated books for both children and adults, published by
-                  Pavilion, Faber & Faber, and Laurence King.
-                </p>
-              </div>
+              <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-[1.1] mb-8 font-display">
+                Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK.
+              </p>
+              <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-[1.1] mb-8 font-display">
+                His work sits at the intersection of digital product design, data visualisation, computational systems, and generative art - translating complex information into clear, beautiful, publicly accessible experiences.
+              </p>
+              <p className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-black leading-[1.1] font-display">
+                Large datasets. Scientific concepts. Technical subjects. Turned into something understandable, elegant, and often unexpected - through interactive products, visual systems, illustration, and writing. Making the complex compelling. Finding beauty in the process.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Currently & Experience */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-16">
-          <div className="frame p-8">
-            <h2 className="font-mono text-xs text-black/40 mb-4">CURRENTLY</h2>
-            <p className="text-black/70 leading-relaxed">
-              I'm currently seeking design roles where I can apply my experience in product
-              design, design systems, and data visualisation. I thrive in collaborative
-              environments and excel at creating clarity from complexity.
+        {/* Recent Work */}
+        <section className="mb-16 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 font-display">Recent Work</h2>
+          <div className="space-y-6 text-lg md:text-xl text-white/80 leading-relaxed">
+            <p>
+              Most recently, he designed and built <span className="text-pink-500 font-semibold">Mxwll</span> - a digital laboratory for scientific data. The project involved creating real-time orbital mechanics simulations, plotting satellite and comet trajectories using SGP4 propagation and Kepler solvers, visualising climate data spanning decades, and rendering interactive charts for everything from the electromagnetic spectrum to the chart of nuclides. Built with React, Three.js, D3, and custom WebGL renderers.
+            </p>
+            <p>
+              He also founded <span className="text-pink-500 font-semibold">Elxsis</span>, a computational art studio exploring dynamical systems, strange attractors, and astrophysical data - using Python, Matplotlib, and cloud GPU processing to generate large-scale generative artworks.
+            </p>
+            <p>
+              <span className="text-pink-500 font-semibold">Axisophy</span> is his data visualisation print studio - transforming mathematical structures, geological timescales, and phylogenetic trees into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
             </p>
           </div>
+        </section>
 
-          <div className="frame p-8">
-            <h2 className="font-mono text-xs text-black/40 mb-4">EXPERIENCE</h2>
-            <div className="space-y-4">
-              <div className="flex justify-between items-start pb-4 border-b border-black/10">
-                <div>
-                  <p className="font-semibold text-black">Mxwll</p>
-                  <p className="text-sm text-black/50">Lead Product Designer</p>
-                </div>
-                <span className="font-mono text-xs text-black/40">2024—25</span>
-              </div>
-              <div className="flex justify-between items-start">
-                <div>
-                  <p className="font-semibold text-black">Space Agency</p>
-                  <p className="text-sm text-black/50">Senior Designer</p>
-                </div>
-                <span className="font-mono text-xs text-black/40">2018—20</span>
-              </div>
-            </div>
-          </div>
+        {/* Books */}
+        <section className="mb-16 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 font-display">Books</h2>
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+            Author and illustrator of books published by Laurence King, Faber & Faber, and Pavilion. His upcoming book <span className="text-pink-500 font-semibold">Gizmo</span> - a comprehensive illustrated survey of retro technology - is published by Laurence King in May 2026.
+          </p>
+        </section>
+
+        {/* Background */}
+        <section className="mb-16 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 font-display">Background</h2>
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+            Previously led design systems work at Space Agency, including the comprehensive pictogram system for Network Rail's UK station wayfinding.
+          </p>
+        </section>
+
+        {/* Currently */}
+        <section className="mb-16 max-w-4xl">
+          <h2 className="text-xl md:text-2xl font-bold mb-6 font-display">Currently</h2>
+          <p className="text-lg md:text-xl text-white/80 leading-relaxed">
+            Based in St Leonards on Sea, East Sussex. Available for creative direction and design roles.
+          </p>
         </section>
       </div>
 
