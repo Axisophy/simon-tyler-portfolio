@@ -70,13 +70,14 @@ export default function ElxsisProject() {
 
         <ImageSlideshow slides={heroSlides} />
 
-        <ImageRow
-          images={[
-            { src: "/images/elxsis/FinalLorenz200.png", alt: "Lorenz attractor variation 1" },
-            { src: "/images/elxsis/FinalLorenz400.png", alt: "Lorenz attractor variation 2" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/FinalLorenz200.png" alt="Lorenz attractor variation 1" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/FinalLorenz400.png" alt="Lorenz attractor variation 2" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Selected Work */}
         <section className="mb-px">
@@ -94,18 +95,23 @@ export default function ElxsisProject() {
           </div>
         </section>
 
-        <ImageRow
-          images={[{ src: "/images/elxsis/gaia_hr_setC_full_hex_full_hex_wide_2400x1350.webp", alt: "Gaia star catalog - wide view" }]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/gaia_hr_setC_full_hex_full_hex_wide_2400x1350.webp" alt="Gaia star catalog - wide view" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/gaia_points_full_square_2000x2000.png" alt="Gaia star catalog points" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/elxsis/gaia_points_full_square_2000x2000.png", alt: "Gaia star catalog points" },
-            { src: "/images/elxsis/elxsis_hydrogen_5pz_4096px_20251226_181325.png", alt: "Hydrogen orbital visualization" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_hydrogen_5pz_4096px_20251226_181325.png" alt="Hydrogen orbital visualization" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/Weyl-coxeter_plot_17_30inch_0p2mm__E8_rnd_s0_d_anti_all_ec-ang_g2.3_tw0_rings0_keep1_762x762mm_300dpi.webp" alt="Weyl-Coxeter E8 visualization" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Technical Approach */}
         <section className="mb-px">
@@ -143,29 +149,29 @@ export default function ElxsisProject() {
           </div>
         </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/elxsis/Weyl-coxeter_plot_17_30inch_0p2mm__E8_rnd_s0_d_anti_all_ec-ang_g2.3_tw0_rings0_keep1_762x762mm_300dpi.webp", alt: "Weyl-Coxeter E8 visualization" },
-            { src: "/images/elxsis/WeylSymmetries-002p2-coxeter_plot_16_white_50inch_1mm__E8_rnd_s0_d_anti_all_ec-ang_g0.2_tw0_rings0_keep1_762x762mm_300dpi.webp", alt: "Weyl symmetries E8" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/WeylSymmetries-002p2-coxeter_plot_16_white_50inch_1mm__E8_rnd_s0_d_anti_all_ec-ang_g0.2_tw0_rings0_keep1_762x762mm_300dpi.webp" alt="Weyl symmetries E8" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_complex_Ripple_20251222_151640.png" alt="Complex function - Ripple" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/elxsis/elxsis_complex_Ripple_20251222_151640.png", alt: "Complex function - Ripple" },
-            { src: "/images/elxsis/elxsis_complex_sinz²_20251222_151314.png", alt: "Complex function - sin(z squared)" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_complex_sinz²_20251222_151314.png" alt="Complex function - sin(z squared)" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_complex_Swirl_20251222_151426.png" alt="Complex function - Swirl" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/elxsis/elxsis_complex_Swirl_20251222_151426.png", alt: "Complex function - Swirl" },
-            { src: "/images/elxsis/elxsis_complex_Vortex_20251222_151524.png", alt: "Complex function - Vortex" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_complex_Vortex_20251222_151524.png" alt="Complex function - Vortex" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Back Link */}
         <section className="mt-16 mb-12">
