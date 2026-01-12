@@ -31,13 +31,13 @@ export default function Home() {
         <section className="mb-16 md:mb-24">
           <div className="frame p-8 md:p-12 pt-16 md:pt-20">
             <div className="max-w-4xl">
-              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+              <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
                 Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK.
               </p>
-              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+              <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
                 His work sits at the intersection of digital product design, data visualisation, computational systems, and generative art - translating complex information into clear, beautiful, publicly accessible experiences.
               </p>
-              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+              <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
                 Large datasets. Scientific concepts. Technical subjects. Turned into something understandable, elegant, and often unexpected - through interactive products, visual systems, illustration, and writing. Making the complex compelling. Finding beauty in the process.
               </p>
             </div>
