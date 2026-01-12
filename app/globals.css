@@ -24,6 +24,12 @@
     border-radius: 0.5rem;
   }
 
+  /* Dark frame for image placeholders */
+  .frame-dark {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.5rem;
+  }
+
   /* Text colors for frames */
   .frame-text {
     color: #000;
