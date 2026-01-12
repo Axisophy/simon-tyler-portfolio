@@ -21,7 +21,7 @@ export default function CardGrid({ title, cards, columns = 2 }: CardGridProps) {
     <section className="mb-px">
       <div className="frame p-4 md:p-6">
         <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">{title}</h2>
-        <div className={`grid grid-cols-1 ${gridCols[columns]} gap-4`}>
+        <div className={`grid grid-cols-1 ${gridCols[columns]} gap-px`}>
           {cards.map((card, index) => (
             <div key={index} className="bg-black/5 rounded-lg p-6">
               <p className="font-mono text-sm text-pink-500 mb-2">{card.number}</p>

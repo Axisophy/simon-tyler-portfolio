@@ -20,7 +20,7 @@ export default function Contact() {
         </section>
 
         {/* Contact Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px mb-16">
           <div className="frame p-4 md:p-6">
             <h2 className="font-mono text-xs text-black/40 mb-4">EMAIL</h2>
             <a
@@ -53,7 +53,7 @@ export default function Contact() {
         {/* Projects Links */}
         <section className="mb-16">
           <h2 className="font-mono text-xs text-white/40 mb-6">PROJECTS</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px">
             <a
               href="https://mxwll.io"
               target="_blank"

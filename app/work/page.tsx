@@ -120,7 +120,7 @@ export default function Work() {
 
         {/* Projects Grid */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             {projects.map((project, index) => (
               <Link
                 key={project.slug}

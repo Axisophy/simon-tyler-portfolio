@@ -54,7 +54,7 @@ export default function MaxwellProject() {
               process from concept through implementation, including UI/UX, data visualisation,
               design systems, and front-end development.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-black/10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-px pt-8 border-t border-black/10">
               <div>
                 <h3 className="font-mono text-xs text-black/40 mb-2">ROLE</h3>
                 <p className="text-black/80 font-semibold">Lead Product Designer</p>
@@ -75,7 +75,7 @@ export default function MaxwellProject() {
         <section className="mb-12">
           <h2 className="font-mono text-xs text-white/40 mb-6">INTERFACE DESIGN</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px mb-px">
             <div className="frame p-4">
               <Image
                 src="/images/maxwell/space.jpg"
@@ -105,7 +105,7 @@ export default function MaxwellProject() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-px mb-px">
             <div className="frame p-4">
               <Image
                 src="/images/maxwell/lhc.jpg"
@@ -149,7 +149,7 @@ export default function MaxwellProject() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             <div className="frame p-4">
               <Image
                 src="/images/maxwell/dashboard.jpg"
