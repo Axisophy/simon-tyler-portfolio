@@ -4,20 +4,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Sticky Header - White frame */}
+      {/* Sticky Header */}
       <header className="sticky top-0 z-50 mx-4 mt-4 md:mx-6 md:mt-6">
-        <div className="frame p-4 md:p-5 flex justify-between items-center">
-          <Link href="/" className="text-black font-medium text-lg">
+        <div className="p-4 md:p-5 flex justify-between items-center">
+          <Link href="/" className="text-white font-medium text-lg">
             Simon Tyler
           </Link>
-          <nav className="flex gap-6 font-mono text-sm text-black">
-            <Link href="/work" className="hover:text-[#3B82F6] transition-colors">
+          <nav className="flex gap-6 font-mono text-sm">
+            <Link href="/work" className="text-white/50 hover:text-white transition-colors">
               Work
             </Link>
-            <Link href="/about" className="hover:text-[#3B82F6] transition-colors">
+            <Link href="/about" className="text-white/50 hover:text-white transition-colors">
               About
             </Link>
-            <Link href="/contact" className="hover:text-[#3B82F6] transition-colors">
+            <Link href="/contact" className="text-white/50 hover:text-white transition-colors">
               Contact
             </Link>
           </nav>
