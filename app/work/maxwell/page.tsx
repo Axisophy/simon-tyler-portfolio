@@ -1,191 +1,214 @@
 import Link from "next/link";
 import Image from "next/image";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function MaxwellProject() {
   return (
     <main className="min-h-screen">
-      <div className="technical-border m-4 md:m-6 lg:m-8 min-h-[calc(100vh-2rem)] md:min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] p-6 md:p-12 lg:p-16 grid-pattern">
-        
-        {/* Header */}
-        <header className="mb-16 md:mb-24">
-          <div className="flex justify-between items-start">
-            <Link href="/" className="hover:opacity-60 transition-opacity">
-              <h1 className="text-xl md:text-2xl font-medium tracking-tight mb-2">Simon Tyler</h1>
-              <p className="font-mono text-xs text-white/40">
-                51.4416°N, 0.5694°E
-              </p>
-            </Link>
-            <nav className="flex gap-6 font-mono text-xs">
-              <Link href="/work" className="hover:text-accent transition-colors">
-                ← Back to Work
-              </Link>
-            </nav>
-          </div>
-        </header>
+      <Header />
 
+      {/* Main Content */}
+      <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Project Header */}
-        <section className="mb-16">
+        <section className="mb-12">
           <div className="flex items-start justify-between mb-6">
             <div>
-              <h2 className="text-5xl md:text-7xl font-medium mb-4">Maxwell</h2>
+              <p className="font-mono text-xs text-pink-500 mb-2">01</p>
+              <h1 className="text-5xl md:text-7xl font-bold mb-4 font-display">Mxwll</h1>
               <p className="text-xl md:text-2xl text-white/60">
                 A digital laboratory for science happening now
               </p>
             </div>
-            <span className="font-mono text-sm text-white/40">2024-25</span>
+            <span className="font-mono text-sm text-white/40">2024—25</span>
           </div>
-          
-          <div className="flex gap-2 flex-wrap mb-8">
-            <span className="font-mono text-xs px-3 py-1 bg-accent/20 text-accent rounded">UI/UX Design</span>
-            <span className="font-mono text-xs px-3 py-1 bg-accent/20 text-accent rounded">Product Design</span>
-            <span className="font-mono text-xs px-3 py-1 bg-accent/20 text-accent rounded">Data Visualization</span>
-            <span className="font-mono text-xs px-3 py-1 bg-accent/20 text-accent rounded">Design Systems</span>
+
+          <div className="flex gap-2 flex-wrap">
+            <span className="font-mono text-xs px-3 py-1 bg-pink-500/20 text-pink-500 rounded">Product Design</span>
+            <span className="font-mono text-xs px-3 py-1 bg-pink-500/20 text-pink-500 rounded">UI/UX</span>
+            <span className="font-mono text-xs px-3 py-1 bg-pink-500/20 text-pink-500 rounded">Data Visualisation</span>
+            <span className="font-mono text-xs px-3 py-1 bg-pink-500/20 text-pink-500 rounded">React</span>
+          </div>
+        </section>
+
+        {/* Hero Image */}
+        <section className="mb-12">
+          <div className="frame p-4 overflow-hidden">
+            <Image
+              src="/images/maxwell/hero.jpg"
+              alt="Mxwll - a digital laboratory for science"
+              width={2880}
+              height={1620}
+              className="w-full h-auto rounded-lg"
+            />
           </div>
         </section>
 
         {/* Overview */}
-        <section className="mb-16">
-          <div className="technical-border p-8 mb-8">
-            <h3 className="font-mono text-xs text-white/40 mb-4">OVERVIEW</h3>
-            <p className="text-lg text-white/80 leading-relaxed mb-6">
-              Maxwell is a scientific data laboratory that presents complex scientific data 
-              in real-time through beautifully designed interfaces. I led the complete design 
-              process from concept through implementation, including UI/UX, data visualization, 
+        <section className="mb-12">
+          <div className="frame p-8 md:p-12">
+            <h2 className="font-mono text-xs text-black/40 mb-4">OVERVIEW</h2>
+            <p className="text-xl md:text-2xl text-black/80 leading-relaxed mb-8 max-w-3xl">
+              Mxwll is a scientific data laboratory that presents complex scientific data
+              in real-time through beautifully designed interfaces. I led the complete design
+              process from concept through implementation, including UI/UX, data visualisation,
               design systems, and front-end development.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-white/10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-black/10">
               <div>
-                <h4 className="font-mono text-xs text-white/40 mb-2">ROLE</h4>
-                <p className="text-white/80">Lead Product Designer</p>
+                <h3 className="font-mono text-xs text-black/40 mb-2">ROLE</h3>
+                <p className="text-black/80 font-semibold">Lead Product Designer</p>
               </div>
               <div>
-                <h4 className="font-mono text-xs text-white/40 mb-2">TIMELINE</h4>
-                <p className="text-white/80">2024-2025</p>
+                <h3 className="font-mono text-xs text-black/40 mb-2">TIMELINE</h3>
+                <p className="text-black/80 font-semibold">2024—2025</p>
               </div>
               <div>
-                <h4 className="font-mono text-xs text-white/40 mb-2">PLATFORM</h4>
-                <p className="text-white/80">Web (React, Tailwind)</p>
+                <h3 className="font-mono text-xs text-black/40 mb-2">PLATFORM</h3>
+                <p className="text-black/80 font-semibold">Web (React, Tailwind)</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Screenshots Section */}
-        <section className="mb-16">
-          <h3 className="font-mono text-xs text-white/40 mb-6">INTERFACE DESIGN</h3>
-          
-          {/* Space Stations */}
-          <div className="technical-border p-4 mb-6">
-            <div className="aspect-[16/10] bg-white/5 rounded-lg mb-4 overflow-hidden">
-              {/* Placeholder for actual Maxwell screenshot */}
-              <div className="w-full h-full flex items-center justify-center text-white/20">
-                [Space Stations Live Tracking Interface]
+        {/* Screenshots Grid */}
+        <section className="mb-12">
+          <h2 className="font-mono text-xs text-white/40 mb-6">INTERFACE DESIGN</h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/space.jpg"
+                alt="Space station tracking interface"
+                width={1440}
+                height={810}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Real-time Space Station Tracking</h3>
+                <p className="text-sm text-black/60">Live visualisation of ISS and Tiangong positions with orbital data</p>
               </div>
             </div>
-            <div className="flex justify-between items-start">
-              <div>
-                <h4 className="text-lg font-medium mb-2">Real-time Space Station Tracking</h4>
-                <p className="text-sm text-white/60">
-                  Live visualization of ISS and Tiangong positions with orbital data
-                </p>
+
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/earth.jpg"
+                alt="Earthquake monitoring dashboard"
+                width={1440}
+                height={810}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Earthquake Monitoring</h3>
+                <p className="text-sm text-black/60">Global earthquake data with temporal filtering and magnitude visualisation</p>
               </div>
-              <span className="font-mono text-xs text-white/40">01</span>
             </div>
           </div>
 
-          {/* Earthquakes */}
-          <div className="technical-border p-4 mb-6">
-            <div className="aspect-[16/10] bg-white/5 rounded-lg mb-4 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-white/20">
-                [Earthquake Monitoring Dashboard]
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/lhc.jpg"
+                alt="LHC particle physics interface"
+                width={960}
+                height={540}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Particle Physics</h3>
+                <p className="text-sm text-black/60">LHC data visualisation</p>
               </div>
             </div>
-            <div className="flex justify-between items-start">
-              <div>
-                <h4 className="text-lg font-medium mb-2">Earthquake Monitoring</h4>
-                <p className="text-sm text-white/60">
-                  Global earthquake data with temporal filtering and magnitude visualization
-                </p>
+
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/periodic.jpg"
+                alt="Interactive periodic table"
+                width={960}
+                height={540}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Periodic Table</h3>
+                <p className="text-sm text-black/60">Interactive element explorer</p>
               </div>
-              <span className="font-mono text-xs text-white/40">02</span>
+            </div>
+
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/observatory.jpg"
+                alt="Observatory interface"
+                width={960}
+                height={540}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Observatory</h3>
+                <p className="text-sm text-black/60">Astronomical data feeds</p>
+              </div>
             </div>
           </div>
 
-          {/* Standard Model */}
-          <div className="technical-border p-4">
-            <div className="aspect-[16/10] bg-white/5 rounded-lg mb-4 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center text-white/20">
-                [Standard Model Particle Selector]
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/dashboard.jpg"
+                alt="Main dashboard"
+                width={1440}
+                height={810}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Dashboard</h3>
+                <p className="text-sm text-black/60">Central hub for all scientific modules</p>
               </div>
             </div>
-            <div className="flex justify-between items-start">
-              <div>
-                <h4 className="text-lg font-medium mb-2">Interactive Particle Physics</h4>
-                <p className="text-sm text-white/60">
-                  Color-coded particle selector for exploring fundamental particles
-                </p>
+
+            <div className="frame p-4">
+              <Image
+                src="/images/maxwell/universe.jpg"
+                alt="Universe explorer"
+                width={1440}
+                height={810}
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="px-2">
+                <h3 className="text-lg font-semibold text-black mb-1">Universe</h3>
+                <p className="text-sm text-black/60">Scale of the universe visualisation</p>
               </div>
-              <span className="font-mono text-xs text-white/40">03</span>
             </div>
           </div>
         </section>
 
-        {/* Design System */}
-        <section className="mb-16">
-          <h3 className="font-mono text-xs text-white/40 mb-6">DESIGN SYSTEM</h3>
-          <div className="technical-border p-8">
-            <p className="text-white/60 mb-6">
-              Built a comprehensive design system including typography, color systems, 
-              component library, and interaction patterns. Black backgrounds with precise 
-              data hierarchy and color-coded information categories.
+        {/* CTA */}
+        <section className="mb-12">
+          <div className="frame p-8 text-center">
+            <p className="text-black/60 mb-4">
+              Interactive demonstrations and live data visualisations
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="technical-border p-4">
-                <div className="w-full h-20 bg-blue-500 rounded mb-2"></div>
-                <p className="font-mono text-xs">Orbit Data</p>
-              </div>
-              <div className="technical-border p-4">
-                <div className="w-full h-20 bg-yellow-500 rounded mb-2"></div>
-                <p className="font-mono text-xs">Magnitude 4+</p>
-              </div>
-              <div className="technical-border p-4">
-                <div className="w-full h-20 bg-orange-500 rounded mb-2"></div>
-                <p className="font-mono text-xs">Force Carriers</p>
-              </div>
-              <div className="technical-border p-4">
-                <div className="w-full h-20 bg-green-500 rounded mb-2"></div>
-                <p className="font-mono text-xs">Matter Particles</p>
-              </div>
-            </div>
+            <a
+              href="https://mxwll.io"
+              target="_blank"
+              rel="noopener"
+              className="inline-block text-xl font-semibold text-pink-500 hover:opacity-70 transition-opacity"
+            >
+              Visit mxwll.io →
+            </a>
           </div>
         </section>
 
-        {/* Interactive Components Section */}
-        <section className="mb-16">
-          <h3 className="font-mono text-xs text-white/40 mb-6">INTERACTIVE DEMO</h3>
-          <div className="technical-border p-8">
-            <p className="text-white/60 mb-4">
-              Interactive component demonstrations coming soon. Will feature live data 
-              visualizations built with React and D3.js.
-            </p>
-            <p className="font-mono text-xs text-accent">
-              → See live site: mxwll.io
-            </p>
-          </div>
+        {/* Back Link */}
+        <section className="mb-12">
+          <Link
+            href="/work"
+            className="font-mono text-sm text-white/40 hover:text-pink-500 transition-colors"
+          >
+            ← Back to Work
+          </Link>
         </section>
-
-        {/* Footer */}
-        <footer className="border-t border-white/10 pt-8 mt-auto">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <p className="font-mono text-xs text-white/40">
-              © 2026 Simon Tyler
-            </p>
-            <Link href="/work" className="font-mono text-xs text-accent hover:opacity-60 transition-opacity">
-              ← Back to Work
-            </Link>
-          </div>
-        </footer>
       </div>
+
+      <Footer />
     </main>
   );
 }

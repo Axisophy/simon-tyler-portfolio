@@ -1,28 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Sticky Header */}
-      <header className="sticky top-0 z-50 mx-4 mt-4 md:mx-6 md:mt-6">
-        <div className="p-4 md:p-5 flex justify-between items-center">
-          <Link href="/" className="text-white font-medium text-lg">
-            Simon Tyler
-          </Link>
-          <nav className="flex gap-6 text-sm">
-            <Link href="/work" className="text-white hover:text-pink-500 transition-colors">
-              Work
-            </Link>
-            <Link href="/about" className="text-white hover:text-pink-500 transition-colors">
-              About
-            </Link>
-            <Link href="/contact" className="text-white hover:text-pink-500 transition-colors">
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
@@ -218,28 +202,7 @@ export default function Home() {
         </section>
       </div>
 
-      {/* Footer */}
-      <footer className="px-4 md:px-6 pb-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <div className="flex items-center gap-4">
-            <p className="font-mono text-xs text-white/30">
-              © 2026 Simon Tyler
-            </p>
-            <span className="hidden md:block w-px h-3 bg-white/20" />
-            <p className="font-mono text-xs text-white/30">
-              Available for design roles
-            </p>
-          </div>
-          <div className="flex gap-6 font-mono text-xs text-white/40">
-            <a href="mailto:hello@simontyler.co.uk" className="hover:text-accent transition-colors">
-              Email
-            </a>
-            <a href="https://linkedin.com/in/simontyler" target="_blank" rel="noopener" className="hover:text-accent transition-colors">
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
