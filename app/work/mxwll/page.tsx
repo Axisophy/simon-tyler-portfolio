@@ -24,7 +24,7 @@ export default function MxwllProject() {
         {/* Project Info Section - White frame with meta fields */}
         <section className="mb-16">
           <div className="frame p-6 md:p-8">
-            <div className="flex flex-wrap gap-8 md:gap-16">
+            <div className="flex flex-wrap gap-8 md:gap-px6">
               <div>
                 <span className="font-mono text-xs text-black/40 block mb-1">Role</span>
                 <span className="text-black font-medium">Founder, Creative Director, Lead Product Developer</span>
@@ -45,7 +45,7 @@ export default function MxwllProject() {
 
         {/* Row: The Problem + The Model */}
         <section className="mb-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             {/* The Problem */}
             <div className="frame p-8 md:p-10">
               <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">The Problem</h2>
@@ -111,7 +111,7 @@ export default function MxwllProject() {
 
         {/* Image Row - Observe widgets */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
             <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
               <p className="font-mono text-xs text-white/30">Observe widgets</p>
             </div>
@@ -123,7 +123,7 @@ export default function MxwllProject() {
 
         {/* Row: Orbital Platform + Data Visualisation */}
         <section className="mb-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             {/* Orbital Platform */}
             <div className="frame p-8 md:p-10">
               <h3 className="text-lg font-semibold text-pink-500 mb-4">Orbital Platform</h3>
@@ -158,7 +158,7 @@ export default function MxwllProject() {
 
         {/* Image Row - Orbital/Charts */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
             <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
               <p className="font-mono text-xs text-white/30">Orbital platform</p>
             </div>
@@ -170,7 +170,7 @@ export default function MxwllProject() {
 
         {/* Row: Vault + Play */}
         <section className="mb-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px">
             {/* Vault */}
             <div className="frame p-8 md:p-10">
               <h3 className="text-lg font-semibold text-pink-500 mb-4">Vault</h3>
@@ -191,7 +191,7 @@ export default function MxwllProject() {
 
         {/* Image Row - Vault/Play */}
         <section className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
             <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
               <p className="font-mono text-xs text-white/30">Vault</p>
             </div>
