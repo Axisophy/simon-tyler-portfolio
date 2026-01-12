@@ -42,78 +42,12 @@ export default function GizmoProject() {
         </section>
 
         {/* Hero Image */}
-        <section className="mb-px">
+        <section className="mb-16">
           <div className="frame p-4">
             <div className="relative aspect-[4/3]">
               <Image
                 src="/images/gizmo/Gizmo1.png"
                 alt="Gizmo - retro technology illustrations"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* Image Grid - 2 up */}
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/images/gizmo/Gizmo2.png"
-                  alt="Gizmo illustrations"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/images/gizmo/Gizmo3.png"
-                  alt="Gizmo illustrations"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Image Grid - 2 up */}
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/images/gizmo/Gizmo4.png"
-                  alt="Gizmo illustrations"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3]">
-                <Image
-                  src="/images/gizmo/Gizmo5.png"
-                  alt="Gizmo illustrations"
-                  fill
-                  className="object-cover rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Final Image */}
-        <section className="mb-16">
-          <div className="frame p-4">
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/images/gizmo/Gizmo6.png"
-                alt="Gizmo illustrations"
                 fill
                 className="object-cover rounded-lg"
               />
