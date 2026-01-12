@@ -30,7 +30,7 @@ export default function Home() {
         {/* Hero Statement */}
         <section className="mb-16 md:mb-24">
           <div className="frame p-8 md:p-12 pt-16 md:pt-20">
-            <div className="max-w-4xl">
+            <div className="max-w-[75%]">
               <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
                 Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK.
               </p>
