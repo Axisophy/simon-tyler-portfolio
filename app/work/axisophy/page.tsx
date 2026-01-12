@@ -16,7 +16,9 @@ export default function AxisophyProject() {
     { label: "Link", value: "axisophy.com", href: "https://axisophy.com" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg", caption: "Sacks Spiral print" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -48,8 +50,8 @@ export default function AxisophyProject() {
 
         <ImageRow
           images={[
-            { alt: "Print collection", placeholder: "Print collection overview" },
-            { alt: "Print detail", placeholder: "Print detail" }
+            { src: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg", alt: "Geological Timescale print" },
+            { src: "/images/axisophy/Axisophy-Aves-Mono-PhylogeneticTree-mockup-1-flat-mono.jpg", alt: "Phylogenetic Tree print" }
           ]}
           aspectRatio="video"
         />
@@ -79,8 +81,19 @@ export default function AxisophyProject() {
         </ContentSection>
 
         <ImageRow
-          images={[{ alt: "Featured prints", placeholder: "Featured prints" }]}
-          aspectRatio="wide"
+          images={[
+            { src: "/images/axisophy/Axisophy-mars-aram-chaos-V3_mockup-flat-crop.jpg", alt: "Mars Aram Chaos print" },
+            { src: "/images/axisophy/Axisophy-european-peacock-butterfly-mockup-1-2800px.jpg", alt: "European Peacock Butterfly print" }
+          ]}
+          aspectRatio="video"
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/axisophy/PhasePortrait_003p1.jpg", alt: "Phase Portrait print" },
+            { src: "/images/axisophy/Axisophy-Canon-XL1_mockup-1-flat-crop.jpg", alt: "Canon XL1 print" }
+          ]}
+          aspectRatio="video"
         />
 
         <ContentSection title="Press">

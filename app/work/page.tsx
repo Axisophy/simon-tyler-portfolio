@@ -46,7 +46,8 @@ export default function Work() {
       year: "2020—25",
       description: "Data visualisation print studio",
       tags: ["E-commerce", "Shopify", "Illustration", "Graphic Design"],
-      category: "Product Design"
+      category: "Product Design",
+      image: "/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
     },
     {
       slug: "with-a-bang",
