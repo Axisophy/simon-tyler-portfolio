@@ -67,9 +67,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame */}
-              <Link href="/work/mxwll" className="frame-dark p-4 flex items-start">
-                <div className="relative h-[300px] w-full">
+              {/* Image Frame - edge to edge */}
+              <Link href="/work/mxwll" className="frame-dark overflow-hidden">
+                <div className="relative h-[450px] w-full">
                   <Image
                     src="/images/maxwell/hero.jpg"
                     alt="Mxwll - a digital laboratory for science"
@@ -108,9 +108,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame */}
-              <Link href="/work/elxsis" className="frame-dark p-4 flex items-start">
-                <div className="relative h-[300px] w-full">
+              {/* Image Frame - edge to edge */}
+              <Link href="/work/elxsis" className="frame-dark overflow-hidden">
+                <div className="relative h-[450px] w-full">
                   <Image
                     src="/images/elxsis/FinalLorenz1.png"
                     alt="Elxsis - Lorenz attractor visualization"
@@ -147,9 +147,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame */}
-              <Link href="/work/network-rail" className="frame-dark p-4 flex items-start">
-                <div className="relative h-[300px] w-full">
+              {/* Image Frame - edge to edge */}
+              <Link href="/work/network-rail" className="frame-dark overflow-hidden">
+                <div className="relative h-[450px] w-full">
                   <Image
                     src="/images/network-rail/hero1.jpg"
                     alt="Network Rail Pictogram System"
@@ -189,9 +189,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame */}
-              <Link href="/work/axisophy" className="frame-dark p-4 flex items-start">
-                <div className="relative h-[300px] w-full">
+              {/* Image Frame - edge to edge */}
+              <Link href="/work/axisophy" className="frame-dark overflow-hidden">
+                <div className="relative h-[450px] w-full">
                   <Image
                     src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
                     alt="Axisophy - Sacks Spiral print"
@@ -228,9 +228,9 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - white bg for book cover */}
-              <Link href="/work/gizmo" className="frame p-4 flex items-start">
-                <div className="relative h-[300px] w-full">
+              {/* Image Frame - white bg for book cover, edge to edge */}
+              <Link href="/work/gizmo" className="frame overflow-hidden">
+                <div className="relative h-[450px] w-full">
                   <Image
                     src="/images/gizmo/Gizmo4.3 front.jpeg"
                     alt="Gizmo - book cover"

@@ -36,9 +36,9 @@ export default function GizmoProject() {
           }
         />
 
-        {/* Book cover - same height as spreads below */}
+        {/* Book cover */}
         <section className="mb-px">
-          <div className="frame p-4">
+          <div className="frame overflow-hidden">
             <div className="relative aspect-[4/3] bg-white">
               <Image
                 src="/images/gizmo/Gizmo4.3 front.jpeg"
@@ -71,7 +71,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-02.png"
@@ -81,7 +81,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-03.png"
@@ -96,7 +96,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-04.png"
@@ -106,7 +106,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-05.png"
@@ -121,7 +121,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-06.png"
@@ -131,7 +131,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-07.png"
@@ -167,7 +167,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-08.png"
@@ -177,7 +177,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-09.png"
@@ -192,7 +192,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-10.png"
@@ -202,7 +202,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-11.png"
@@ -217,7 +217,7 @@ export default function GizmoProject() {
 
         <section className="mb-px">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-12.png"
@@ -227,7 +227,7 @@ export default function GizmoProject() {
                 />
               </div>
             </div>
-            <div className="frame p-4">
+            <div className="frame overflow-hidden">
               <div className="relative aspect-[4/3] bg-white">
                 <Image
                   src="/images/gizmo/gizmo-13.png"
@@ -241,7 +241,7 @@ export default function GizmoProject() {
         </section>
 
         <section className="mb-px">
-          <div className="frame p-4">
+          <div className="frame overflow-hidden">
             <div className="relative aspect-[4/3] bg-white">
               <Image
                 src="/images/gizmo/gizmo-14.png"

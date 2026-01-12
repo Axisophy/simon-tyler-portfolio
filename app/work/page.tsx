@@ -159,13 +159,13 @@ export default function Work() {
                   </div>
                 </Link>
 
-                {/* Image Frame */}
+                {/* Image Frame - edge to edge */}
                 {project.image && (
                   <Link
                     href={`/work/${project.slug}`}
-                    className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} p-4 flex items-start`}
+                    className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} overflow-hidden`}
                   >
-                    <div className="relative h-[250px] w-full">
+                    <div className="relative h-[300px] w-full">
                       <Image
                         src={project.image}
                         alt={project.title}

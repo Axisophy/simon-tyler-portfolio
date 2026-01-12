@@ -41,24 +41,24 @@ export default function ImageSlideshow({
   if (slides.length === 0 || !slides[0].src) {
     return (
       <section className="mb-px">
-        <div className="frame-dark rounded-lg overflow-hidden">
+        <div className="frame-dark overflow-hidden">
           <div className={`${aspectClasses[aspectRatio]} flex items-center justify-center`}>
             <p className="font-mono text-xs text-white/30">{placeholder || "Project images"}</p>
           </div>
-          {placeholder && (
-            <div className="px-4 py-3">
-              <p className="font-mono text-xs text-white/50">{placeholder}</p>
-            </div>
-          )}
         </div>
+        {placeholder && (
+          <div className="frame-dark px-4 py-3 mt-px">
+            <p className="font-mono text-xs text-white/50">{placeholder}</p>
+          </div>
+        )}
       </section>
     );
   }
 
   return (
     <section className="mb-px">
-      <div className={`${containOnWhite ? 'frame' : 'frame-dark'} rounded-lg overflow-hidden`}>
-        {/* Slideshow Container */}
+      {/* Image Frame - edge to edge */}
+      <div className={`${containOnWhite ? 'frame' : 'frame-dark'} overflow-hidden`}>
         <div className={`relative ${aspectClasses[aspectRatio]} ${containOnWhite ? 'bg-white' : ''}`}>
           <Image
             src={slides[currentSlide].src}
@@ -85,14 +85,14 @@ export default function ImageSlideshow({
             </>
           )}
         </div>
+      </div>
 
-        {/* Caption */}
-        <div className="px-4 py-3 flex items-center justify-between">
-          <p className={`font-mono text-xs ${containOnWhite ? 'text-black/50' : 'text-white/50'}`}>{slides[currentSlide].caption}</p>
-          {slides.length > 1 && (
-            <p className={`font-mono text-xs ${containOnWhite ? 'text-black/30' : 'text-white/30'}`}>{currentSlide + 1} / {slides.length}</p>
-          )}
-        </div>
+      {/* Caption Frame - separate with padding */}
+      <div className={`${containOnWhite ? 'frame' : 'frame-dark'} px-4 py-3 mt-px flex items-center justify-between`}>
+        <p className={`font-mono text-xs ${containOnWhite ? 'text-black/50' : 'text-white/50'}`}>{slides[currentSlide].caption}</p>
+        {slides.length > 1 && (
+          <p className={`font-mono text-xs ${containOnWhite ? 'text-black/30' : 'text-white/30'}`}>{currentSlide + 1} / {slides.length}</p>
+        )}
       </div>
     </section>
   );

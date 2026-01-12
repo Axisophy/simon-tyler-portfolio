@@ -25,7 +25,7 @@ export default function ImageRow({ images, aspectRatio = "video" }: ImageRowProp
     <section className="mb-px">
       <div className={`grid grid-cols-1 ${!isSingle ? 'md:grid-cols-2' : ''} gap-px`}>
         {images.map((image, index) => (
-          <div key={index} className="frame-dark rounded-lg overflow-hidden">
+          <div key={index} className="frame-dark overflow-hidden">
             <div className={`relative ${aspectClasses[aspectRatio]} flex items-center justify-center`}>
               {image.src ? (
                 <Image
