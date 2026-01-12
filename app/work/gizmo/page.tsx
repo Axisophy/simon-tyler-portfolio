@@ -42,12 +42,177 @@ export default function GizmoProject() {
         </section>
 
         {/* Hero Image */}
+        <section className="mb-px">
+          <div className="frame p-4">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/images/gizmo/gizmo-01.png"
+                alt="Gizmo - retro technology illustrations"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* Spreads - 2 up grids */}
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-02.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-03.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-04.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-05.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-06.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-07.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-08.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-09.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-10.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-11.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-px">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-12.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div className="frame p-4">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/gizmo/gizmo-13.png"
+                  alt="Gizmo spread"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final spread */}
         <section className="mb-16">
           <div className="frame p-4">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/gizmo/Gizmo1.png"
-                alt="Gizmo - retro technology illustrations"
+                src="/images/gizmo/gizmo-14.png"
+                alt="Gizmo spread"
                 fill
                 className="object-cover rounded-lg"
               />

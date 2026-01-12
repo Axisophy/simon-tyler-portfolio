@@ -164,7 +164,7 @@ export default function Home() {
 
               <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
                 <Image
-                  src="/images/gizmo/Gizmo1.png"
+                  src="/images/gizmo/gizmo-01.png"
                   alt="Gizmo - retro technology illustrations"
                   fill
                   className="object-cover"
