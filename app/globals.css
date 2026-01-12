@@ -4,43 +4,42 @@
   :root {
     --color-accent: #3B82F6;
     --color-accent-light: #60A5FA;
-    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    --font-mono: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", monospace;
-  }
-
-  * {
-    border-color: rgba(255, 255, 255, 0.1);
+    --font-sans: "neue-haas-grotesk-display", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-text: "neue-haas-grotesk-text", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: "input-mono", "SF Mono", "Monaco", monospace;
   }
 
   body {
     background-color: #000;
     color: #fff;
-    font-family: var(--font-sans);
+    font-family: var(--font-text);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: -0.01em;
   }
 
-  /* Jon Way inspired technical aesthetic */
-  .technical-border {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+  /* White frame elements - tight border radius, no borders */
+  .frame {
+    background-color: #fff;
+    border-radius: 0.5rem;
   }
 
-  .grid-pattern {
-    background-image: 
-      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 4px 4px;
+  /* Text colors for frames */
+  .frame-text {
+    color: #000;
   }
 
   /* Tight spacing aesthetic */
   .tight-spacing {
     letter-spacing: -0.025em;
   }
-  
+
   .font-mono {
     font-family: var(--font-mono);
+  }
+
+  .font-display {
+    font-family: var(--font-sans);
   }
 }
 
@@ -48,7 +47,7 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .text-accent {
     color: var(--color-accent);
   }
