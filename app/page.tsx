@@ -137,10 +137,10 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Row 3: Gizmo (2 cols) + Axisophy (1 col) */}
+            {/* Row 3: Gizmo (1 col) + Axisophy (2 cols) */}
             <Link
               href="/work/gizmo"
-              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -152,7 +152,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2026</span>
               </div>
 
-              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">Laurence King</p>
               </div>
 
@@ -170,7 +170,7 @@ export default function Home() {
 
             <Link
               href="/work/axisophy"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -182,8 +182,8 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2020—25</span>
               </div>
 
-              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <p className="font-mono text-xs text-black/30">axisophy.com</p>
+              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                <p className="font-mono text-xs text-black/30">axisophy.com — The art of intelligent data</p>
               </div>
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
