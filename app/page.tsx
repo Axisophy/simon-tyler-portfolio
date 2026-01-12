@@ -54,13 +54,12 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2024—25</span>
               </div>
 
-              <div className="mb-4 overflow-hidden rounded-lg">
+              <div className="relative aspect-[21/9] mb-4 overflow-hidden rounded-lg">
                 <Image
                   src="/images/maxwell/hero.jpg"
                   alt="Mxwll - a digital laboratory for science"
-                  width={2880}
-                  height={1620}
-                  className="w-full h-auto"
+                  fill
+                  className="object-cover"
                 />
               </div>
 
@@ -92,7 +91,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2024—25</span>
               </div>
 
-              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="relative aspect-video bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">elxsis.com</p>
               </div>
 
@@ -121,8 +120,13 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2020</span>
               </div>
 
-              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <p className="font-mono text-xs text-black/30">Pictogram System</p>
+              <div className="relative aspect-square rounded-lg mb-4 overflow-hidden">
+                <Image
+                  src="/images/network-rail/hero1.jpg"
+                  alt="Network Rail Pictogram System"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
@@ -152,7 +156,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2026</span>
               </div>
 
-              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="relative aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">Laurence King</p>
               </div>
 
@@ -182,7 +186,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2020—25</span>
               </div>
 
-              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="relative aspect-video bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">axisophy.com — The art of intelligent data</p>
               </div>
 
