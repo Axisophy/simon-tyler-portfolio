@@ -137,45 +137,14 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Row 3: Axisophy (2 cols) + Gizmo (1 col) */}
+            {/* Row 3: Gizmo (2 cols) + Axisophy (1 col) */}
             <Link
-              href="/work/axisophy"
+              href="/work/gizmo"
               className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <p className="font-mono text-xs text-pink-500 mb-2">04</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
-                    Axisophy
-                  </h2>
-                </div>
-                <span className="font-mono text-xs text-black/40">2020—25</span>
-              </div>
-
-              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <p className="font-mono text-xs text-black/30">axisophy.com — The art of intelligent data</p>
-              </div>
-
-              <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                Data visualisation print studio. Mathematical structures, geological timescales, phylogenetic trees,
-                and computational art — transformed into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
-              </p>
-
-              <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">E-commerce</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Shopify</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Graphic Design</span>
-              </div>
-            </Link>
-
-            <Link
-              href="/work/gizmo"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <p className="font-mono text-xs text-pink-500 mb-2">05</p>
                   <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Gizmo
                   </h2>
@@ -183,7 +152,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2026</span>
               </div>
 
-              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">Laurence King</p>
               </div>
 
@@ -196,6 +165,37 @@ export default function Home() {
                 <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
                 <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Design</span>
                 <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Writing</span>
+              </div>
+            </Link>
+
+            <Link
+              href="/work/axisophy"
+              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <p className="font-mono text-xs text-pink-500 mb-2">05</p>
+                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
+                    Axisophy
+                  </h2>
+                </div>
+                <span className="font-mono text-xs text-black/40">2020—25</span>
+              </div>
+
+              <div className="aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+                <p className="font-mono text-xs text-black/30">axisophy.com</p>
+              </div>
+
+              <p className="text-black/60 text-sm mb-4 leading-relaxed">
+                Data visualisation print studio. Mathematical structures, geological timescales, phylogenetic trees,
+                and computational art — transformed into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
+              </p>
+
+              <div className="flex gap-2 flex-wrap">
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">E-commerce</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Shopify</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Graphic Design</span>
               </div>
             </Link>
           </div>
