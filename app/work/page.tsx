@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -10,7 +11,8 @@ export default function Work() {
       year: "2024—25",
       description: "End-to-end product design for a scientific data laboratory",
       tags: ["Product Design", "UI/UX", "Data Visualisation", "React"],
-      category: "Digital Product"
+      category: "Digital Product",
+      image: "/images/maxwell/hero.jpg"
     },
     {
       slug: "elxsis",
@@ -18,7 +20,8 @@ export default function Work() {
       year: "2024—25",
       description: "Computational art studio exploring mathematical forms",
       tags: ["Creative Direction", "Generative Art", "Python"],
-      category: "Digital Product"
+      category: "Digital Product",
+      image: "/images/elxsis/FinalLorenz1.png"
     },
     {
       slug: "network-rail",
@@ -26,7 +29,8 @@ export default function Work() {
       year: "2020",
       description: "Comprehensive pictogram system for UK rail wayfinding",
       tags: ["Pictograms", "Wayfinding", "Iconography", "Illustration"],
-      category: "Design Systems"
+      category: "Design Systems",
+      image: "/images/network-rail/hero1.jpg"
     },
     {
       slug: "iwm-duxford",
@@ -58,7 +62,9 @@ export default function Work() {
       year: "2026",
       description: "A comprehensive illustrated survey of retro technology - the gadgets we loved and lost. Published by Laurence King.",
       tags: ["Book", "Illustration", "Design", "Writing"],
-      category: "Books"
+      category: "Books",
+      image: "/images/gizmo/Gizmo4.3 front.jpeg",
+      containImage: true
     },
     {
       slug: "bugs",
@@ -136,6 +142,17 @@ export default function Work() {
                   </div>
                   <span className="font-mono text-xs text-black/40">{project.year}</span>
                 </div>
+
+                {project.image && (
+                  <div className={`relative aspect-video rounded-lg mb-4 overflow-hidden ${project.containImage ? 'bg-white' : ''}`}>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className={project.containImage ? "object-contain" : "object-cover"}
+                    />
+                  </div>
+                )}
 
                 <p className="text-black/60 mb-4 leading-relaxed">
                   {project.description}
