@@ -41,7 +41,7 @@ export default function MxwllProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
+        <ImageSlideshow slides={heroSlides} height={400} />
 
         <ContentSection title="The Problem">
           <div className="space-y-4">
@@ -73,7 +73,7 @@ export default function MxwllProject() {
 
         <ImageRow
           images={[{ alt: "Platform screenshots", placeholder: "Platform screenshots" }]}
-          aspectRatio="wide"
+          height={350}
         />
 
         {/* Combined What I Built section */}
@@ -153,12 +153,12 @@ export default function MxwllProject() {
             { alt: "Observe widgets", placeholder: "Observe widgets" },
             { alt: "Observe widgets", placeholder: "Observe widgets" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         <ImageRow
           images={[{ alt: "Orbital platform", placeholder: "Orbital platform" }]}
-          aspectRatio="wide"
+          height={350}
         />
 
         <ImageRow
@@ -166,7 +166,7 @@ export default function MxwllProject() {
             { alt: "Data visualisation", placeholder: "Data visualisation" },
             { alt: "Data visualisation", placeholder: "Data visualisation" }
           ]}
-          aspectRatio="video"
+          height={300}
         />
 
         {/* Technical Implementation */}

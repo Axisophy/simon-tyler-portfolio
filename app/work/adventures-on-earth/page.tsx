@@ -37,7 +37,7 @@ export default function AdventuresOnEarthProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="Adventures on Earth book cover" />
+        <ImageSlideshow slides={heroSlides} height={400} placeholder="Adventures on Earth book cover" />
 
         <ContentSection title="The Book">
           <p>

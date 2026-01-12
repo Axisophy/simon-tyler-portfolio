@@ -37,7 +37,7 @@ export default function EmergencyVehiclesProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="Emergency Vehicles book cover" />
+        <ImageSlideshow slides={heroSlides} height={400} placeholder="Emergency Vehicles book cover" />
 
         <ContentSection title="The Book">
           <p>

@@ -37,7 +37,7 @@ export default function BugsProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="Bugs book cover" />
+        <ImageSlideshow slides={heroSlides} height={400} placeholder="Bugs book cover" />
 
         <ContentSection title="The Book">
           <p>
