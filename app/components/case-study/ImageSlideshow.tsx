@@ -57,7 +57,7 @@ export default function ImageSlideshow({
 
   return (
     <section className="mb-px">
-      <div className="frame-dark rounded-lg overflow-hidden">
+      <div className={`${containOnWhite ? 'frame' : 'frame-dark'} rounded-lg overflow-hidden`}>
         {/* Slideshow Container */}
         <div className={`relative ${aspectClasses[aspectRatio]} ${containOnWhite ? 'bg-white' : ''}`}>
           <Image
@@ -88,9 +88,9 @@ export default function ImageSlideshow({
 
         {/* Caption */}
         <div className="px-4 py-3 flex items-center justify-between">
-          <p className="font-mono text-xs text-white/50">{slides[currentSlide].caption}</p>
+          <p className={`font-mono text-xs ${containOnWhite ? 'text-black/50' : 'text-white/50'}`}>{slides[currentSlide].caption}</p>
           {slides.length > 1 && (
-            <p className="font-mono text-xs text-white/30">{currentSlide + 1} / {slides.length}</p>
+            <p className={`font-mono text-xs ${containOnWhite ? 'text-black/30' : 'text-white/30'}`}>{currentSlide + 1} / {slides.length}</p>
           )}
         </div>
       </div>
