@@ -58,7 +58,7 @@ export default function Contact() {
               href="https://mxwll.io"
               target="_blank"
               rel="noopener"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Mxwll →</p>
               <p className="text-sm text-black/50">Scientific data lab</p>
@@ -67,7 +67,7 @@ export default function Contact() {
               href="https://elxsis.com"
               target="_blank"
               rel="noopener"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Elxsis →</p>
               <p className="text-sm text-black/50">Computational art</p>
@@ -76,7 +76,7 @@ export default function Contact() {
               href="https://axisophy.com"
               target="_blank"
               rel="noopener"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">Axisophy →</p>
               <p className="text-sm text-black/50">Data viz prints</p>
@@ -85,7 +85,7 @@ export default function Contact() {
               href="https://withabang.co"
               target="_blank"
               rel="noopener"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <p className="text-black font-semibold group-hover:text-pink-500 transition-colors">With a Bang →</p>
               <p className="text-sm text-black/50">Textiles & homewares</p>

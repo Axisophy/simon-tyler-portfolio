@@ -42,7 +42,7 @@ export default function Home() {
             {/* Row 1: Mxwll - Full width */}
             <Link
               href="/work/maxwell"
-              className="lg:col-span-3 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="lg:col-span-3 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -80,7 +80,7 @@ export default function Home() {
             {/* Row 2: Elxsis (2 cols) + Network Rail (1 col) */}
             <Link
               href="/work/elxsis"
-              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="lg:col-span-2 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -109,7 +109,7 @@ export default function Home() {
 
             <Link
               href="/work/network-rail"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -140,7 +140,7 @@ export default function Home() {
             {/* Row 3: Gizmo (1 col) + Axisophy (2 cols) */}
             <Link
               href="/work/gizmo"
-              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -170,7 +170,7 @@ export default function Home() {
 
             <Link
               href="/work/axisophy"
-              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
+              className="lg:col-span-2 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>

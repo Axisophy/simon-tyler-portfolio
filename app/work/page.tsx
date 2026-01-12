@@ -125,7 +125,7 @@ export default function Work() {
               <Link
                 key={project.slug}
                 href={`/work/${project.slug}`}
-                className="frame p-8 hover:ring-2 hover:ring-pink-500 transition-all group"
+                className="frame p-8 transition-all group"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div>
