@@ -205,9 +205,10 @@ export default function Home() {
               </p>
 
               <div className="flex gap-2 flex-wrap">
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Writing</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Book</span>
                 <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Illustration</span>
-                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Publishing</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Design</span>
+                <span className="font-mono text-[10px] px-2 py-1 bg-black/5 rounded text-black/50">Writing</span>
               </div>
             </Link>
           </div>
