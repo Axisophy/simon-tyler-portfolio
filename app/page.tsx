@@ -91,8 +91,13 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2024—25</span>
               </div>
 
-              <div className="relative aspect-video bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <p className="font-mono text-xs text-black/30">elxsis.com</p>
+              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
+                <Image
+                  src="/images/elxsis/FinalLorenz1.png"
+                  alt="Elxsis - Lorenz attractor visualization"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
