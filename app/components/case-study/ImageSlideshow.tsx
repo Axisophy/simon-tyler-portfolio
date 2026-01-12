@@ -12,12 +12,14 @@ interface ImageSlideshowProps {
   slides: Slide[];
   aspectRatio?: "video" | "wide" | "square";
   placeholder?: string;
+  containOnWhite?: boolean;
 }
 
 export default function ImageSlideshow({
   slides,
   aspectRatio = "wide",
-  placeholder
+  placeholder,
+  containOnWhite = false
 }: ImageSlideshowProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -57,12 +59,12 @@ export default function ImageSlideshow({
     <section className="mb-px">
       <div className="frame-dark rounded-lg overflow-hidden">
         {/* Slideshow Container */}
-        <div className={`relative ${aspectClasses[aspectRatio]}`}>
+        <div className={`relative ${aspectClasses[aspectRatio]} ${containOnWhite ? 'bg-white' : ''}`}>
           <Image
             src={slides[currentSlide].src}
             alt={slides[currentSlide].caption}
             fill
-            className="object-cover"
+            className={containOnWhite ? "object-contain" : "object-cover"}
           />
 
           {/* Navigation arrows - only show if multiple slides */}

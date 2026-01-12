@@ -47,7 +47,7 @@ export default function GizmoProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="video" />
+        <ImageSlideshow slides={heroSlides} aspectRatio="video" containOnWhite />
 
         {/* Book spreads with white background for full image display */}
         <section className="mb-px">
