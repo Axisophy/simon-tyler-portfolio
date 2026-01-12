@@ -76,10 +76,10 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Row 2: Elxsis (2 cols) + Network Rail (1 col) */}
+            {/* Elxsis - 2 cols left */}
             <Link
               href="/work/elxsis"
-              className="lg:col-span-2 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-1 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -106,9 +106,10 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Network Rail - 2 cols right */}
             <Link
               href="/work/network-rail"
-              className="frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-2 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -120,7 +121,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2020</span>
               </div>
 
-              <div className="relative aspect-square rounded-lg mb-4 overflow-hidden">
+              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
                 <Image
                   src="/images/network-rail/hero1.jpg"
                   alt="Network Rail Pictogram System"
@@ -141,10 +142,10 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Row 3: Gizmo (1 col) + Axisophy (2 cols) */}
+            {/* Gizmo - 2 cols left */}
             <Link
               href="/work/gizmo"
-              className="frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-1 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -156,7 +157,7 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2026</span>
               </div>
 
-              <div className="relative aspect-square bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
+              <div className="relative aspect-video bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
                 <p className="font-mono text-xs text-black/30">Laurence King</p>
               </div>
 
@@ -172,9 +173,10 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Axisophy - 2 cols right */}
             <Link
               href="/work/axisophy"
-              className="lg:col-span-2 frame p-6 transition-all group"
+              className="lg:col-span-2 lg:col-start-2 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
