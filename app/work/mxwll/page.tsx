@@ -72,8 +72,9 @@ export default function MxwllProject() {
         </ContentSection>
 
         <ImageRow
-          images={[{ alt: "Platform screenshots", placeholder: "Platform screenshots" }]}
-         
+          images={[
+            { src: "/images/maxwell/dashboard.jpg", alt: "Mxwll Dashboard - central hub for scientific modules" }
+          ]}
         />
 
         {/* Combined What I Built section */}
@@ -150,23 +151,24 @@ export default function MxwllProject() {
 
         <ImageRow
           images={[
-            { alt: "Observe widgets", placeholder: "Observe widgets" },
-            { alt: "Observe widgets", placeholder: "Observe widgets" }
+            { src: "/images/maxwell/earth.jpg", alt: "Earthquake monitoring - global seismic data" },
+            { src: "/images/maxwell/observe.jpg", alt: "Observe widgets - real-time scientific feeds" }
           ]}
-         
-        />
-
-        <ImageRow
-          images={[{ alt: "Orbital platform", placeholder: "Orbital platform" }]}
-         
         />
 
         <ImageRow
           images={[
-            { alt: "Data visualisation", placeholder: "Data visualisation" },
-            { alt: "Data visualisation", placeholder: "Data visualisation" }
+            { src: "/images/maxwell/space.jpg", alt: "Space station tracking - ISS and Tiangong positions" },
+            { src: "/images/maxwell/universe.jpg", alt: "Scale of the universe visualisation" }
           ]}
-         
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/maxwell/periodic.jpg", alt: "Interactive periodic table" },
+            { src: "/images/maxwell/lhc.jpg", alt: "LHC particle physics data" },
+            { src: "/images/maxwell/observatory.jpg", alt: "Observatory - astronomical data feeds" }
+          ]}
         />
 
         {/* Technical Implementation */}
