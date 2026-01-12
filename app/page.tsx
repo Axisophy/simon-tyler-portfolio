@@ -70,11 +70,14 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2024—25</span>
               </div>
 
-              <div className="aspect-[21/9] bg-gradient-to-br from-black/5 to-black/[0.02] rounded-lg mb-4 overflow-hidden flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="font-mono text-xs text-black/30 mb-2">mxwll.io</p>
-                  <p className="text-black/40 text-sm">A digital laboratory for science</p>
-                </div>
+              <div className="mb-4 overflow-hidden rounded-lg">
+                <Image
+                  src="/images/maxwell/hero.jpg"
+                  alt="Mxwll - a digital laboratory for science"
+                  width={2880}
+                  height={1620}
+                  className="w-full h-auto"
+                />
               </div>
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
