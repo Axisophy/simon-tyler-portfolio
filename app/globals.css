@@ -41,6 +41,14 @@
   .font-display {
     font-family: var(--font-sans);
   }
+
+  /* Bold text gets tighter tracking */
+  .font-bold,
+  .font-semibold,
+  b,
+  strong {
+    letter-spacing: -0.03em;
+  }
 }
 
 @layer utilities {

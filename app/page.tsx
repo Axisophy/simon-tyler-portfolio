@@ -28,18 +28,20 @@ export default function Home() {
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
 
         {/* Hero Statement */}
-        <section className="max-w-5xl mb-16 md:mb-24">
-          <p className="font-mono text-xs text-white/40 mb-6">Introduction</p>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium tight-spacing leading-[1.15] mb-8 font-display">
-            <span className="text-white/90">Simon Tyler</span> is a designer and author working at the intersection of{" "}
-            <span className="text-accent">digital product</span>,{" "}
-            <span className="text-accent">data visualization</span>, and{" "}
-            <span className="text-accent">computational systems</span>.
-          </h1>
-          <p className="text-lg md:text-xl text-white/50 leading-relaxed max-w-3xl">
-            Currently seeking design roles. Based in St Leonards on Sea, UK.
-            Building Maxwell, Elxsis, and With a Bang. Previously led design systems at Space Agency.
-          </p>
+        <section className="mb-16 md:mb-24">
+          <div className="frame p-8 md:p-12 pt-16 md:pt-20">
+            <div className="max-w-4xl">
+              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+                Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK.
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+                His work sits at the intersection of digital product design, data visualisation, computational systems, and generative art - translating complex information into clear, beautiful, publicly accessible experiences.
+              </p>
+              <p className="text-2xl md:text-3xl font-bold text-black leading-relaxed mb-6 font-display">
+                Large datasets. Scientific concepts. Technical subjects. Turned into something understandable, elegant, and often unexpected - through interactive products, visual systems, illustration, and writing. Making the complex compelling. Finding beauty in the process.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Featured Projects */}
