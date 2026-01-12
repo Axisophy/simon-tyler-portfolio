@@ -11,13 +11,13 @@ export default function Home() {
             Simon Tyler
           </Link>
           <nav className="flex gap-6 text-sm">
-            <Link href="/work" className="text-white/50 hover:text-white transition-colors">
+            <Link href="/work" className="text-white hover:text-pink-500 transition-colors">
               Work
             </Link>
-            <Link href="/about" className="text-white/50 hover:text-white transition-colors">
+            <Link href="/about" className="text-white hover:text-pink-500 transition-colors">
               About
             </Link>
-            <Link href="/contact" className="text-white/50 hover:text-white transition-colors">
+            <Link href="/contact" className="text-white hover:text-pink-500 transition-colors">
               Contact
             </Link>
           </nav>
@@ -58,12 +58,12 @@ export default function Home() {
             {/* Row 1: Mxwll - Full width */}
             <Link
               href="/work/maxwell"
-              className="lg:col-span-3 frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
+              className="lg:col-span-3 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="font-mono text-xs text-[#3B82F6] mb-2">01</p>
-                  <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
+                  <p className="font-mono text-xs text-pink-500 mb-2">01</p>
+                  <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Mxwll
                   </h2>
                 </div>
@@ -93,12 +93,12 @@ export default function Home() {
             {/* Row 2: Elxsis (2 cols) + Network Rail (1 col) */}
             <Link
               href="/work/elxsis"
-              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
+              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="font-mono text-xs text-[#3B82F6] mb-2">02</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
+                  <p className="font-mono text-xs text-pink-500 mb-2">02</p>
+                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Elxsis
                   </h2>
                 </div>
@@ -122,12 +122,12 @@ export default function Home() {
 
             <Link
               href="/work/network-rail"
-              className="frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
+              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="font-mono text-xs text-[#3B82F6] mb-2">03</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
+                  <p className="font-mono text-xs text-pink-500 mb-2">03</p>
+                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Network Rail
                   </h2>
                 </div>
@@ -153,12 +153,12 @@ export default function Home() {
             {/* Row 3: Axisophy (2 cols) + Gizmo (1 col) */}
             <Link
               href="/work/axisophy"
-              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
+              className="lg:col-span-2 frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="font-mono text-xs text-[#3B82F6] mb-2">04</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
+                  <p className="font-mono text-xs text-pink-500 mb-2">04</p>
+                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Axisophy
                   </h2>
                 </div>
@@ -184,12 +184,12 @@ export default function Home() {
 
             <Link
               href="/work/gizmo"
-              className="frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
+              className="frame p-6 hover:ring-2 hover:ring-pink-500 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p className="font-mono text-xs text-[#3B82F6] mb-2">05</p>
-                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
+                  <p className="font-mono text-xs text-pink-500 mb-2">05</p>
+                  <h2 className="text-xl md:text-2xl font-medium text-black group-hover:text-pink-500 font-display transition-colors">
                     Gizmo
                   </h2>
                 </div>

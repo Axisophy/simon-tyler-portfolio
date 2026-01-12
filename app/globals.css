@@ -2,8 +2,8 @@
 
 @layer base {
   :root {
-    --color-accent: #3B82F6;
-    --color-accent-light: #60A5FA;
+    --color-accent: #ec4899;
+    --color-accent-light: #f472b6;
     --font-sans: "neue-haas-grotesk-display", -apple-system, BlinkMacSystemFont, sans-serif;
     --font-text: "neue-haas-grotesk-text", -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: "input-mono", "SF Mono", "Monaco", monospace;
