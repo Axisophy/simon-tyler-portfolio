@@ -5,7 +5,8 @@ import {
   CaseStudyHero,
   CaseStudyMeta,
   ImageSlideshow,
-  ContentSection
+  ContentSection,
+  ImageRow
 } from "../../components/case-study";
 
 export default function IWMDuxfordProject() {
@@ -15,7 +16,9 @@ export default function IWMDuxfordProject() {
     { label: "Client", value: "Imperial War Museum (with Spaceagency)" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/IWM-duxford/Duxford1.jpg", caption: "IWM Duxford wayfinding signage" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -37,7 +40,46 @@ export default function IWMDuxfordProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="IWM Duxford hero image" />
+        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
+
+        <ImageRow
+          images={[
+            { src: "/images/IWM-duxford/Duxford2.jpeg", alt: "Duxford signage" },
+            { src: "/images/IWM-duxford/Duxford3.webp", alt: "Duxford signage" }
+          ]}
+          aspectRatio="video"
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/IWM-duxford/Duxford4.webp", alt: "Duxford signage" },
+            { src: "/images/IWM-duxford/Duxford5.jpeg", alt: "Duxford signage" }
+          ]}
+          aspectRatio="video"
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/IWM-duxford/Duxford6.jpg", alt: "Duxford signage" },
+            { src: "/images/IWM-duxford/Duxford7.webp", alt: "Duxford signage" }
+          ]}
+          aspectRatio="video"
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/IWM-duxford/Duxford8.webp", alt: "Duxford signage" },
+            { src: "/images/IWM-duxford/Duxford9.jpg", alt: "Duxford signage" }
+          ]}
+          aspectRatio="video"
+        />
+
+        <ImageRow
+          images={[
+            { src: "/images/IWM-duxford/Duxford10.webp", alt: "Duxford signage" }
+          ]}
+          aspectRatio="wide"
+        />
 
         <ContentSection title="The Project">
           <p>

@@ -38,7 +38,8 @@ export default function Work() {
       year: "2020",
       description: "Wayfinding and identity signage for the Imperial War Museum's historic Duxford Airfield. At Space Agency.",
       tags: ["Wayfinding", "Identity", "Signage"],
-      category: "Wayfinding"
+      category: "Wayfinding",
+      image: "/images/IWM-duxford/Duxford1.jpg"
     },
     {
       slug: "axisophy",
