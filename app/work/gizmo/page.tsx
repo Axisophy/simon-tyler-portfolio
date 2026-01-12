@@ -33,20 +33,21 @@ export default function GizmoProject() {
           tagline="The retro-tech we loved and lost — a comprehensive survey of electronic gadgets."
         />
 
-        <CaseStudyMeta items={metaItems} />
+        <CaseStudyMeta
+          items={metaItems}
+          overview={
+            <div className="space-y-4">
+              <p>
+                Gizmo is a comprehensive illustrated survey of the electronic devices that defined generations — from the Walkman to the Game Boy, the Polaroid to the Palm Pilot. Each gadget is rendered in detailed technical illustration, accompanied by stories of invention, cultural impact, and eventual obsolescence.
+              </p>
+              <p>
+                The book celebrates the physical, tactile nature of technology before everything became a rectangle of glass — the satisfying click of buttons, the whir of motors, the warm glow of CRT screens.
+              </p>
+            </div>
+          }
+        />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="video" />
-
-        <ContentSection title="Overview">
-          <div className="space-y-4">
-            <p>
-              Gizmo is a comprehensive illustrated survey of the electronic devices that defined generations — from the Walkman to the Game Boy, the Polaroid to the Palm Pilot. Each gadget is rendered in detailed technical illustration, accompanied by stories of invention, cultural impact, and eventual obsolescence.
-            </p>
-            <p>
-              The book celebrates the physical, tactile nature of technology before everything became a rectangle of glass — the satisfying click of buttons, the whir of motors, the warm glow of CRT screens.
-            </p>
-          </div>
-        </ContentSection>
 
         {/* Book spreads with white background for full image display */}
         <section className="mb-px">

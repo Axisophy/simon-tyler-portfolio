@@ -32,20 +32,21 @@ export default function ElxsisProject() {
           tagline="Computational art studio exploring dynamical systems, astrophysical data, and emergent forms."
         />
 
-        <CaseStudyMeta items={metaItems} />
+        <CaseStudyMeta
+          items={metaItems}
+          overview={
+            <div className="space-y-4">
+              <p>
+                Elxsis is a computational art practice exploring the visual language of mathematics, physics, and astronomy. Each piece begins with real scientific data or mathematical systems, transformed through code into visual forms that reveal hidden structures and patterns.
+              </p>
+              <p>
+                The work spans strange attractors, stellar catalogues, quantum orbital structures, and abstract mathematical symmetries — all rendered with obsessive attention to both scientific accuracy and aesthetic quality.
+              </p>
+            </div>
+          }
+        />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="video" />
-
-        <ContentSection title="Overview">
-          <div className="space-y-4">
-            <p>
-              Elxsis is a computational art practice exploring the visual language of mathematics, physics, and astronomy. Each piece begins with real scientific data or mathematical systems, transformed through code into visual forms that reveal hidden structures and patterns.
-            </p>
-            <p>
-              The work spans strange attractors, stellar catalogues, quantum orbital structures, and abstract mathematical symmetries — all rendered with obsessive attention to both scientific accuracy and aesthetic quality.
-            </p>
-          </div>
-        </ContentSection>
 
         <ContentSection title="Strange Attractors" subtitle="Lorenz System" accentSubtitle>
           <div className="space-y-4">

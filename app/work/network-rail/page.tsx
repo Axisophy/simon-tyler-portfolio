@@ -56,20 +56,21 @@ export default function NetworkRailProject() {
           tagline="A comprehensive pictogram system for UK rail wayfinding — balancing ISO clarity with British character."
         />
 
-        <CaseStudyMeta items={metaItems} />
+        <CaseStudyMeta
+          items={metaItems}
+          overview={
+            <div className="space-y-4">
+              <p>
+                Network Rail operates over 2,500 stations across the UK, from Victorian termini to modern transport hubs. Each station requires clear, consistent wayfinding — but existing pictogram systems were fragmented, inconsistent, and often borrowed from other transport networks without adaptation.
+              </p>
+              <p>
+                Working with Spaceagency and Weston Williamson, I led the design of a comprehensive pictogram system that would work across this diverse estate while maintaining a distinctly British character.
+              </p>
+            </div>
+          }
+        />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
-
-        <ContentSection title="Overview">
-          <div className="space-y-4">
-            <p>
-              Network Rail operates over 2,500 stations across the UK, from Victorian termini to modern transport hubs. Each station requires clear, consistent wayfinding — but existing pictogram systems were fragmented, inconsistent, and often borrowed from other transport networks without adaptation.
-            </p>
-            <p>
-              Working with Spaceagency and Weston Williamson, I led the design of a comprehensive pictogram system that would work across this diverse estate while maintaining a distinctly British character.
-            </p>
-          </div>
-        </ContentSection>
 
         <CardGrid title="Design Criteria" cards={designCriteria} columns={2} />
 

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface MetaItem {
   label: string;
   value: string;
@@ -6,9 +8,10 @@ interface MetaItem {
 
 interface CaseStudyMetaProps {
   items: MetaItem[];
+  overview?: ReactNode;
 }
 
-export default function CaseStudyMeta({ items }: CaseStudyMetaProps) {
+export default function CaseStudyMeta({ items, overview }: CaseStudyMetaProps) {
   return (
     <section className="mb-px">
       <div className="frame p-4 md:p-6">
@@ -31,6 +34,13 @@ export default function CaseStudyMeta({ items }: CaseStudyMetaProps) {
             </div>
           ))}
         </div>
+        {overview && (
+          <div className="mt-6 pt-6 border-t border-black/10">
+            <div className="text-base text-black/80 leading-relaxed max-w-4xl">
+              {overview}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

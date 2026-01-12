@@ -32,15 +32,16 @@ export default function MxwllProject() {
           tagline="The quality layer for science — design-led real-time data for curious people."
         />
 
-        <CaseStudyMeta items={metaItems} />
+        <CaseStudyMeta
+          items={metaItems}
+          overview={
+            <p>
+              Mxwll is the quality layer for science - a design-led real-time data platform and digital publication presenting scientific information with the care usually reserved for luxury products or art books.
+            </p>
+          }
+        />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
-
-        <ContentSection title="Overview">
-          <p>
-            Mxwll is the quality layer for science - a design-led real-time data platform and digital publication presenting scientific information with the care usually reserved for luxury products or art books.
-          </p>
-        </ContentSection>
 
         <ContentSection title="The Problem">
           <div className="space-y-4">

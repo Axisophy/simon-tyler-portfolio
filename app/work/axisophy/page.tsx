@@ -30,20 +30,21 @@ export default function AxisophyProject() {
           tagline="Data visualisation prints — the art of intelligent data."
         />
 
-        <CaseStudyMeta items={metaItems} />
+        <CaseStudyMeta
+          items={metaItems}
+          overview={
+            <div className="space-y-4">
+              <p>
+                Axisophy is a data visualisation print studio, transforming complex datasets into museum-grade prints. Mathematical structures, geological timescales, phylogenetic trees, and computational art — rendered with obsessive attention to accuracy and aesthetic quality.
+              </p>
+              <p>
+                Each print begins with real data: astronomical catalogues, evolutionary trees, mathematical constants. The challenge is finding visual forms that honour the data's inherent structure while creating something genuinely beautiful to live with.
+              </p>
+            </div>
+          }
+        />
 
         <ImageSlideshow slides={heroSlides} aspectRatio="wide" placeholder="Axisophy prints" />
-
-        <ContentSection title="Overview">
-          <div className="space-y-4">
-            <p>
-              Axisophy is a data visualisation print studio, transforming complex datasets into museum-grade prints. Mathematical structures, geological timescales, phylogenetic trees, and computational art — rendered with obsessive attention to accuracy and aesthetic quality.
-            </p>
-            <p>
-              Each print begins with real data: astronomical catalogues, evolutionary trees, mathematical constants. The challenge is finding visual forms that honour the data's inherent structure while creating something genuinely beautiful to live with.
-            </p>
-          </div>
-        </ContentSection>
 
         <ImageRow
           images={[
