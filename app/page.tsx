@@ -162,12 +162,12 @@ export default function Home() {
                 <span className="font-mono text-xs text-black/40">2026</span>
               </div>
 
-              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden">
+              <div className="relative aspect-video rounded-lg mb-4 overflow-hidden bg-white">
                 <Image
-                  src="/images/gizmo/gizmo-01.png"
-                  alt="Gizmo - retro technology illustrations"
+                  src="/images/gizmo/Gizmo4.3 front.jpeg"
+                  alt="Gizmo - book cover"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 
