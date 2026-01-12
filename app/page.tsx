@@ -37,9 +37,6 @@ export default function Home() {
               <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
                 His work sits at the intersection of digital product design, data visualisation, computational systems, and generative art - translating complex information into clear, beautiful, publicly accessible experiences.
               </p>
-              <p className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-black leading-[1.1] mb-8 font-display">
-                Large datasets. Scientific concepts. Technical subjects. Turned into something understandable, elegant, and often unexpected - through interactive products, visual systems, illustration, and writing. Making the complex compelling. Finding beauty in the process.
-              </p>
             </div>
           </div>
         </section>
