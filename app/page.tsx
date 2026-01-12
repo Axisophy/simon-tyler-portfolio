@@ -183,8 +183,8 @@ export default function Home() {
               {/* Image Frame */}
               <Link href="/work/axisophy" className="frame p-4 md:p-6">
                 <img
-                  src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
-                  alt="Axisophy - Sacks Spiral print"
+                  src="/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg"
+                  alt="Axisophy - Geological Timescale print"
                   className="rounded-lg h-auto max-w-full"
                 />
               </Link>
