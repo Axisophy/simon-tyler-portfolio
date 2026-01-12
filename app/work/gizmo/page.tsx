@@ -5,9 +5,6 @@ import Footer from "../../components/Footer";
 import {
   CaseStudyHero,
   CaseStudyMeta,
-  ImageSlideshow,
-  ContentSection,
-  ImageRow
 } from "../../components/case-study";
 
 export default function GizmoProject() {
@@ -17,8 +14,24 @@ export default function GizmoProject() {
     { label: "Publisher", value: "Laurence King" }
   ];
 
-  const heroSlides = [
-    { src: "/images/gizmo/Gizmo4.3 front.jpeg", caption: "Gizmo - book cover" }
+  // Image data with aspect ratios
+  // Book cover is roughly 3:4 (portrait), spreads are 4:3 (landscape)
+  const images = [
+    { src: "/images/gizmo/Gizmo4.3 front.jpeg", alt: "Gizmo - book cover", caption: "Gizmo - book cover", aspect: "3/4" },
+    { src: "/images/gizmo/gizmo-01.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-02.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-03.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-04.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-05.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-06.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-07.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-08.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-09.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-10.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-11.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-12.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-13.png", alt: "Gizmo spread", aspect: "4/3" },
+    { src: "/images/gizmo/gizmo-14.png", alt: "Gizmo spread", aspect: "4/3" },
   ];
 
   return (
@@ -47,182 +60,33 @@ export default function GizmoProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} aspectRatio="video" containOnWhite />
-
-        {/* Book spreads with white background for full image display */}
+        {/* Images in native aspect ratio frames with consistent height */}
         <section className="mb-px">
-          <div className="frame p-4">
-            <div className="relative aspect-[4/3] bg-white">
-              <Image
-                src="/images/gizmo/gizmo-01.png"
-                alt="Gizmo spread"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-02.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
+          <div className="flex flex-wrap gap-px">
+            {images.map((img, index) => (
+              <div key={index} className="flex flex-col gap-px" style={{ height: '400px' }}>
+                {/* Image frame */}
+                <div
+                  className="frame flex-1 flex items-center justify-center overflow-hidden"
+                  style={{ aspectRatio: img.aspect }}
+                >
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+                {/* Caption frame - only show if there's a caption */}
+                {img.caption && (
+                  <div className="frame px-4 py-3" style={{ aspectRatio: img.aspect, height: 'auto', flex: 'none' }}>
+                    <p className="font-mono text-xs text-black/50">{img.caption}</p>
+                  </div>
+                )}
               </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-03.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-04.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-05.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-06.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-07.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-08.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-09.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-10.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-11.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-12.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-            <div className="frame p-4">
-              <div className="relative aspect-[4/3] bg-white">
-                <Image
-                  src="/images/gizmo/gizmo-13.png"
-                  alt="Gizmo spread"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="mb-px">
-          <div className="frame p-4">
-            <div className="relative aspect-[4/3] bg-white">
-              <Image
-                src="/images/gizmo/gizmo-14.png"
-                alt="Gizmo spread"
-                fill
-                className="object-contain"
-              />
-            </div>
+            ))}
           </div>
         </section>
 
