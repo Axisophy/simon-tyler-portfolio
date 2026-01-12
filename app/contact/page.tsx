@@ -9,7 +9,7 @@ export default function Contact() {
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Contact Header */}
-        <section className="mb-12">
+        <section className="pt-[100px] mb-12">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 font-display">
             Get in Touch
           </h1>
@@ -20,32 +20,14 @@ export default function Contact() {
         </section>
 
         {/* Contact Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px mb-16">
+        <section className="mb-16">
           <div className="frame p-4 md:p-6">
             <h2 className="font-mono text-xs text-black/40 mb-4">EMAIL</h2>
             <a
-              href="mailto:hello@simontyler.co.uk"
+              href="mailto:thesimontyler@gmail.com"
               className="text-xl md:text-2xl text-pink-500 hover:opacity-70 transition-opacity font-semibold"
             >
-              hello@simontyler.co.uk
-            </a>
-          </div>
-
-          <div className="frame p-4 md:p-6">
-            <h2 className="font-mono text-xs text-black/40 mb-4">LOCATION</h2>
-            <p className="text-xl md:text-2xl text-black font-semibold">St Leonards on Sea</p>
-            <p className="text-sm text-black/50 mt-1">East Sussex, UK</p>
-          </div>
-
-          <div className="frame p-4 md:p-6">
-            <h2 className="font-mono text-xs text-black/40 mb-4">LINKEDIN</h2>
-            <a
-              href="https://linkedin.com/in/simontyler"
-              target="_blank"
-              rel="noopener"
-              className="text-xl md:text-2xl text-pink-500 hover:opacity-70 transition-opacity font-semibold"
-            >
-              /in/simontyler →
+              thesimontyler@gmail.com
             </a>
           </div>
         </section>
