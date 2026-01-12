@@ -10,7 +10,7 @@ export default function Home() {
           <Link href="/" className="text-white font-medium text-lg">
             Simon Tyler
           </Link>
-          <nav className="flex gap-6 font-mono text-sm">
+          <nav className="flex gap-6 text-sm">
             <Link href="/work" className="text-white/50 hover:text-white transition-colors">
               Work
             </Link>
