@@ -41,7 +41,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Row 1: Mxwll - Full width */}
             <Link
-              href="/work/maxwell"
+              href="/work/mxwll"
               className="lg:col-span-3 frame p-6 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">

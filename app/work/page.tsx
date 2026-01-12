@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 export default function Work() {
   const projects = [
     {
-      slug: "maxwell",
+      slug: "mxwll",
       title: "Mxwll",
       year: "2024—25",
       description: "End-to-end product design for a scientific data laboratory",
