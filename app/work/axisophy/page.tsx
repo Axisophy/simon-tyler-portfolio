@@ -17,7 +17,7 @@ export default function AxisophyProject() {
   ];
 
   const heroSlides = [
-    { src: "/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg", caption: "Sacks Spiral print" }
+    { src: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg", caption: "Geological Timescale print" }
   ];
 
   const collections = [
@@ -70,13 +70,14 @@ export default function AxisophyProject() {
 
         <ImageSlideshow slides={heroSlides} />
 
-        <ImageRow
-          images={[
-            { src: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg", alt: "Geological Timescale print" },
-            { src: "/images/axisophy/Axisophy-Aves-Mono-PhylogeneticTree-mockup-1-flat-mono.jpg", alt: "Phylogenetic Tree print" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg" alt="Sacks Spiral print" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/Axisophy-Aves-Mono-PhylogeneticTree-mockup-1-flat-mono.jpg" alt="Phylogenetic Tree print" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Collections */}
         <section className="mb-px">
@@ -94,13 +95,14 @@ export default function AxisophyProject() {
           </div>
         </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/axisophy/Axisophy-mars-aram-chaos-V3_mockup-flat-crop.jpg", alt: "Mars Aram Chaos print" },
-            { src: "/images/axisophy/Axisophy-european-peacock-butterfly-mockup-1-2800px.jpg", alt: "European Peacock Butterfly print" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/Axisophy-mars-aram-chaos-V3_mockup-flat-crop.jpg" alt="Mars Aram Chaos print" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/Axisophy-european-peacock-butterfly-mockup-1-2800px.jpg" alt="European Peacock Butterfly print" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Technical Approach */}
         <section className="mb-px">
@@ -142,13 +144,14 @@ export default function AxisophyProject() {
           </div>
         </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/axisophy/PhasePortrait_003p1.jpg", alt: "Phase Portrait print" },
-            { src: "/images/axisophy/Axisophy-Canon-XL1_mockup-1-flat-crop.jpg", alt: "Canon XL1 print" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/PhasePortrait_003p1.jpg" alt="Phase Portrait print" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/axisophy/Axisophy-Canon-XL1_mockup-1-flat-crop.jpg" alt="Canon XL1 print" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         <ContentSection title="Production">
           <p>

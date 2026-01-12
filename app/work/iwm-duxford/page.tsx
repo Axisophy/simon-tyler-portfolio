@@ -42,13 +42,14 @@ export default function IWMDuxfordProject() {
 
         <ImageSlideshow slides={heroSlides} />
 
-        <ImageRow
-          images={[
-            { src: "/images/IWM-duxford/Duxford2.jpeg", alt: "Duxford signage" },
-            { src: "/images/IWM-duxford/Duxford3.webp", alt: "Duxford signage" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford2.jpeg" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford3.webp" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         <ContentSection title="The Work">
           <div className="space-y-4">
@@ -61,36 +62,38 @@ export default function IWMDuxfordProject() {
           </div>
         </ContentSection>
 
-        <ImageRow
-          images={[
-            { src: "/images/IWM-duxford/Duxford4.webp", alt: "Duxford signage" },
-            { src: "/images/IWM-duxford/Duxford5.jpeg", alt: "Duxford signage" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford4.webp" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford5.jpeg" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/IWM-duxford/Duxford6.jpg", alt: "Duxford signage" },
-            { src: "/images/IWM-duxford/Duxford7.webp", alt: "Duxford signage" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford6.jpg" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford7.webp" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/IWM-duxford/Duxford8.webp", alt: "Duxford signage" },
-            { src: "/images/IWM-duxford/Duxford9.jpg", alt: "Duxford signage" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford8.webp" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford9.jpg" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
-        <ImageRow
-          images={[
-            { src: "/images/IWM-duxford/Duxford10.webp", alt: "Duxford signage" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/IWM-duxford/Duxford10.webp" alt="Duxford signage" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         <section className="mt-16 mb-12">
           <Link

@@ -36,14 +36,13 @@ export default function GizmoProject() {
         />
 
         {/* Book cover */}
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
             <img
               src="/images/gizmo/Gizmo4.3 front.jpeg"
               alt="Gizmo - book cover"
               className="rounded-lg h-auto max-w-full"
             />
-            <p className="font-mono text-xs text-black/50 mt-3">Gizmo - book cover</p>
           </div>
         </section>
 
@@ -62,30 +61,30 @@ export default function GizmoProject() {
         </ContentSection>
 
         {/* Book spreads */}
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-02.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-03.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-02.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-03.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-04.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-05.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-04.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-05.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-06.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-07.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-06.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-07.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
@@ -110,34 +109,34 @@ export default function GizmoProject() {
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-08.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-09.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-08.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-09.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-10.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-11.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-10.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-11.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
-            <div className="flex flex-wrap gap-4">
-              <img src="/images/gizmo/gizmo-12.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-              <img src="/images/gizmo/gizmo-13.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-            </div>
+            <img src="/images/gizmo/gizmo-12.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-13.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 
-        <section className="mb-px">
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
           <div className="frame p-4 md:p-6">
             <img src="/images/gizmo/gizmo-14.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>

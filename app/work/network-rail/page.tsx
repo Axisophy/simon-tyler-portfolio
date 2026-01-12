@@ -73,13 +73,14 @@ export default function NetworkRailProject() {
 
         <CardGrid title="Design Criteria" cards={designCriteria} columns={2} />
 
-        <ImageRow
-          images={[
-            { src: "/images/network-rail/pictograms1.jpg", alt: "Pictogram set 1" },
-            { src: "/images/network-rail/pictograms2.jpg", alt: "Pictogram set 2" }
-          ]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/network-rail/pictograms1.jpg" alt="Pictogram set 1" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/network-rail/pictograms2.jpg" alt="Pictogram set 2" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         {/* Design System */}
         <section className="mb-px">
@@ -102,10 +103,11 @@ export default function NetworkRailProject() {
           </div>
         </section>
 
-        <ImageRow
-          images={[{ src: "/images/network-rail/pictograms3.jpg", alt: "Pictograms in context" }]}
-         
-        />
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/network-rail/pictograms3.jpg" alt="Pictograms in context" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         <ContentSection title="Stakeholder Feedback">
           <p>
