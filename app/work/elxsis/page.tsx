@@ -68,14 +68,14 @@ export default function ElxsisProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} height={400} />
+        <ImageSlideshow slides={heroSlides} />
 
         <ImageRow
           images={[
             { src: "/images/elxsis/FinalLorenz200.png", alt: "Lorenz attractor variation 1" },
             { src: "/images/elxsis/FinalLorenz400.png", alt: "Lorenz attractor variation 2" }
           ]}
-          height={300}
+         
         />
 
         {/* Selected Work */}
@@ -96,7 +96,7 @@ export default function ElxsisProject() {
 
         <ImageRow
           images={[{ src: "/images/elxsis/gaia_hr_setC_full_hex_full_hex_wide_2400x1350.webp", alt: "Gaia star catalog - wide view" }]}
-          height={350}
+         
         />
 
         <ImageRow
@@ -104,7 +104,7 @@ export default function ElxsisProject() {
             { src: "/images/elxsis/gaia_points_full_square_2000x2000.png", alt: "Gaia star catalog points" },
             { src: "/images/elxsis/elxsis_hydrogen_5pz_4096px_20251226_181325.png", alt: "Hydrogen orbital visualization" }
           ]}
-          height={300}
+         
         />
 
         {/* Technical Approach */}
@@ -148,7 +148,7 @@ export default function ElxsisProject() {
             { src: "/images/elxsis/Weyl-coxeter_plot_17_30inch_0p2mm__E8_rnd_s0_d_anti_all_ec-ang_g2.3_tw0_rings0_keep1_762x762mm_300dpi.webp", alt: "Weyl-Coxeter E8 visualization" },
             { src: "/images/elxsis/WeylSymmetries-002p2-coxeter_plot_16_white_50inch_1mm__E8_rnd_s0_d_anti_all_ec-ang_g0.2_tw0_rings0_keep1_762x762mm_300dpi.webp", alt: "Weyl symmetries E8" }
           ]}
-          height={300}
+         
         />
 
         <ImageRow
@@ -156,7 +156,7 @@ export default function ElxsisProject() {
             { src: "/images/elxsis/elxsis_complex_Ripple_20251222_151640.png", alt: "Complex function - Ripple" },
             { src: "/images/elxsis/elxsis_complex_sinz²_20251222_151314.png", alt: "Complex function - sin(z squared)" }
           ]}
-          height={300}
+         
         />
 
         <ImageRow
@@ -164,7 +164,7 @@ export default function ElxsisProject() {
             { src: "/images/elxsis/elxsis_complex_Swirl_20251222_151426.png", alt: "Complex function - Swirl" },
             { src: "/images/elxsis/elxsis_complex_Vortex_20251222_151524.png", alt: "Complex function - Vortex" }
           ]}
-          height={300}
+         
         />
 
         {/* Back Link */}

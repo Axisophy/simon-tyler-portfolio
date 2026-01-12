@@ -69,7 +69,7 @@ export default function NetworkRailProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} height={400} />
+        <ImageSlideshow slides={heroSlides} />
 
         <CardGrid title="Design Criteria" cards={designCriteria} columns={2} />
 
@@ -78,7 +78,7 @@ export default function NetworkRailProject() {
             { src: "/images/network-rail/pictograms1.jpg", alt: "Pictogram set 1" },
             { src: "/images/network-rail/pictograms2.jpg", alt: "Pictogram set 2" }
           ]}
-          height={300}
+         
         />
 
         {/* Design System */}
@@ -104,7 +104,7 @@ export default function NetworkRailProject() {
 
         <ImageRow
           images={[{ src: "/images/network-rail/pictograms3.jpg", alt: "Pictograms in context" }]}
-          height={350}
+         
         />
 
         <ContentSection title="Stakeholder Feedback">

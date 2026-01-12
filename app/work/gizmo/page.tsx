@@ -37,17 +37,13 @@ export default function GizmoProject() {
 
         {/* Book cover */}
         <section className="mb-px">
-          <div className="frame overflow-hidden w-fit">
+          <div className="frame p-4 md:p-6">
             <img
               src="/images/gizmo/Gizmo4.3 front.jpeg"
               alt="Gizmo - book cover"
-              className="h-[400px] w-auto block"
+              className="rounded-lg h-auto max-w-full"
             />
-          </div>
-        </section>
-        <section className="mb-px">
-          <div className="frame px-4 py-3 w-fit">
-            <p className="font-mono text-xs text-black/50">Gizmo - book cover</p>
+            <p className="font-mono text-xs text-black/50 mt-3">Gizmo - book cover</p>
           </div>
         </section>
 
@@ -65,59 +61,30 @@ export default function GizmoProject() {
           </div>
         </ContentSection>
 
+        {/* Book spreads */}
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-02.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-03.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-02.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-03.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-04.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-05.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-04.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-05.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-06.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-07.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-06.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-07.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
@@ -144,69 +111,35 @@ export default function GizmoProject() {
         </section>
 
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-08.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-09.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-08.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-09.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-10.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-11.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-10.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-11.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="flex flex-wrap gap-px">
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-12.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
-            </div>
-            <div className="frame overflow-hidden w-fit">
-              <img
-                src="/images/gizmo/gizmo-13.png"
-                alt="Gizmo spread"
-                className="h-[300px] w-auto block"
-              />
+          <div className="frame p-4 md:p-6">
+            <div className="flex flex-wrap gap-4">
+              <img src="/images/gizmo/gizmo-12.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
+              <img src="/images/gizmo/gizmo-13.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
             </div>
           </div>
         </section>
 
         <section className="mb-px">
-          <div className="frame overflow-hidden w-fit">
-            <img
-              src="/images/gizmo/gizmo-14.png"
-              alt="Gizmo spread"
-              className="h-[300px] w-auto block"
-            />
+          <div className="frame p-4 md:p-6">
+            <img src="/images/gizmo/gizmo-14.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
           </div>
         </section>
 

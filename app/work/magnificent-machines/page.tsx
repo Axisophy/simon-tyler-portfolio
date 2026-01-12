@@ -37,7 +37,7 @@ export default function MagnificentMachinesProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} height={400} placeholder="Magnificent Machines book cover" />
+        <ImageSlideshow slides={heroSlides} placeholder="Magnificent Machines book cover" />
 
         <ContentSection title="The Book">
           <p>

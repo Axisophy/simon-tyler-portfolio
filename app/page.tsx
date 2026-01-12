@@ -67,15 +67,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - shrink to fit */}
-              <Link href="/work/mxwll" className="block">
-                <div className="frame-dark overflow-hidden w-fit">
-                  <img
-                    src="/images/maxwell/hero.jpg"
-                    alt="Mxwll - a digital laboratory for science"
-                    className="h-[450px] w-auto block"
-                  />
-                </div>
+              {/* Image Frame */}
+              <Link href="/work/mxwll" className="frame p-4 md:p-6">
+                <img
+                  src="/images/maxwell/hero.jpg"
+                  alt="Mxwll - a digital laboratory for science"
+                  className="rounded-lg h-auto max-w-full"
+                />
               </Link>
             </div>
 
@@ -107,15 +105,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - shrink to fit */}
-              <Link href="/work/elxsis" className="block">
-                <div className="frame-dark overflow-hidden w-fit">
-                  <img
-                    src="/images/elxsis/FinalLorenz1.png"
-                    alt="Elxsis - Lorenz attractor visualization"
-                    className="h-[450px] w-auto block"
-                  />
-                </div>
+              {/* Image Frame */}
+              <Link href="/work/elxsis" className="frame p-4 md:p-6">
+                <img
+                  src="/images/elxsis/FinalLorenz1.png"
+                  alt="Elxsis - Lorenz attractor visualization"
+                  className="rounded-lg h-auto max-w-full"
+                />
               </Link>
             </div>
 
@@ -145,15 +141,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - shrink to fit */}
-              <Link href="/work/network-rail" className="block">
-                <div className="frame-dark overflow-hidden w-fit">
-                  <img
-                    src="/images/network-rail/hero1.jpg"
-                    alt="Network Rail Pictogram System"
-                    className="h-[450px] w-auto block"
-                  />
-                </div>
+              {/* Image Frame */}
+              <Link href="/work/network-rail" className="frame p-4 md:p-6">
+                <img
+                  src="/images/network-rail/hero1.jpg"
+                  alt="Network Rail Pictogram System"
+                  className="rounded-lg h-auto max-w-full"
+                />
               </Link>
             </div>
 
@@ -186,15 +180,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - shrink to fit */}
-              <Link href="/work/axisophy" className="block">
-                <div className="frame-dark overflow-hidden w-fit">
-                  <img
-                    src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
-                    alt="Axisophy - Sacks Spiral print"
-                    className="h-[450px] w-auto block"
-                  />
-                </div>
+              {/* Image Frame */}
+              <Link href="/work/axisophy" className="frame p-4 md:p-6">
+                <img
+                  src="/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
+                  alt="Axisophy - Sacks Spiral print"
+                  className="rounded-lg h-auto max-w-full"
+                />
               </Link>
             </div>
 
@@ -224,15 +216,13 @@ export default function Home() {
                 </div>
               </Link>
 
-              {/* Image Frame - white bg for book cover, shrink to fit */}
-              <Link href="/work/gizmo" className="block">
-                <div className="frame overflow-hidden w-fit">
-                  <img
-                    src="/images/gizmo/Gizmo4.3 front.jpeg"
-                    alt="Gizmo - book cover"
-                    className="h-[450px] w-auto block"
-                  />
-                </div>
+              {/* Image Frame */}
+              <Link href="/work/gizmo" className="frame p-4 md:p-6">
+                <img
+                  src="/images/gizmo/Gizmo4.3 front.jpeg"
+                  alt="Gizmo - book cover"
+                  className="rounded-lg h-auto max-w-full"
+                />
               </Link>
             </div>
           </div>

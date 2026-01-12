@@ -6,32 +6,31 @@ interface ImageItem {
 
 interface ImageRowProps {
   images: ImageItem[];
-  height?: number;
 }
 
-export default function ImageRow({ images, height = 300 }: ImageRowProps) {
+export default function ImageRow({ images }: ImageRowProps) {
   return (
     <section className="mb-px">
-      <div className="flex flex-wrap gap-px">
-        {images.map((image, index) => (
-          <div key={index} className="frame-dark overflow-hidden w-fit">
-            {image.src ? (
+      <div className="frame p-4 md:p-6">
+        <div className="flex flex-wrap gap-4">
+          {images.map((image, index) => (
+            image.src ? (
               <img
+                key={index}
                 src={image.src}
                 alt={image.alt}
-                className="block"
-                style={{ height: `${height}px`, width: 'auto' }}
+                className="rounded-lg h-auto max-w-full"
               />
             ) : (
               <div
-                className="flex items-center justify-center bg-white/5"
-                style={{ height: `${height}px`, width: '400px' }}
+                key={index}
+                className="flex items-center justify-center bg-black/5 rounded-lg h-[200px] w-[300px]"
               >
-                <p className="font-mono text-xs text-white/30">{image.placeholder || image.alt}</p>
+                <p className="font-mono text-xs text-black/30">{image.placeholder || image.alt}</p>
               </div>
-            )}
-          </div>
-        ))}
+            )
+          ))}
+        </div>
       </div>
     </section>
   );

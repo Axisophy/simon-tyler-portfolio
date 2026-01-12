@@ -37,7 +37,7 @@ export default function WithABangProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} height={400} placeholder="With a Bang hero image" />
+        <ImageSlideshow slides={heroSlides} placeholder="With a Bang hero image" />
 
         <ContentSection title="The Work">
           <div className="space-y-4">

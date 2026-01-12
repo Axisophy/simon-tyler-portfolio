@@ -158,16 +158,14 @@ export default function Work() {
                   </div>
                 </Link>
 
-                {/* Image Frame - shrink to fit */}
+                {/* Image Frame */}
                 {project.image && (
-                  <Link href={`/work/${project.slug}`} className="block">
-                    <div className={`${project.useWhiteBg ? 'frame' : 'frame-dark'} overflow-hidden w-fit`}>
-                      <img
-                        src={project.image}
-                        alt={project.title}
-                        className="h-[300px] w-auto block"
-                      />
-                    </div>
+                  <Link href={`/work/${project.slug}`} className="frame p-4 md:p-6">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="rounded-lg h-auto max-w-full"
+                    />
                   </Link>
                 )}
               </div>
