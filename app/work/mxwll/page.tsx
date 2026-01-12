@@ -1,26 +1,24 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import {
+  CaseStudyHero,
+  CaseStudyMeta,
+  ImageSlideshow,
+  ContentSection,
+  ImageRow
+} from "../../components/case-study";
 
 export default function MxwllProject() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Slideshow images - add more here later
-  const slides = [
-    { src: "/images/maxwell/hero.jpg", caption: "Mxwll platform overview" },
+  const metaItems = [
+    { label: "Role", value: "Founder, Creative Director, Lead Product Developer" },
+    { label: "Dates", value: "2025—2026" },
+    { label: "Link", value: "mxwll.io", href: "https://mxwll.io" }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  const heroSlides = [
+    { src: "/images/maxwell/hero.jpg", caption: "Mxwll platform overview" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -29,246 +27,146 @@ export default function MxwllProject() {
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
 
-        {/* 1. Title/Info Section - Single white frame */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-12">
-            {/* Title */}
-            <h1 className="text-5xl md:text-6xl font-bold text-black font-display mb-8">
-              Mxwll
-            </h1>
+        <CaseStudyHero
+          title="Mxwll"
+          tagline="The quality layer for science — design-led real-time data for curious people."
+        />
 
-            {/* Project Meta */}
-            <div className="flex flex-wrap gap-8 md:gap-16 mb-10">
-              <div>
-                <span className="font-mono text-xs text-black/40 block mb-1">Role</span>
-                <span className="text-black font-medium">Founder, Creative Director, Lead Product Developer</span>
-              </div>
-              <div>
-                <span className="font-mono text-xs text-black/40 block mb-1">Dates</span>
-                <span className="text-black font-medium">2025—2026</span>
-              </div>
-              <div>
-                <span className="font-mono text-xs text-black/40 block mb-1">Link</span>
-                <a href="https://mxwll.io" target="_blank" rel="noopener" className="text-pink-500 hover:opacity-70 transition-opacity font-medium">
-                  mxwll.io →
-                </a>
-              </div>
+        <CaseStudyMeta items={metaItems} />
+
+        <ImageSlideshow slides={heroSlides} aspectRatio="wide" />
+
+        <ContentSection title="Overview">
+          <p>
+            Mxwll is the quality layer for science - a design-led real-time data platform and digital publication presenting scientific information with the care usually reserved for luxury products or art books.
+          </p>
+        </ContentSection>
+
+        <ContentSection title="The Problem">
+          <div className="space-y-4">
+            <p>
+              All the science is already out there. NASA publishes live solar imagery. NOAA streams space weather data. USGS tracks every earthquake in real time. Thousands of papers are published daily.
+            </p>
+            <p>
+              But accessing it means navigating government websites designed in 2003, paywalled journals with hostile interfaces, and PDFs that haven't been touched since digitisation. The raw material of science is abundant and largely free. What's missing is the presentation layer - the curation, design, and craft that makes it accessible, beautiful, and trustworthy.
+            </p>
+            <p className="font-semibold text-black">
+              Mxwll is that presentation layer.
+            </p>
+          </div>
+        </ContentSection>
+
+        <ContentSection title="The Model">
+          <div className="space-y-4">
+            <p>
+              The underlying content is often free. What people value is someone with good judgment deciding what matters, beautiful and functional presentation, and a reliable place to return to.
+            </p>
+            <p>
+              This is the same model that made Flightradar24 (acquired for $1B+ despite presenting public flight data), the Criterion Collection (licensing films anyone can access), and earth.nullschool.net (public weather data made mesmerising).
+            </p>
+            <p className="font-semibold text-black">
+              Mxwll applies this model to science. Taste + presentation + trust = value.
+            </p>
+          </div>
+        </ContentSection>
+
+        <ImageRow
+          images={[{ alt: "Platform screenshots", placeholder: "Platform screenshots" }]}
+          aspectRatio="wide"
+        />
+
+        {/* Combined What I Built section */}
+        <section className="mb-px">
+          <div className="frame p-8 md:p-10">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-8 font-display">What I Built</h2>
+
+            {/* Observe */}
+            <div className="mb-10">
+              <h3 className="text-lg font-semibold text-pink-500 mb-4">Observe</h3>
+              <p className="text-base text-black/80 leading-relaxed mb-4">
+                Real-time feeds from NASA, NOAA, weather satellites, seismology networks, and particle physics experiments. 40+ widgets across space, earth, life, infrastructure, and detectors:
+              </p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-black/70 text-sm">
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Solar observatory with multi-wavelength disc viewers (SDO, SOHO, STEREO)</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Live earthquake mapping and seismograph grid</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Space station tracking with crew data</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>LHC beam status and luminosity</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Gravitational wave detector status (LIGO/Virgo)</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Neutrino event alerts from IceCube at the South Pole</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Cosmic ray monitoring</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>UK energy generation mix and carbon intensity</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Global fire and lightning detection</li>
+              </ul>
             </div>
 
-            {/* Overview */}
+            {/* Orbital Platform */}
+            <div className="mb-10">
+              <h3 className="text-lg font-semibold text-pink-500 mb-4">Orbital Platform</h3>
+              <p className="text-base text-black/80 leading-relaxed mb-4">
+                Multi-scale visualisation engine for everything from LEO satellites to Voyager at the edge of the solar system:
+              </p>
+              <ul className="space-y-2 text-black/70 text-sm">
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Sun-Earth-Moon orrery using VSOP87 planetary positions</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Real-time Voyager 1 & 2 tracking at 20+ billion km using JPL Horizons ephemeris</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Live ISS/Tiangong tracking with TLE/SGP4 propagation</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Comet trajectories using Keplerian orbital mechanics</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Near-Earth asteroid close approach calendar</li>
+              </ul>
+            </div>
+
+            {/* Data Visualisation */}
+            <div className="mb-10">
+              <h3 className="text-lg font-semibold text-pink-500 mb-4">Data Visualisation</h3>
+              <p className="text-base text-black/80 leading-relaxed mb-4">
+                Complex scientific datasets rendered as clear, interactive charts:
+              </p>
+              <ul className="space-y-2 text-black/70 text-sm">
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Climate data spanning decades with 38 datasets</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Chart of nuclides - every known isotope plotted by decay type and half-life</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Electromagnetic spectrum spanning 19 orders of magnitude</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Standard Model of particle physics</li>
+                <li className="flex gap-3"><span className="text-pink-500">•</span>Periodic table with trend visualisation and element exploration</li>
+              </ul>
+            </div>
+
+            {/* Vault */}
+            <div className="mb-10">
+              <h3 className="text-lg font-semibold text-pink-500 mb-4">Vault</h3>
+              <p className="text-base text-black/80 leading-relaxed">
+                Curated scientific library presenting foundational texts with editorial context and typographic care. Classic papers and landmark discoveries, reformatted for modern reading.
+              </p>
+            </div>
+
+            {/* Play */}
             <div>
-              <h2 className="font-mono text-xs text-black/40 mb-3">Overview</h2>
-              <p className="text-lg md:text-xl text-black/80 leading-relaxed max-w-4xl">
-                Mxwll is the quality layer for science - a design-led real-time data platform and digital publication presenting scientific information with the care usually reserved for luxury products or art books.
+              <h3 className="text-lg font-semibold text-pink-500 mb-4">Play</h3>
+              <p className="text-base text-black/80 leading-relaxed">
+                15+ interactive mathematical visualisations: strange attractors (Lorenz, Rössler, Aizawa), fractals, cellular automata, pattern formation systems. Mathematical beauty as exploration.
               </p>
             </div>
           </div>
         </section>
 
-        {/* 2. Image Slideshow Section */}
-        <section className="mb-px">
-          <div className="frame-dark rounded-lg overflow-hidden">
-            {/* Slideshow Container */}
-            <div className="relative aspect-[21/9]">
-              <Image
-                src={slides[currentSlide].src}
-                alt={slides[currentSlide].caption}
-                fill
-                className="object-cover"
-              />
+        <ImageRow
+          images={[
+            { alt: "Observe widgets", placeholder: "Observe widgets" },
+            { alt: "Observe widgets", placeholder: "Observe widgets" }
+          ]}
+          aspectRatio="video"
+        />
 
-              {/* Navigation arrows - only show if multiple slides */}
-              {slides.length > 1 && (
-                <>
-                  <button
-                    onClick={prevSlide}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors"
-                  >
-                    ←
-                  </button>
-                  <button
-                    onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors"
-                  >
-                    →
-                  </button>
-                </>
-              )}
-            </div>
+        <ImageRow
+          images={[{ alt: "Orbital platform", placeholder: "Orbital platform" }]}
+          aspectRatio="wide"
+        />
 
-            {/* Caption */}
-            <div className="px-4 py-3 flex items-center justify-between">
-              <p className="font-mono text-xs text-white/50">{slides[currentSlide].caption}</p>
-              {slides.length > 1 && (
-                <p className="font-mono text-xs text-white/30">{currentSlide + 1} / {slides.length}</p>
-              )}
-            </div>
-          </div>
-        </section>
-
-        {/* 3. Content Sections - All full width */}
-
-        {/* The Problem */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">The Problem</h2>
-            <div className="space-y-4 text-lg text-black/80 leading-relaxed max-w-4xl">
-              <p>
-                All the science is already out there. NASA publishes live solar imagery. NOAA streams space weather data. USGS tracks every earthquake in real time. Thousands of papers are published daily.
-              </p>
-              <p>
-                But accessing it means navigating government websites designed in 2003, paywalled journals with hostile interfaces, and PDFs that haven't been touched since digitisation. The raw material of science is abundant and largely free. What's missing is the presentation layer - the curation, design, and craft that makes it accessible, beautiful, and trustworthy.
-              </p>
-              <p className="text-black font-semibold">
-                Mxwll is that presentation layer.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* The Model */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">The Model</h2>
-            <div className="space-y-4 text-lg text-black/80 leading-relaxed max-w-4xl">
-              <p>
-                The underlying content is often free. What people value is someone with good judgment deciding what matters, beautiful and functional presentation, and a reliable place to return to.
-              </p>
-              <p>
-                This is the same model that made Flightradar24 (acquired for $1B+ despite presenting public flight data), the Criterion Collection (licensing films anyone can access), and earth.nullschool.net (public weather data made mesmerising).
-              </p>
-              <p className="text-black font-semibold">
-                Mxwll applies this model to science. Taste + presentation + trust = value.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Image placeholder */}
-        <section className="mb-px">
-          <div className="frame-dark aspect-[21/9] rounded-lg flex items-center justify-center">
-            <p className="font-mono text-xs text-white/30">Platform screenshots</p>
-          </div>
-        </section>
-
-        {/* What I Built: Observe */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-2 font-display">What I Built</h2>
-            <h3 className="text-lg font-semibold text-pink-500 mb-4">Observe</h3>
-            <p className="text-lg text-black/80 leading-relaxed mb-6 max-w-4xl">
-              Real-time feeds from NASA, NOAA, weather satellites, seismology networks, and particle physics experiments. 40+ widgets across space, earth, life, infrastructure, and detectors:
-            </p>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-black/70">
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Solar observatory with multi-wavelength disc viewers (SDO, SOHO, STEREO)</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Live earthquake mapping and seismograph grid</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Space station tracking with crew data</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>LHC beam status and luminosity</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Gravitational wave detector status (LIGO/Virgo)</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Neutrino event alerts from IceCube at the South Pole</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Cosmic ray monitoring</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>UK energy generation mix and carbon intensity</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Global fire and lightning detection</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Image placeholder - Observe */}
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Observe widgets</p>
-            </div>
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Observe widgets</p>
-            </div>
-          </div>
-        </section>
-
-        {/* What I Built: Orbital Platform */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h3 className="text-lg font-semibold text-pink-500 mb-4">Orbital Platform</h3>
-            <p className="text-lg text-black/80 leading-relaxed mb-6 max-w-4xl">
-              Multi-scale visualisation engine for everything from LEO satellites to Voyager at the edge of the solar system:
-            </p>
-            <ul className="space-y-2 text-black/70 max-w-4xl">
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Sun-Earth-Moon orrery using VSOP87 planetary positions</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Real-time Voyager 1 & 2 tracking at 20+ billion km using JPL Horizons ephemeris</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Live ISS/Tiangong tracking with TLE/SGP4 propagation</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Comet trajectories using Keplerian orbital mechanics</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Near-Earth asteroid close approach calendar</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Image placeholder - Orbital */}
-        <section className="mb-px">
-          <div className="frame-dark aspect-[21/9] rounded-lg flex items-center justify-center">
-            <p className="font-mono text-xs text-white/30">Orbital platform</p>
-          </div>
-        </section>
-
-        {/* What I Built: Data Visualisation */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h3 className="text-lg font-semibold text-pink-500 mb-4">Data Visualisation</h3>
-            <p className="text-lg text-black/80 leading-relaxed mb-6 max-w-4xl">
-              Complex scientific datasets rendered as clear, interactive charts:
-            </p>
-            <ul className="space-y-2 text-black/70 max-w-4xl">
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Climate data spanning decades with 38 datasets</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Chart of nuclides - every known isotope plotted by decay type and half-life</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Electromagnetic spectrum spanning 19 orders of magnitude</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Standard Model of particle physics</li>
-              <li className="flex gap-3"><span className="text-pink-500">•</span>Periodic table with trend visualisation and element exploration</li>
-            </ul>
-          </div>
-        </section>
-
-        {/* Image placeholder - Data Vis */}
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Data visualisation</p>
-            </div>
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Data visualisation</p>
-            </div>
-          </div>
-        </section>
-
-        {/* What I Built: Vault */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h3 className="text-lg font-semibold text-pink-500 mb-4">Vault</h3>
-            <p className="text-lg text-black/80 leading-relaxed max-w-4xl">
-              Curated scientific library presenting foundational texts with editorial context and typographic care. Classic papers and landmark discoveries, reformatted for modern reading.
-            </p>
-          </div>
-        </section>
-
-        {/* What I Built: Play */}
-        <section className="mb-px">
-          <div className="frame p-8 md:p-10">
-            <h3 className="text-lg font-semibold text-pink-500 mb-4">Play</h3>
-            <p className="text-lg text-black/80 leading-relaxed max-w-4xl">
-              15+ interactive mathematical visualisations: strange attractors (Lorenz, Rössler, Aizawa), fractals, cellular automata, pattern formation systems. Mathematical beauty as exploration.
-            </p>
-          </div>
-        </section>
-
-        {/* Image placeholder - Vault/Play */}
-        <section className="mb-px">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-px">
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Vault</p>
-            </div>
-            <div className="frame-dark aspect-video rounded-lg flex items-center justify-center">
-              <p className="font-mono text-xs text-white/30">Play</p>
-            </div>
-          </div>
-        </section>
+        <ImageRow
+          images={[
+            { alt: "Data visualisation", placeholder: "Data visualisation" },
+            { alt: "Data visualisation", placeholder: "Data visualisation" }
+          ]}
+          aspectRatio="video"
+        />
 
         {/* Technical Implementation */}
         <section className="mb-px">
@@ -313,7 +211,7 @@ export default function MxwllProject() {
 
             {/* Orbital Mechanics */}
             <h3 className="text-lg font-semibold text-black mb-4">Orbital mechanics:</h3>
-            <ul className="space-y-2 text-black/70 max-w-4xl">
+            <ul className="space-y-2 text-black/70 text-sm">
               <li className="flex gap-3"><span className="text-pink-500">•</span>Floating origin (camera at 0,0,0) to prevent floating-point jitter at planetary scales</li>
               <li className="flex gap-3"><span className="text-pink-500">•</span>Logarithmic depth buffer for LEO to heliocentric scale rendering</li>
               <li className="flex gap-3"><span className="text-pink-500">•</span>Three propagation regimes: SGP4 for Earth-orbiting satellites, Keplerian mechanics for solar system bodies, JPL ephemeris interpolation for spacecraft</li>
@@ -322,23 +220,19 @@ export default function MxwllProject() {
           </div>
         </section>
 
-        {/* Why It Matters */}
-        <section className="mb-16">
-          <div className="frame p-8 md:p-12">
-            <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Why It Matters</h2>
-            <div className="space-y-6 text-lg md:text-xl text-black/80 leading-relaxed max-w-4xl">
-              <p>
-                Science deserves better presentation. The invisible processes that shape our world - stars fusing, particles decaying, plates shifting, data flowing - mostly go unseen. Mxwll builds windows into these processes. Beautiful windows. Trustworthy windows.
-              </p>
-              <p>
-                The differentiator isn't more data or more features. It's design quality, editorial clarity, and the conviction that curious people deserve better than what currently exists.
-              </p>
-            </div>
+        <ContentSection title="Why It Matters">
+          <div className="space-y-4">
+            <p>
+              Science deserves better presentation. The invisible processes that shape our world - stars fusing, particles decaying, plates shifting, data flowing - mostly go unseen. Mxwll builds windows into these processes. Beautiful windows. Trustworthy windows.
+            </p>
+            <p>
+              The differentiator isn't more data or more features. It's design quality, editorial clarity, and the conviction that curious people deserve better than what currently exists.
+            </p>
           </div>
-        </section>
+        </ContentSection>
 
         {/* Back Link */}
-        <section className="mb-12">
+        <section className="mt-16 mb-12">
           <Link
             href="/work"
             className="font-mono text-sm text-white/40 hover:text-pink-500 transition-colors"
