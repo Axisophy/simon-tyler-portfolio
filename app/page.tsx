@@ -55,7 +55,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            {/* Row 1: Maxwell - Full width */}
+            {/* Row 1: Mxwll - Full width */}
             <Link
               href="/work/maxwell"
               className="lg:col-span-3 frame p-6 hover:ring-2 hover:ring-[#3B82F6] transition-all group"
@@ -64,7 +64,7 @@ export default function Home() {
                 <div>
                   <p className="font-mono text-xs text-[#3B82F6] mb-2">01</p>
                   <h2 className="text-2xl md:text-3xl font-medium text-black group-hover:text-[#3B82F6] font-display transition-colors">
-                    Maxwell
+                    Mxwll
                   </h2>
                 </div>
                 <span className="font-mono text-xs text-black/40">2024—25</span>
@@ -79,7 +79,7 @@ export default function Home() {
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
                 End-to-end product design for a scientific data platform. Real-time space station tracking,
-                earthquake monitoring, particle physics visualization, and live astronomical data.
+                earthquake monitoring, particle physics visualisation, and live astronomical data.
               </p>
 
               <div className="flex gap-2 flex-wrap">
@@ -170,7 +170,7 @@ export default function Home() {
               </div>
 
               <p className="text-black/60 text-sm mb-4 leading-relaxed">
-                Data visualization print studio. Mathematical structures, geological timescales, phylogenetic trees,
+                Data visualisation print studio. Mathematical structures, geological timescales, phylogenetic trees,
                 and computational art — transformed into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
               </p>
 
