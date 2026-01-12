@@ -40,44 +40,22 @@ export default function GizmoProject() {
           }
         />
 
-        {/* Book cover - full height with black space to right */}
-        <section className="mb-px">
-          <div className="frame-dark overflow-hidden">
-            <div className="flex">
-              {/* Book cover image - portrait aspect ratio at full frame height */}
-              <div className="relative aspect-[3/4] h-[500px] bg-white flex-shrink-0">
-                <Image
-                  src="/images/gizmo/Gizmo4.3 front.jpeg"
-                  alt="Gizmo - book cover"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              {/* Black space fills the rest */}
-              <div className="flex-1" />
-            </div>
-          </div>
-        </section>
-        {/* Caption frame below, matching book cover width */}
-        <section className="mb-px">
-          <div className="frame" style={{ width: 'calc(500px * 3 / 4)' }}>
-            <div className="px-4 py-3">
-              <p className="font-mono text-xs text-black/50">Gizmo - book cover</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Book spreads */}
+        {/* Book cover - same height as spreads below */}
         <section className="mb-px">
           <div className="frame p-4">
             <div className="relative aspect-[4/3] bg-white">
               <Image
-                src="/images/gizmo/gizmo-01.png"
-                alt="Gizmo spread"
+                src="/images/gizmo/Gizmo4.3 front.jpeg"
+                alt="Gizmo - book cover"
                 fill
                 className="object-contain"
               />
             </div>
+          </div>
+        </section>
+        <section className="mb-px">
+          <div className="frame px-4 py-3">
+            <p className="font-mono text-xs text-black/50">Gizmo - book cover</p>
           </div>
         </section>
 
