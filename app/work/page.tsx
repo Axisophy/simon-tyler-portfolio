@@ -29,6 +29,14 @@ export default function Work() {
       category: "Design Systems"
     },
     {
+      slug: "iwm-duxford",
+      title: "IWM Duxford",
+      year: "2020",
+      description: "Wayfinding and identity signage for the Imperial War Museum's historic Duxford Airfield. At Space Agency.",
+      tags: ["Wayfinding", "Identity", "Signage"],
+      category: "Wayfinding"
+    },
+    {
       slug: "axisophy",
       title: "Axisophy",
       year: "2020—25",
@@ -48,9 +56,49 @@ export default function Work() {
       slug: "gizmo",
       title: "Gizmo",
       year: "2026",
-      description: "Illustrated survey of retro technology, published by Laurence King",
+      description: "A comprehensive illustrated survey of retro technology - the gadgets we loved and lost. Published by Laurence King.",
       tags: ["Book", "Illustration", "Design", "Writing"],
-      category: "Publishing"
+      category: "Books"
+    },
+    {
+      slug: "bugs",
+      title: "Bugs",
+      year: "2017",
+      description: "Illustrated compendium of 50+ insects with bold graphic illustrations. Published by Pavilion.",
+      tags: ["Book", "Illustration", "Writing"],
+      category: "Books"
+    },
+    {
+      slug: "adventures-in-space",
+      title: "Adventures in Space",
+      year: "2018",
+      description: "Illustrated guide to space exploration and astronomy. Published by Pavilion.",
+      tags: ["Book", "Illustration", "Writing"],
+      category: "Books"
+    },
+    {
+      slug: "adventures-on-earth",
+      title: "Adventures on Earth",
+      year: "2019",
+      description: "Exploration of Earth's extreme environments - polar regions, volcanoes, mountains, oceans, deserts. Published by Pavilion.",
+      tags: ["Book", "Illustration", "Writing"],
+      category: "Books"
+    },
+    {
+      slug: "emergency-vehicles",
+      title: "Emergency Vehicles",
+      year: "2020",
+      description: "Technical illustrations of emergency vehicles from around the world. Published by Faber & Faber.",
+      tags: ["Book", "Illustration", "Writing"],
+      category: "Books"
+    },
+    {
+      slug: "magnificent-machines",
+      title: "The World's Most Magnificent Machines",
+      year: "2020",
+      description: "Illustrations for David Long's book on 32 magnificent machines from history. Published by Faber & Faber.",
+      tags: ["Book", "Illustration"],
+      category: "Books"
     },
   ];
 
