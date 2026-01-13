@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
         {/* Contact Header */}
         <section className="pt-[100px] mb-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 font-display">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6 font-display">
             Get in Touch
           </h1>
           <p className="text-lg text-white/60 max-w-2xl mb-8">
