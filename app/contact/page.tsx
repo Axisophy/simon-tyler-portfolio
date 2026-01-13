@@ -1,5 +1,20 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Simon Tyler for design roles, product design, design systems, and data visualisation opportunities.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/contact"
+  },
+  openGraph: {
+    title: "Contact | Simon Tyler",
+    description: "Get in touch with Simon Tyler for design roles, product design, design systems, and data visualisation opportunities.",
+    url: "https://simontyler.co.uk/contact",
+    type: "website"
+  }
+};
 
 export default function Contact() {
   return (

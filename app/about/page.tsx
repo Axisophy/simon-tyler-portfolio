@@ -1,5 +1,20 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK, working across data visualisation, product design, and computational art.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/about"
+  },
+  openGraph: {
+    title: "About | Simon Tyler",
+    description: "Simon Tyler is a creative director, designer, illustrator, author, and artist based in the UK, working across data visualisation, product design, and computational art.",
+    url: "https://simontyler.co.uk/about",
+    type: "website"
+  }
+};
 
 export default function About() {
   return (

@@ -8,6 +8,22 @@ import {
   ContentSection,
   ImageRow
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Axisophy",
+  description: "Data visualisation print studio producing museum-quality art prints from mathematical structures, geological timescales, and phylogenetic trees.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/axisophy"
+  },
+  openGraph: {
+    title: "Axisophy | Simon Tyler",
+    description: "Data visualisation print studio producing museum-quality art prints from mathematical structures, geological timescales, and phylogenetic trees.",
+    url: "https://simontyler.co.uk/work/axisophy",
+    type: "article",
+    images: [{ url: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg" }]
+  }
+};
 
 export default function AxisophyProject() {
   const metaItems = [

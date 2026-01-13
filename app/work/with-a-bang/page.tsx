@@ -7,6 +7,21 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "With a Bang",
+  description: "Design-led textiles and homewares business featuring bold graphic patterns and contemporary design.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/with-a-bang"
+  },
+  openGraph: {
+    title: "With a Bang | Simon Tyler",
+    description: "Design-led textiles and homewares business featuring bold graphic patterns and contemporary design.",
+    url: "https://simontyler.co.uk/work/with-a-bang",
+    type: "article"
+  }
+};
 
 export default function WithABangProject() {
   const metaItems = [

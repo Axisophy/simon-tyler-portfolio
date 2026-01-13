@@ -8,6 +8,22 @@ import {
   ContentSection,
   ImageRow
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mxwll",
+  description: "Mxwll is a design-led real-time scientific data platform featuring space station tracking, earthquake monitoring, and particle physics visualisation.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/mxwll"
+  },
+  openGraph: {
+    title: "Mxwll | Simon Tyler",
+    description: "Mxwll is a design-led real-time scientific data platform featuring space station tracking, earthquake monitoring, and particle physics visualisation.",
+    url: "https://simontyler.co.uk/work/mxwll",
+    type: "article",
+    images: [{ url: "/images/maxwell/hero.jpg" }]
+  }
+};
 
 export default function MxwllProject() {
   const metaItems = [

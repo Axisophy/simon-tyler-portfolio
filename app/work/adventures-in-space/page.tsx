@@ -7,6 +7,22 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Adventures in Space",
+  description: "Adventures in Space is an illustrated guide to space exploration and astronomy, from Earth orbit to the edge of the observable universe. Published by Pavilion.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/adventures-in-space"
+  },
+  openGraph: {
+    title: "Adventures in Space | Simon Tyler",
+    description: "Adventures in Space is an illustrated guide to space exploration and astronomy, from Earth orbit to the edge of the observable universe. Published by Pavilion.",
+    url: "https://simontyler.co.uk/work/adventures-in-space",
+    type: "article",
+    images: [{ url: "/images/adventuresinspace/space-cover.jpg" }]
+  }
+};
 
 export default function AdventuresInSpaceProject() {
   const metaItems = [

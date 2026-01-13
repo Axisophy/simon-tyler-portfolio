@@ -1,6 +1,21 @@
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Selected Work",
+  description: "Portfolio of design work by Simon Tyler spanning digital product design, data visualisation, design systems, wayfinding, and illustrated books.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work"
+  },
+  openGraph: {
+    title: "Selected Work | Simon Tyler",
+    description: "Portfolio of design work by Simon Tyler spanning digital product design, data visualisation, design systems, wayfinding, and illustrated books.",
+    url: "https://simontyler.co.uk/work",
+    type: "website"
+  }
+};
 
 export default function Work() {
   const projects = [

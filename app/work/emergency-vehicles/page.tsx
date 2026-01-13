@@ -7,6 +7,22 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Emergency Vehicles",
+  description: "Technical illustrations of emergency vehicles from around the world - fire engines, ambulances, police cars, and rescue vehicles. Published by Faber & Faber.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/emergency-vehicles"
+  },
+  openGraph: {
+    title: "Emergency Vehicles | Simon Tyler",
+    description: "Technical illustrations of emergency vehicles from around the world - fire engines, ambulances, police cars, and rescue vehicles. Published by Faber & Faber.",
+    url: "https://simontyler.co.uk/work/emergency-vehicles",
+    type: "article",
+    images: [{ url: "/images/emergencyvehicles/emergencyvehicles-cover.jpg" }]
+  }
+};
 
 export default function EmergencyVehiclesProject() {
   const metaItems = [

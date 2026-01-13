@@ -1,6 +1,22 @@
 import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mxwll",
+  description: "Mxwll is a design-led real-time scientific data platform featuring space station tracking, earthquake monitoring, and particle physics visualisation.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/mxwll"
+  },
+  openGraph: {
+    title: "Mxwll | Simon Tyler",
+    description: "Mxwll is a design-led real-time scientific data platform featuring space station tracking, earthquake monitoring, and particle physics visualisation.",
+    url: "https://simontyler.co.uk/work/mxwll",
+    type: "article",
+    images: [{ url: "/images/maxwell/hero.jpg" }]
+  }
+};
 
 export default function MaxwellProject() {
   return (

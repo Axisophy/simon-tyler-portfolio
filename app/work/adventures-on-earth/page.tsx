@@ -7,6 +7,22 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Adventures on Earth",
+  description: "Adventures on Earth explores our planet's extreme environments - polar regions, volcanoes, mountains, oceans, and deserts. Published by Pavilion.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/adventures-on-earth"
+  },
+  openGraph: {
+    title: "Adventures on Earth | Simon Tyler",
+    description: "Adventures on Earth explores our planet's extreme environments - polar regions, volcanoes, mountains, oceans, and deserts. Published by Pavilion.",
+    url: "https://simontyler.co.uk/work/adventures-on-earth",
+    type: "article",
+    images: [{ url: "/images/adventuresonearth/adventures-earth-cover.jpg" }]
+  }
+};
 
 export default function AdventuresOnEarthProject() {
   const metaItems = [

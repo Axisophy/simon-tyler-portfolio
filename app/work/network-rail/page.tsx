@@ -9,6 +9,22 @@ import {
   CardGrid,
   ImageRow
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Network Rail Pictograms",
+  description: "Comprehensive pictogram system for UK rail station wayfinding, balancing ISO clarity with British character. Designed at Spaceagency.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/network-rail"
+  },
+  openGraph: {
+    title: "Network Rail Pictograms | Simon Tyler",
+    description: "Comprehensive pictogram system for UK rail station wayfinding, balancing ISO clarity with British character. Designed at Spaceagency.",
+    url: "https://simontyler.co.uk/work/network-rail",
+    type: "article",
+    images: [{ url: "/images/network-rail/hero1.jpg" }]
+  }
+};
 
 export default function NetworkRailProject() {
   const metaItems = [

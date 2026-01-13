@@ -7,6 +7,22 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The World's Most Magnificent Machines",
+  description: "Illustrations for David Long's book featuring 32 remarkable machines from history - steam engines to space rockets. Published by Faber & Faber.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/magnificent-machines"
+  },
+  openGraph: {
+    title: "Magnificent Machines | Simon Tyler",
+    description: "Illustrations for David Long's book featuring 32 remarkable machines from history - steam engines to space rockets. Published by Faber & Faber.",
+    url: "https://simontyler.co.uk/work/magnificent-machines",
+    type: "article",
+    images: [{ url: "/images/magnificentmachines/magnificent-machines-cover.jpg" }]
+  }
+};
 
 export default function MagnificentMachinesProject() {
   const metaItems = [

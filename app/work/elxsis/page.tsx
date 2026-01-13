@@ -8,6 +8,22 @@ import {
   ContentSection,
   ImageRow
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Elxsis",
+  description: "Elxsis is a computational art studio exploring dynamical systems, astrophysical data, and emergent mathematical forms through generative visualisation.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/elxsis"
+  },
+  openGraph: {
+    title: "Elxsis | Simon Tyler",
+    description: "Elxsis is a computational art studio exploring dynamical systems, astrophysical data, and emergent mathematical forms through generative visualisation.",
+    url: "https://simontyler.co.uk/work/elxsis",
+    type: "article",
+    images: [{ url: "/images/elxsis/FinalLorenz1.png" }]
+  }
+};
 
 export default function ElxsisProject() {
   const metaItems = [

@@ -6,6 +6,22 @@ import {
   CaseStudyMeta,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Gizmo",
+  description: "Gizmo is a comprehensive illustrated survey of retro technology - the gadgets we loved and lost. Published by Laurence King in May 2026.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/gizmo"
+  },
+  openGraph: {
+    title: "Gizmo | Simon Tyler",
+    description: "Gizmo is a comprehensive illustrated survey of retro technology - the gadgets we loved and lost. Published by Laurence King in May 2026.",
+    url: "https://simontyler.co.uk/work/gizmo",
+    type: "article",
+    images: [{ url: "/images/gizmo/Gizmo4.3 front.jpeg" }]
+  }
+};
 
 export default function GizmoProject() {
   const metaItems = [

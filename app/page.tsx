@@ -2,11 +2,37 @@ import Link from "next/link";
 import Image from "next/image";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Simon Tyler | Designer, Illustrator, Author",
+  description: "Simon Tyler is a designer, illustrator, and author working across data visualisation, product design, and infographics. Portfolio featuring Network Rail pictograms, Mxwll, Elxsis, and more.",
+  alternates: {
+    canonical: "https://simontyler.co.uk"
+  }
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Simon Tyler",
+  url: "https://simontyler.co.uk",
+  jobTitle: "Designer, Illustrator, Author",
+  description: "Creative director, designer, illustrator, author, and artist working across data visualisation, product design, computational systems, and generative art.",
+  sameAs: [
+    "https://linkedin.com/in/simontyler"
+  ]
+};
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Header />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <main className="min-h-screen">
+        <Header />
 
       {/* Main Content */}
       <div className="px-4 md:px-6 py-12 md:py-16 lg:py-20">
@@ -229,7 +255,8 @@ export default function Home() {
         </section>
       </div>
 
-      <Footer />
-    </main>
+        <Footer />
+      </main>
+    </>
   );
 }

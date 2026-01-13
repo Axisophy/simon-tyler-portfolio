@@ -7,6 +7,22 @@ import {
   ImageSlideshow,
   ContentSection
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bugs",
+  description: "Bugs is an illustrated compendium of 50+ insects with bold graphic illustrations. Published by Pavilion.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/bugs"
+  },
+  openGraph: {
+    title: "Bugs | Simon Tyler",
+    description: "Bugs is an illustrated compendium of 50+ insects with bold graphic illustrations. Published by Pavilion.",
+    url: "https://simontyler.co.uk/work/bugs",
+    type: "article",
+    images: [{ url: "/images/bugs/bugs-cover.jpg" }]
+  }
+};
 
 export default function BugsProject() {
   const metaItems = [

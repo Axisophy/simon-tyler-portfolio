@@ -8,6 +8,22 @@ import {
   ContentSection,
   ImageRow
 } from "../../components/case-study";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IWM Duxford",
+  description: "Wayfinding and identity signage for IWM Duxford, Europe's largest air museum. Colour-coded symbol system and navigational totems.",
+  alternates: {
+    canonical: "https://simontyler.co.uk/work/iwm-duxford"
+  },
+  openGraph: {
+    title: "IWM Duxford | Simon Tyler",
+    description: "Wayfinding and identity signage for IWM Duxford, Europe's largest air museum. Colour-coded symbol system and navigational totems.",
+    url: "https://simontyler.co.uk/work/iwm-duxford",
+    type: "article",
+    images: [{ url: "/images/IWM-duxford/Duxford1.jpg" }]
+  }
+};
 
 export default function IWMDuxfordProject() {
   const metaItems = [
