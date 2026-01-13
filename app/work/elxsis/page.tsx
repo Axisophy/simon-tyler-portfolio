@@ -171,6 +171,9 @@ export default function ElxsisProject() {
           <div className="frame p-4 md:p-6">
             <img src="/images/elxsis/elxsis_complex_Vortex_20251222_151524.png" alt="Complex function - Vortex" className="rounded-lg h-auto max-w-full" />
           </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/elxsis/elxsis_complex_z_+_1_z_Joukowski_20251222_151249.png" alt="Complex function - Joukowski transform" className="rounded-lg h-auto max-w-full" />
+          </div>
         </section>
 
         {/* Back Link */}
