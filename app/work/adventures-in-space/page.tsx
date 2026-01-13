@@ -15,7 +15,9 @@ export default function AdventuresInSpaceProject() {
     { label: "Publisher", value: "Pavilion" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/adventuresinspace/space-cover.jpg", caption: "Adventures in Space book cover" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -37,11 +39,29 @@ export default function AdventuresInSpaceProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} placeholder="Adventures in Space book cover" />
+        <ImageSlideshow slides={heroSlides} />
+
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/adventuresinspace/space2.jpg" alt="Adventures in Space spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/adventuresinspace/space3.jpg" alt="Adventures in Space spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
+
+        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
+          <div className="frame p-4 md:p-6">
+            <img src="/images/adventuresinspace/space4.jpg" alt="Adventures in Space spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/adventuresinspace/space5.jpg" alt="Adventures in Space spread" className="rounded-lg h-auto max-w-full" />
+          </div>
+        </section>
 
         <ContentSection title="The Book">
           <p>
-            Case study content coming soon.
+            Adventures in Space is an illustrated guide to space exploration and astronomy, taking readers on a journey from Earth orbit to the edge of the observable universe. Bold illustrations bring the wonders of space to life for young readers.
           </p>
         </ContentSection>
 

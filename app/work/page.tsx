@@ -50,14 +50,6 @@ export default function Work() {
       image: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg"
     },
     {
-      slug: "with-a-bang",
-      title: "With a Bang",
-      year: "2023-25",
-      description: "Design-led textiles and homewares business",
-      tags: ["Product Design", "Branding", "Textiles"],
-      category: "Product Design"
-    },
-    {
       slug: "gizmo",
       title: "Gizmo",
       year: "2026",
@@ -73,7 +65,8 @@ export default function Work() {
       year: "2017",
       description: "Illustrated compendium of 50+ insects with bold graphic illustrations. Published by Pavilion.",
       tags: ["Book", "Illustration", "Writing"],
-      category: "Books"
+      category: "Books",
+      image: "/images/bugs/bugs-cover.jpg"
     },
     {
       slug: "adventures-in-space",
@@ -81,7 +74,8 @@ export default function Work() {
       year: "2018",
       description: "Illustrated guide to space exploration and astronomy. Published by Pavilion.",
       tags: ["Book", "Illustration", "Writing"],
-      category: "Books"
+      category: "Books",
+      image: "/images/adventuresinspace/space-cover.jpg"
     },
     {
       slug: "adventures-on-earth",
@@ -89,7 +83,8 @@ export default function Work() {
       year: "2019",
       description: "Exploration of Earth's extreme environments - polar regions, volcanoes, mountains, oceans, deserts. Published by Pavilion.",
       tags: ["Book", "Illustration", "Writing"],
-      category: "Books"
+      category: "Books",
+      image: "/images/adventuresonearth/adventures-earth-cover.jpg"
     },
     {
       slug: "emergency-vehicles",
@@ -97,7 +92,8 @@ export default function Work() {
       year: "2020",
       description: "Technical illustrations of emergency vehicles from around the world. Published by Faber & Faber.",
       tags: ["Book", "Illustration", "Writing"],
-      category: "Books"
+      category: "Books",
+      image: "/images/emergencyvehicles/emergencyvehicles-cover.jpg"
     },
     {
       slug: "magnificent-machines",
@@ -105,7 +101,8 @@ export default function Work() {
       year: "2020",
       description: "Illustrations for David Long's book on 32 magnificent machines from history. Published by Faber & Faber.",
       tags: ["Book", "Illustration"],
-      category: "Books"
+      category: "Books",
+      image: "/images/magnificentmachines/magnificent-machines-cover.jpg"
     },
   ];
 
