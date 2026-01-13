@@ -107,6 +107,9 @@ export default function NetworkRailProject() {
           <div className="frame p-4 md:p-6">
             <img src="/images/network-rail/pictograms3.jpg" alt="Pictograms in context" className="rounded-lg h-auto max-w-full" />
           </div>
+          <div className="frame p-4 md:p-6">
+            <img src="/images/network-rail/pictograms4.jpg" alt="Pictograms detail" className="rounded-lg h-auto max-w-full" />
+          </div>
         </section>
 
         <ContentSection title="Stakeholder Feedback">
