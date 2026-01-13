@@ -136,12 +136,6 @@ export default function GizmoProject() {
           </div>
         </section>
 
-        <section className="mb-px grid grid-cols-1 md:grid-cols-2 gap-px">
-          <div className="frame p-4 md:p-6">
-            <img src="/images/gizmo/gizmo-14.png" alt="Gizmo spread" className="rounded-lg h-auto max-w-full" />
-          </div>
-        </section>
-
         {/* Back Link */}
         <section className="mt-16 mb-12">
           <Link
