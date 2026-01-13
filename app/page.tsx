@@ -106,7 +106,7 @@ export default function Home() {
               </Link>
 
               {/* Image Frame */}
-              <Link href="/work/elxsis" className="frame p-4 md:p-6">
+              <Link href="/work/elxsis" className="frame p-4 md:p-6 flex-1">
                 <img
                   src="/images/elxsis/FinalLorenz1.png"
                   alt="Elxsis - Lorenz attractor visualization"
@@ -142,7 +142,7 @@ export default function Home() {
               </Link>
 
               {/* Image Frame */}
-              <Link href="/work/network-rail" className="frame p-4 md:p-6">
+              <Link href="/work/network-rail" className="frame p-4 md:p-6 flex-1">
                 <img
                   src="/images/network-rail/hero1.jpg"
                   alt="Network Rail Pictogram System"
@@ -181,7 +181,7 @@ export default function Home() {
               </Link>
 
               {/* Image Frame */}
-              <Link href="/work/axisophy" className="frame p-4 md:p-6">
+              <Link href="/work/axisophy" className="frame p-4 md:p-6 flex-1">
                 <img
                   src="/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg"
                   alt="Axisophy - Geological Timescale print"
@@ -217,7 +217,7 @@ export default function Home() {
               </Link>
 
               {/* Image Frame */}
-              <Link href="/work/gizmo" className="frame p-4 md:p-6">
+              <Link href="/work/gizmo" className="frame p-4 md:p-6 flex-1">
                 <img
                   src="/images/gizmo/Gizmo4.3 front.jpeg"
                   alt="Gizmo - book cover"
