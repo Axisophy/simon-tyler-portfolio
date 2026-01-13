@@ -50,6 +50,16 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
+      {
+        source: '/bugs',
+        destination: '/work/bugs',
+        permanent: true,
+      },
+      {
+        source: '/gizmo',
+        destination: '/work/gizmo',
+        permanent: true,
+      },
     ];
   },
 };
