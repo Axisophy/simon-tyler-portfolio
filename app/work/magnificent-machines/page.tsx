@@ -15,7 +15,9 @@ export default function MagnificentMachinesProject() {
     { label: "Publisher", value: "Faber & Faber" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/magnificentmachines/magnificent-machines-cover.jpg", caption: "Magnificent Machines book cover" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -37,7 +39,7 @@ export default function MagnificentMachinesProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} placeholder="Magnificent Machines book cover" />
+        <ImageSlideshow slides={heroSlides} />
 
         <ContentSection title="The Book">
           <p>

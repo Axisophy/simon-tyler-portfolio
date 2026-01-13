@@ -15,7 +15,9 @@ export default function AdventuresOnEarthProject() {
     { label: "Publisher", value: "Pavilion" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/adventuresonearth/adventures-earth-cover.jpg", caption: "Adventures on Earth book cover" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -37,7 +39,7 @@ export default function AdventuresOnEarthProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} placeholder="Adventures on Earth book cover" />
+        <ImageSlideshow slides={heroSlides} />
 
         <ContentSection title="The Book">
           <p>

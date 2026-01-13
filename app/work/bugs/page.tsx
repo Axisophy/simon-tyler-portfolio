@@ -15,7 +15,9 @@ export default function BugsProject() {
     { label: "Publisher", value: "Pavilion" }
   ];
 
-  const heroSlides: { src: string; caption: string }[] = [];
+  const heroSlides = [
+    { src: "/images/bugs/bugs-cover.jpg", caption: "Bugs book cover" }
+  ];
 
   return (
     <main className="min-h-screen">
@@ -37,7 +39,7 @@ export default function BugsProject() {
           }
         />
 
-        <ImageSlideshow slides={heroSlides} placeholder="Bugs book cover" />
+        <ImageSlideshow slides={heroSlides} />
 
         <ContentSection title="The Book">
           <p>
