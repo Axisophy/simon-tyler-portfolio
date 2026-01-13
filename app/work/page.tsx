@@ -47,7 +47,7 @@ export default function Work() {
       description: "Data visualisation print studio",
       tags: ["E-commerce", "Shopify", "Illustration", "Graphic Design"],
       category: "Product Design",
-      image: "/images/axisophy/Axisophy-sacks-spiral-black-mockup-1-flat-crop.jpg"
+      image: "/images/axisophy/Axisophy-GeologicalTimescale_mockup-1-flat-crop.jpg"
     },
     {
       slug: "with-a-bang",
