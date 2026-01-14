@@ -27,7 +27,7 @@ export default function GizmoProject() {
   const metaItems = [
     { label: "Role", value: "Author, Illustrator" },
     { label: "Date", value: "2026" },
-    { label: "Publisher", value: "Laurence King" }
+    { label: "Publisher", value: "Laurence King", href: "https://www.laurenceking.com/products/gizmo" }
   ];
 
   return (

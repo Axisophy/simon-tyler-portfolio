@@ -45,13 +45,13 @@ export default function About() {
             <h2 className="text-xl md:text-2xl font-bold text-black mb-6 font-display">Recent Work</h2>
             <div className="space-y-6 text-lg md:text-xl text-black/80 leading-relaxed">
               <p>
-                Most recently, he designed and built <Link href="/work/mxwll" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Mxwll</Link> - a digital laboratory for scientific data. The project involved creating real-time orbital mechanics simulations, plotting satellite and comet trajectories using SGP4 propagation and Kepler solvers, visualising climate data spanning decades, and rendering interactive charts for everything from the electromagnetic spectrum to the chart of nuclides. Built with React, Three.js, D3, and custom WebGL renderers.
+                Most recently, he designed and built <a href="https://mxwll.io" target="_blank" rel="noopener" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Mxwll</a> - a digital laboratory for scientific data. The project involved creating real-time orbital mechanics simulations, plotting satellite and comet trajectories using SGP4 propagation and Kepler solvers, visualising climate data spanning decades, and rendering interactive charts for everything from the electromagnetic spectrum to the chart of nuclides. Built with React, Three.js, D3, and custom WebGL renderers.
               </p>
               <p>
-                He also founded <Link href="/work/elxsis" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Elxsis</Link>, a computational art studio exploring dynamical systems, strange attractors, and astrophysical data - using Python, Matplotlib, and cloud GPU processing to generate large-scale generative artworks.
+                He also founded <a href="https://elxsis.com" target="_blank" rel="noopener" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Elxsis</a>, a computational art studio exploring dynamical systems, strange attractors, and astrophysical data - using Python, Matplotlib, and cloud GPU processing to generate large-scale generative artworks.
               </p>
               <p>
-                <Link href="/work/axisophy" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Axisophy</Link> is his data visualisation print studio - transforming mathematical structures, geological timescales, and phylogenetic trees into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
+                <a href="https://axisophy.com" target="_blank" rel="noopener" className="text-pink-500 font-semibold hover:opacity-70 transition-opacity">Axisophy</a> is his data visualisation print studio - transforming mathematical structures, geological timescales, and phylogenetic trees into museum-grade prints. Featured in The Guardian, Elle Decoration, and The Times.
               </p>
             </div>
           </div>
